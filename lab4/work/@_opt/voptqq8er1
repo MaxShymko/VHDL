@@ -1,0 +1,122 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\modeltech_6.5b\examples\LABS\lab3
+T_opt
+Z1 V1;:=LNZOagLGAl0XQ9]H<1
+Z2 04 8 6 work scheme_1 struct 1
+Z3 =1-b4b52f7248b3-59fc0250-2c5-11fc
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 n@_opt
+Z6 OE;O;6.5b;42
+T_opt1
+Z7 V1Y?_l2oY5>BTOgZz=_8>K2
+Z8 04 8 6 work scheme_2 struct 1
+Z9 =1-b4b52f7248b3-59fc00c6-2e6-1274
+R4
+Z10 n@_opt1
+R6
+Einv
+Z11 w1509687861
+Z12 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z13 dC:\modeltech_6.5b\examples\LABS\lab4
+Z14 8C:/modeltech_6.5b/examples/LABS/lab4/INV.vhd
+Z15 FC:/modeltech_6.5b/examples/LABS/lab4/INV.vhd
+l0
+L4
+Z16 VS1BLbefLUZEZ^NC:A2c^C1
+Z17 OE;C;6.5b;42
+32
+Z18 o-work work -2002 -explicit
+Z19 tExplicit 1
+Z20 !s100 i5GKQTmS7JLcP>jDDOLF?0
+Astruct
+R12
+Z21 DEx4 work 3 inv 0 22 S1BLbefLUZEZ^NC:A2c^C1
+l9
+L8
+Z22 VfiVhA3D7hNb>a^IiHih712
+R17
+32
+Z23 Mx1 4 ieee 14 std_logic_1164
+R18
+R19
+Z24 !s100 ?XJD[`2U8EiTl?VANSf<i2
+Enoaa
+Z25 w1509687843
+R12
+R13
+Z26 8C:/modeltech_6.5b/examples/LABS/lab4/NOAA.vhd
+Z27 FC:/modeltech_6.5b/examples/LABS/lab4/NOAA.vhd
+l0
+L4
+Z28 VO9K^RagEKP>PeSB_QGW<=1
+R17
+32
+R18
+R19
+Z29 !s100 QX72IODnd=91IgHiWz2`?1
+Astruct
+R12
+Z30 DEx4 work 4 noaa 0 22 O9K^RagEKP>PeSB_QGW<=1
+l9
+L8
+Z31 V@I1dBY22d5Wg6dSG0MW263
+R17
+32
+R23
+R18
+R19
+Z32 !s100 Uj933QdMOO=E3nzfkFX:I0
+Escheme_1
+Z33 w1509687878
+Z34 DPx22 C:\modeltech_6.5b\ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+32
+R13
+Z35 8C:/modeltech_6.5b/examples/LABS/lab4/scheme_1.vhd
+Z36 FC:/modeltech_6.5b/examples/LABS/lab4/scheme_1.vhd
+l0
+L4
+Z37 V`BhTBi3SD===ZcP<a[`nF2
+R17
+R18
+R19
+Z38 !s100 zXdV5I9B]=kB[B4I_EXLg0
+Astruct
+DEx41 C:\modeltech_6.5b\examples\LABS\lab4\work 4 noaa 0 22 O9K^RagEKP>PeSB_QGW<=1
+DEx41 C:\modeltech_6.5b\examples\LABS\lab4\work 3 inv 0 22 S1BLbefLUZEZ^NC:A2c^C1
+R34
+DEx41 C:\modeltech_6.5b\examples\LABS\lab4\work 8 scheme_1 0 22 `BhTBi3SD===ZcP<a[`nF2
+32
+Mx1 22 C:\modeltech_6.5b\ieee 14 std_logic_1164
+l18
+L8
+Z39 VWFZ]fYT]S5n81;NN6oOYP0
+R17
+R18
+R19
+Z40 !s100 N7gde:E1]h[dOHh=gikhR1
+Escheme_2
+Z41 w1509686817
+R13
+Z42 8C:/modeltech_6.5b/examples/LABS/lab4/scheme_2.vhd
+Z43 FC:/modeltech_6.5b/examples/LABS/lab4/scheme_2.vhd
+l0
+L1
+Z44 VPeUl4P4PNS]ZK?IkPoTJf3
+R17
+32
+R18
+R19
+Z45 !s100 gB04L@9X4GlE2QUPQ9]GP0
+Astruct
+Z46 DEx4 work 8 scheme_2 0 22 PeUl4P4PNS]ZK?IkPoTJf3
+l7
+L5
+Z47 Ve;TC<ejm^EN68<24<mH073
+R17
+32
+R18
+R19
+Z48 !s100 W6O5joG]P[D^[lcFU]ZiK2

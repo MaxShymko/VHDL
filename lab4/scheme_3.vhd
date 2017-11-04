@@ -1,0 +1,49 @@
+package vv_vls is
+	type fsm_in_type is (z1,z2,z3);
+	type fsm_out_type is (w1,w2,w3,w4,w5);
+end vv_vls;
+
+Library work;
+use work.vv_vls.all;
+entity FSM_A is
+port (z: in fsm_in_type;
+	clk: in bit;
+	w: out fsm_out_type);
+end FSM_A;
+architecture arch of FSM_A is
+	type T_state is (a11,a2,a33,a4);
+	signal NEXT_state: T_state;
+	signal state: T_state;
+	begin
+		NS: process(state, z)
+		begin
+			case state is
+				when a11 =>
+					if (z=z1) then NEXT_state<=a33; w<=w4;
+					elsif(z=z2) then NEXT_state<=a4; w<=w5;
+					else NEXT_state<=a11; w<=w5;
+					end if;
+				when a2 =>
+					if (z=z1) then NEXT_state<=a2; w<=w1;
+					elsif(z=z2) then NEXT_state<=a33; w<=w3;
+					else NEXT_state<=a33; w<=w2;
+					end if;
+				when a33 =>
+					if (z=z1) then NEXT_state<=a11; w<=w2;
+					elsif(z=z2) then NEXT_state<=a4; w<=w4;
+					else NEXT_state<=a11; w<=w4;
+					end if;
+				when a4 =>
+					if (z=z1) then NEXT_state<=a33; w<=w4;
+					elsif(z=z2) then NEXT_state<=a33; w<=w3;
+					else NEXT_state<=a11; w<=w1;
+					end if;
+			end case;
+		end process;
+		REG: process (clk)
+		begin
+			if (clk='1' and clk'event) then
+			   state<=NEXT_state;
+			end if;
+		end process;
+end arch;

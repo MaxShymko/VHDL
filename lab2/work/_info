@@ -1,0 +1,281 @@
+m255
+K3
+13
+cModel Technology
+dC:\modeltech_6.5b\examples
+Ea2
+Z0 w1506333024
+Z1 dC:\modeltech_6.5b\examples\LABS\lab2
+Z2 8C:/modeltech_6.5b/examples/LABS/lab2/A2.vhd
+Z3 FC:/modeltech_6.5b/examples/LABS/lab2/A2.vhd
+l0
+L1
+VNEjkbX@VD]ibJA2Rf@`Y@2
+Z4 OE;C;6.5b;42
+32
+Z5 o-work work -2002 -explicit
+Z6 tExplicit 1
+!s100 [fP8]fm;]TbOWOAV[Mdi:0
+Aa2_arch
+DEx4 work 2 a2 0 22 NEjkbX@VD]ibJA2Rf@`Y@2
+32
+l6
+L5
+V]o3>m01d:9X@H3c2lKdYN3
+R4
+R5
+R6
+!s100 HD6`f3;9WC8lmVQXLjWL:3
+En
+Z7 w1506333021
+R1
+Z8 8C:/modeltech_6.5b/examples/LABS/lab2/N.vhd
+Z9 FC:/modeltech_6.5b/examples/LABS/lab2/N.vhd
+l0
+L1
+V]f0F79752;eD79^cCK^U?3
+R4
+32
+R5
+R6
+!s100 zYL=LdbZGGI_gP[b;Cd0i3
+An_arch
+DEx4 work 1 n 0 22 ]f0F79752;eD79^cCK^U?3
+32
+l6
+L5
+V9N^6:W;WaTGHP3@_4mA0M3
+R4
+R5
+R6
+!s100 7QeNIZIafBgNU8OU:J4I42
+Ena3o2
+Z10 w1506333014
+R1
+Z11 8C:/modeltech_6.5b/examples/LABS/lab2/NA3O2.vhd
+Z12 FC:/modeltech_6.5b/examples/LABS/lab2/NA3O2.vhd
+l0
+L1
+V^c953S5^5oCd9T:TgmkhZ3
+R4
+32
+R5
+R6
+!s100 QM0WCUX[6;zYRZ@:ijzDa3
+Ana3o2_arch
+DEx4 work 5 na3o2 0 22 ^c953S5^5oCd9T:TgmkhZ3
+32
+l7
+L6
+VP:;UImU4m:K7`lA`6_VW11
+R4
+R5
+R6
+!s100 Ij;J:d377@RaAzU::NWMX2
+Enao2
+Z13 w1506333012
+R1
+Z14 8C:/modeltech_6.5b/examples/LABS/lab2/NAO2.vhd
+Z15 FC:/modeltech_6.5b/examples/LABS/lab2/NAO2.vhd
+l0
+L1
+V_G]I56a=iBNbiTTCo[fmD2
+R4
+32
+R5
+R6
+!s100 o_Wac^@XmT>DbdAXbcfHX3
+Anao2_arch
+DEx4 work 4 nao2 0 22 _G]I56a=iBNbiTTCo[fmD2
+32
+l7
+L6
+VUEcNX;bmNIjk_lXQGJd:>2
+R4
+R5
+R6
+!s100 lR`Eah8lIh<KY=E1mNDTh1
+Enaoa2
+Z16 w1506333008
+R1
+Z17 8C:/modeltech_6.5b/examples/LABS/lab2/NAOA2.vhd
+Z18 FC:/modeltech_6.5b/examples/LABS/lab2/NAOA2.vhd
+l0
+L1
+V:CWKFKShzUU4Dm5B?D[WY1
+R4
+32
+R5
+R6
+!s100 m17;507?JgZHzM4cUoJ=33
+Anaoa2_arch
+DEx4 work 5 naoa2 0 22 :CWKFKShzUU4Dm5B?D[WY1
+32
+l7
+L6
+V8b`Y<]:YZ8B6Pd=PaLQ:12
+R4
+R5
+R6
+!s100 ;eeEe@Yk2FeAS[EEZO8Ok3
+Enex2
+Z19 w1506333005
+R1
+Z20 8C:/modeltech_6.5b/examples/LABS/lab2/NEX2.vhd
+Z21 FC:/modeltech_6.5b/examples/LABS/lab2/NEX2.vhd
+l0
+L1
+VX7fUZ[a__ALNR:k<?_=FO3
+R4
+32
+R5
+R6
+!s100 bzASza`d]g25Ije8Hn8BX2
+Anex2_arch
+DEx4 work 4 nex2 0 22 X7fUZ[a__ALNR:k<?_=FO3
+32
+l7
+L6
+V>koBn;79Ho;E^?<@kRgZ73
+R4
+R5
+R6
+!s100 GS7TV?_XiCX3mjUd@mc2`3
+Eno2
+Z22 w1506333002
+R1
+Z23 8C:/modeltech_6.5b/examples/LABS/lab2/NO2.vhd
+Z24 FC:/modeltech_6.5b/examples/LABS/lab2/NO2.vhd
+l0
+L1
+V<S2eK8QcRF`;ljGUTB[N11
+R4
+32
+R5
+R6
+!s100 QYcG:_2cMmgc2blO1ZX>E0
+Ano2_arch
+DEx4 work 3 no2 0 22 <S2eK8QcRF`;ljGUTB[N11
+32
+l7
+L6
+V]T7f]NImShA9:mbVMl:2J0
+R4
+R5
+R6
+!s100 n^J0G77DLVlzVREPk]bjA3
+Eno3
+Z25 w1506333018
+R1
+Z26 8C:/modeltech_6.5b/examples/LABS/lab2/N03.vhd
+Z27 FC:/modeltech_6.5b/examples/LABS/lab2/N03.vhd
+l0
+L1
+Vi<4oGG0=G4eZXWzm>=:RX0
+R4
+32
+R5
+R6
+!s100 ;iM1;8b`M=W3QCJgBgmMo1
+Ano3_arch
+DEx4 work 3 no3 0 22 i<4oGG0=G4eZXWzm>=:RX0
+32
+l6
+L5
+V<Yb4ZodHQ>P=bfF]1[Jj22
+R4
+R5
+R6
+!s100 o8Ro^fIUO3fXdCd0LV3]01
+Enoa3
+Z28 w1506332998
+R1
+Z29 8C:/modeltech_6.5b/examples/LABS/lab2/NOA3.vhd
+Z30 FC:/modeltech_6.5b/examples/LABS/lab2/NOA3.vhd
+l0
+L1
+VD7FT5b0<i9;P@4zjG5:zI3
+R4
+32
+R5
+R6
+!s100 MY;<mT^Noii4OIYz5NF0J2
+Anoa3_arch
+DEx4 work 4 noa3 0 22 D7FT5b0<i9;P@4zjG5:zI3
+32
+l6
+L5
+VB3e<<4jK2ZV>8SbX1af<80
+R4
+R5
+R6
+!s100 lmK^S>Li>?P>jB<;IdMIM1
+Escheme
+Z31 w1506090408
+R1
+Z32 8C:/modeltech_6.5b/examples/LABS/lab2/scheme.vhd
+Z33 FC:/modeltech_6.5b/examples/LABS/lab2/scheme.vhd
+l0
+L1
+VXBdY7AX=7VkRG6b^d`]f53
+R4
+32
+R5
+R6
+!s100 ?J4DO;71zRnY5gMLa`NC]0
+Astr
+DEx4 work 6 scheme 0 22 XBdY7AX=7VkRG6b^d`]f53
+32
+l56
+L7
+Vgd2V:h7<`2>C]afRLCzdo3
+R4
+R5
+R6
+!s100 z:B^NJn`MEI3IUJMNWmeF0
+Eshema
+Z34 w1506081154
+R1
+R32
+R33
+l0
+L1
+VTc?43emX>hBJ`B8K[T_gn3
+R4
+32
+R5
+R6
+!s100 JjHbC;4i:SJ06VL2UI1S53
+Astr
+DEx4 work 5 shema 0 22 Tc?43emX>hBJ`B8K[T_gn3
+l56
+L7
+VR`D6m^Sl]LzL;:SCAg6oU0
+R4
+32
+R5
+R6
+!s100 ]c6AAMBQ?VSJH^6he7ab23
+Etest_scheme
+Z35 w1506090603
+R1
+Z36 8C:/modeltech_6.5b/examples/LABS/lab2/test_scheme.vhd
+Z37 FC:/modeltech_6.5b/examples/LABS/lab2/test_scheme.vhd
+l0
+L1
+VnTfGo<g^b<9>@i3KMM8>I0
+R4
+32
+R5
+R6
+!s100 G7a=J5=MbDTi6>kAB:WB10
+Abehavior
+DEx4 work 11 test_scheme 0 22 nTfGo<g^b<9>@i3KMM8>I0
+32
+l14
+L4
+VEDPdEO8G=7T^P]kialH7<1
+R4
+R5
+R6
+!s100 fiTOQ=S3hcfGB1iKI_LUf1

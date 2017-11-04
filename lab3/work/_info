@@ -1,0 +1,235 @@
+m255
+K3
+13
+cModel Technology
+dC:\modeltech_6.5b\examples\LABS\lab2
+Eadd
+Z0 w1508413199
+Z1 dC:\modeltech_6.5b\examples\LABS\lab3
+Z2 8C:/modeltech_6.5b/examples/LABS/lab3/add.vhd
+Z3 FC:/modeltech_6.5b/examples/LABS/lab3/add.vhd
+l0
+L1
+V0CRCHa1W8LOShHT0@cQ[n0
+Z4 OE;C;6.5b;42
+32
+Z5 o-work work -2002 -explicit
+Z6 tExplicit 1
+!s100 ;9S4<zBUF;GR_I?0HdLaW1
+Astruct
+DEx4 work 3 add 0 22 0CRCHa1W8LOShHT0@cQ[n0
+32
+l10
+L5
+V00G`L5aabDhKhIijoJeWR2
+R4
+R5
+R6
+!s100 1WcS1A9f:1nNeRUlfK8=;1
+Eadd1
+Z7 w1507539853
+R1
+Z8 8C:/modeltech_6.5b/examples/LABS/lab3/add1.vhd
+Z9 FC:/modeltech_6.5b/examples/LABS/lab3/add1.vhd
+l0
+L1
+VE`dFgPBe5H`h=8o?z2E0W3
+R4
+32
+R5
+R6
+!s100 zRC3dl>e9gh?J>M;:G[_72
+Astruct_1
+DEx4 work 4 add1 0 22 E`dFgPBe5H`h=8o?z2E0W3
+32
+l5
+L4
+Vg3?F[70Kn4Gc@RW<?IfTo0
+R4
+R5
+R6
+!s100 Ni;0h4S<6NbNE[IdGD^`j2
+Eelement
+Z10 w1508147048
+R1
+Z11 8C:/modeltech_6.5b/examples/LABS/lab3/element.vhd
+Z12 FC:/modeltech_6.5b/examples/LABS/lab3/element.vhd
+l0
+L1
+VdhcdA9zofHNhh<h]fieaR2
+R4
+32
+R5
+R6
+!s100 J:_U=^S74clB0<E97X7:G1
+Astruct
+DEx4 work 7 element 0 22 dhcdA9zofHNhh<h]fieaR2
+32
+l15
+L5
+V36zJCN^oU072X6SG=<<Z22
+R4
+R5
+R6
+!s100 HeXhTSd:zQdjdX;2PXjMa0
+Efull_scheme_1
+Z13 w1508155947
+R1
+Z14 8C:/modeltech_6.5b/examples/LABS/lab3/full_scheme_1.vhd
+Z15 FC:/modeltech_6.5b/examples/LABS/lab3/full_scheme_1.vhd
+l0
+L1
+V_ojzJojL_@PmXCE[PB0^M2
+R4
+32
+R5
+R6
+!s100 B^P[eZaa52iV_ZHPZX8gL2
+Astruct
+DEx4 work 13 full_scheme_1 0 22 _ojzJojL_@PmXCE[PB0^M2
+l14
+L8
+VCWC5G=SBA:Y=g=QGQ7ZWZ2
+R4
+32
+R5
+R6
+!s100 XWF?eNEjBheilQ5YSGbO=0
+Efull_scheme_2
+Z16 w1508413240
+R1
+Z17 8C:/modeltech_6.5b/examples/LABS/lab3/full_scheme_2.vhd
+Z18 FC:/modeltech_6.5b/examples/LABS/lab3/full_scheme_2.vhd
+l0
+L1
+V2lXhk][LO<FQeAz95R:4=3
+R4
+32
+R5
+R6
+!s100 A]N7jUL<DQo316ReCBa=81
+Astruct
+DEx4 work 13 full_scheme_2 0 22 2lXhk][LO<FQeAz95R:4=3
+32
+l14
+L8
+V9A3;ak?S7nXT_U0_oSV_a0
+R4
+R5
+R6
+!s100 U`@GPmb@52`U2AlX`eD8C2
+Emain_test
+Z19 w1507543465
+R1
+Z20 8C:/modeltech_6.5b/examples/LABS/lab3/test.vhd
+Z21 FC:/modeltech_6.5b/examples/LABS/lab3/test.vhd
+l0
+L1
+V9@joa_`4Dh;aAGJ8hTMGa3
+R4
+32
+R5
+R6
+!s100 RSc?lY[Dado<j^ez<BObC1
+Abehavior
+DEx4 work 9 main_test 0 22 9@joa_`4Dh;aAGJ8hTMGa3
+32
+l10
+L3
+VkUOg4_K[LLUT>zXD3SKiZ0
+R4
+R5
+R6
+!s100 2I[B_7:dj9@zD@j?@^[l92
+Emult
+Z22 w1507891090
+R1
+Z23 8C:/modeltech_6.5b/examples/LABS/lab3/mult.vhd
+Z24 FC:/modeltech_6.5b/examples/LABS/lab3/mult.vhd
+l0
+L1
+VO<1?ggDFaBSoD[djE@CPB2
+R4
+32
+R5
+R6
+!s100 gHjG61Sz_ALQN3KG?@nX[0
+Astruct
+DEx4 work 4 mult 0 22 O<1?ggDFaBSoD[djE@CPB2
+32
+l11
+L5
+VOkI9BbPQK9BZWaTX7IEMf0
+R4
+R5
+R6
+!s100 mg7]bojaQ?o=ZAQTAYmS?2
+Emult_2
+Z25 w1507540245
+R1
+Z26 8C:/modeltech_6.5b/examples/LABS/lab3/mult_2.vhd
+Z27 FC:/modeltech_6.5b/examples/LABS/lab3/mult_2.vhd
+l0
+L1
+VCeV1[1gEB;0Fk_Kz`i?Qa1
+R4
+32
+R5
+R6
+!s100 bnkLbEdYej@C=Y]i]MebI2
+Astructure
+DEx4 work 6 mult_2 0 22 CeV1[1gEB;0Fk_Kz`i?Qa1
+32
+l10
+L5
+V>N4A@BdSLb[RLTD@`9`HF3
+R4
+R5
+R6
+!s100 NHb@X`egS>Fj`gJl<kYFm1
+Escheme
+Z28 w1507891329
+R1
+Z29 8C:/modeltech_6.5b/examples/LABS/lab3/scheme.vhd
+Z30 FC:/modeltech_6.5b/examples/LABS/lab3/scheme.vhd
+l0
+L1
+VQW[_Ge<dNg]_f`O1MUJDM1
+R4
+32
+R5
+R6
+!s100 kWXJ4loc>c^1Y`PHc2hMI2
+Astr
+DEx4 work 6 scheme 0 22 QW[_Ge<dNg]_f`O1MUJDM1
+l18
+L6
+V8kLkP`d:3AXb2R>QS?XSE2
+R4
+32
+R5
+R6
+!s100 _=ekI952GU^9f;_N_jQ6e3
+Etest
+Z31 w1508160892
+R1
+R20
+R21
+l0
+L1
+VaWS5UiZ4zcd8i5`JO:LIh0
+R4
+32
+R5
+R6
+!s100 LIa=@aWjDRMzOj><LLi9R3
+Abehavior
+DEx4 work 4 test 0 22 aWS5UiZ4zcd8i5`JO:LIh0
+32
+l16
+L4
+V^;BM>P5T?HQAm;3?j`UCl2
+R4
+R5
+R6
+!s100 XM1Hfg;kn=XYK?jT0Z4VR0

@@ -1,0 +1,23 @@
+vsim scheme_1
+add wave D TI TE C QN
+force C 0 0, 1 25 -repeat 50
+force D 0 0, 1 50 -repeat 100
+force TI 0 0, 1 100 -repeat 200
+force TE 0 0, 1 200 -repeat 400
+view wave
+run 1450
+
+#add wave *
+#force c '0' 0, '1' 30ns -repeat 60ns
+#      force d '0'
+#      run 50
+#      force d '1'
+#      run 50
+#      force TI '0'
+#      run 50
+#      force TI '1'
+#      run 50
+#      force TE '0'
+#      run 50
+#      force TE '1' 
+#      run 50

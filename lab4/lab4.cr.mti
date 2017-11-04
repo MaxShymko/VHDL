@@ -1,0 +1,37 @@
+C:/modeltech_6.5b/examples/LABS/lab4/INV.vhd {1 {vcom -work work -2002 -explicit -vopt C:/modeltech_6.5b/examples/LABS/lab4/INV.vhd
+Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity inv
+-- Compiling architecture struct of inv
+
+} {} {}} C:/modeltech_6.5b/examples/LABS/lab4/scheme_1.vhd {1 {vcom -work work -2002 -explicit -vopt C:/modeltech_6.5b/examples/LABS/lab4/scheme_1.vhd
+Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity scheme_1
+-- Compiling architecture struct of scheme_1
+
+} {} {}} C:/modeltech_6.5b/examples/LABS/lab4/scheme_2.vhd {1 {vcom -work work -2002 -explicit -vopt C:/modeltech_6.5b/examples/LABS/lab4/scheme_2.vhd
+Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity scheme_2
+-- Compiling architecture struct of scheme_2
+
+} {} {}} C:/modeltech_6.5b/examples/LABS/lab4/NOAA.vhd {1 {vcom -work work -2002 -explicit -vopt C:/modeltech_6.5b/examples/LABS/lab4/NOAA.vhd
+Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity noaa
+-- Compiling architecture struct of noaa
+
+} {} {}} C:/modeltech_6.5b/examples/LABS/lab4/scheme_3.vhd {1 {vcom -work work -2002 -explicit -vopt C:/modeltech_6.5b/examples/LABS/lab4/scheme_3.vhd
+Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
+-- Loading package standard
+-- Compiling package vv_vls
+-- Loading package vv_vls
+-- Compiling entity fsm_a
+-- Compiling architecture arch of fsm_a
+
+} {} {}}

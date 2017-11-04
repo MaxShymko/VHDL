@@ -1,0 +1,15 @@
+entity mult is
+port(a1,b1,mc2,mc1: in BIT;
+  mp2, mp1: out BIT);
+end mult;
+architecture struct of mult is
+component
+  mult_2 port(s1,s0,r1,r0: in BIT;
+    t3,t2,t1,t0: out BIT);
+end component;
+signal t0,t1,p3,p4: BIT;
+begin
+  t0 <= a1 and b1;
+  t1 <= '0';
+  circ1: mult_2 port map(t1,t0,mc2,mc1, p4,p3,p2,p1);
+end struct;

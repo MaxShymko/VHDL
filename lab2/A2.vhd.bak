@@ -1,0 +1,8 @@
+entity A2 is
+port(A, B: in BIT; 
+  Y: out BIT);
+end A2;
+architecture A2_arch of A2 is
+begin
+  Y <= (A and B);-- after 2 ns;
+end A2_arch;
