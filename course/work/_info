@@ -4,25 +4,38 @@ K3
 cModel Technology
 dC:\modeltech_6.5b\examples\LABS\lab4
 Emain
-Z0 w1509279301
-Z1 dC:\modeltech_6.5b\examples\LABS\course
-Z2 8C:/modeltech_6.5b/examples/LABS/course/main.vhd
-Z3 FC:/modeltech_6.5b/examples/LABS/course/main.vhd
+Z0 w1510065673
+Z1 dD:\GitHub\VHDL\course
+Z2 8D:/GitHub/VHDL/course/main.vhd
+Z3 FD:/GitHub/VHDL/course/main.vhd
 l0
 L1
-VRzW6hVUL`H23lnV;=^kI]1
+VH1oX[b>E9Cn8]UL@2JcHo3
+!s100 V_[6O8Q@fB;O:9Y_VG2h_3
 Z4 OE;C;6.5b;42
 32
 Z5 o-work work -2002 -explicit
 Z6 tExplicit 1
-!s100 ]S5oeOKP`7Z`H;Mi3C`=k3
 Astruct
-DEx4 work 4 main 0 22 RzW6hVUL`H23lnV;=^kI]1
-32
-l13
-L4
-V^KMf5_2`H6mgE6c]EK93@0
+Z7 DEx4 work 4 main 0 22 H1oX[b>E9Cn8]UL@2JcHo3
+l17
+L5
+Z8 VZn8H;0_D3>4]_GW@5edSk1
+Z9 !s100 @QohlL3UJFIUbFa7XkK_X1
 R4
+32
 R5
 R6
-!s100 zZFQ]LB:i`Ha71No=[kIg1
+Ptypes
+w1510059897
+R1
+8D:/GitHub/VHDL/course/types.vhd
+FD:/GitHub/VHDL/course/types.vhd
+l0
+L1
+VJ=7W;9z3hN2Z;nX2_D^_[3
+R4
+32
+R5
+R6
+!s100 O7KLZ9:L=<WZJ`Q9ZzFcS1
