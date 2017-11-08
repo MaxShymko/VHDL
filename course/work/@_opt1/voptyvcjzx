@@ -1,0 +1,64 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\modeltech_6.5b\examples\LABS\lab4
+T_opt
+Z1 Vmd413BNG4zl>o?F3Zm0ce1
+Z2 04 4 6 work main struct 1
+Z3 =1-b4b52f7248b3-5a033995-18c-2738
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 n@_opt
+Z6 OE;O;6.5b;42
+T_opt1
+Z7 V91Cih`k756>^1hiRG0H550
+R2
+Z8 =1-b4b52f7248b3-5a036892-199-fc4
+R4
+Z9 n@_opt1
+R6
+Emain
+Z10 w1510172811
+Z11 DPx21 C:\modeltech_6.5b\std 6 textio 0 22 m2KQDRRhmF833<<DjYdL70
+Z12 DPx26 D:\GitHub\VHDL\course\work 5 types 0 22 D[C=e2[9DNlA4j0MZ<I461
+Z13 DPx22 C:\modeltech_6.5b\ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+32
+Z14 dD:\GitHub\VHDL\course
+Z15 8D:/GitHub/VHDL/course/main.vhd
+Z16 FD:/GitHub/VHDL/course/main.vhd
+l0
+L5
+Z17 V`>_Q>D0QlooehOZE>;9d21
+Z18 OE;C;6.5b;42
+Z19 o-work work -2002 -explicit
+Z20 tExplicit 1
+Z21 !s100 8kcf]:TK@a=RfX;kO`8Xh1
+Astruct
+R11
+R12
+R13
+Z22 DEx26 D:\GitHub\VHDL\course\work 4 main 0 22 `>_Q>D0QlooehOZE>;9d21
+32
+Z23 Mx3 22 C:\modeltech_6.5b\ieee 14 std_logic_1164
+Z24 Mx2 26 D:\GitHub\VHDL\course\work 5 types
+Z25 Mx1 21 C:\modeltech_6.5b\std 6 textio
+l34
+L10
+Z26 V8CK27h2?S?WG;<6zfXzi:2
+R18
+R19
+R20
+Z27 !s100 WUaH];<AEkF2IO5Jb^?8K0
+Ptypes
+32
+Z28 w1510162906
+R14
+Z29 8D:/GitHub/VHDL/course/types.vhd
+Z30 FD:/GitHub/VHDL/course/types.vhd
+l0
+L1
+Z31 VD[C=e2[9DNlA4j0MZ<I461
+R18
+R19
+R20
+Z32 !s100 ?_m3CM5Z@lhCN]I5Ib6Fc2

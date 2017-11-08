@@ -4,54 +4,61 @@ K3
 cModel Technology
 Z0 dC:\modeltech_6.5b\examples\LABS\lab4
 T_opt
-Vmd413BNG4zl>o?F3Zm0ce1
-Z1 04 4 6 work main struct 1
-Z2 =1-b4b52f7248b3-5a033995-18c-2738
-Z3 o-quiet -auto_acc_if_foreign -work work
-Z4 n@_opt
-Z5 OE;O;6.5b;42
+Z1 Vmd413BNG4zl>o?F3Zm0ce1
+Z2 04 4 6 work main struct 1
+Z3 =1-b4b52f7248b3-5a033995-18c-2738
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 n@_opt
+Z6 OE;O;6.5b;42
+T_opt1
+V91Cih`k756>^1hiRG0H550
+R2
+Z7 =1-b4b52f7248b3-5a036892-199-fc4
+R4
+Z8 n@_opt1
+R6
 Emain
-Z6 w1510160774
-Z7 DPx3 std 6 textio 0 22 m2KQDRRhmF833<<DjYdL70
-Z8 DPx4 work 5 types 0 22 D[C=e2[9DNlA4j0MZ<I461
-Z9 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
-Z10 dD:\GitHub\VHDL\course
-Z11 8D:/GitHub/VHDL/course/main.vhd
-Z12 FD:/GitHub/VHDL/course/main.vhd
+Z9 w1510172811
+Z10 DPx3 std 6 textio 0 22 m2KQDRRhmF833<<DjYdL70
+Z11 DPx4 work 5 types 0 22 D[C=e2[9DNlA4j0MZ<I461
+Z12 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z13 dD:\GitHub\VHDL\course
+Z14 8D:/GitHub/VHDL/course/main.vhd
+Z15 FD:/GitHub/VHDL/course/main.vhd
 l0
 L5
-Z13 V`>_Q>D0QlooehOZE>;9d21
-Z14 OE;C;6.5b;42
+Z16 V`>_Q>D0QlooehOZE>;9d21
+Z17 OE;C;6.5b;42
 32
-Z15 o-work work -2002 -explicit
-Z16 tExplicit 1
-Z17 !s100 8kcf]:TK@a=RfX;kO`8Xh1
+Z18 o-work work -2002 -explicit
+Z19 tExplicit 1
+Z20 !s100 8kcf]:TK@a=RfX;kO`8Xh1
 Astruct
-R7
-R8
-R9
-Z18 DEx4 work 4 main 0 22 `>_Q>D0QlooehOZE>;9d21
-l32
-L10
-Z19 Vm6U8=oCjgz<AJPQ1n5O[P2
-R14
-32
-Z20 Mx3 4 ieee 14 std_logic_1164
-Z21 Mx2 4 work 5 types
-Z22 Mx1 3 std 6 textio
-R15
-R16
-Z23 !s100 ?ECT[I]Bdg8bmgc?zS8H:2
-Ptypes
-Z24 w1510157453
 R10
-Z25 8D:/GitHub/VHDL/course/types.vhd
-Z26 FD:/GitHub/VHDL/course/types.vhd
+R11
+R12
+Z21 DEx4 work 4 main 0 22 `>_Q>D0QlooehOZE>;9d21
+l34
+L10
+Z22 V8CK27h2?S?WG;<6zfXzi:2
+R17
+32
+Z23 Mx3 4 ieee 14 std_logic_1164
+Z24 Mx2 4 work 5 types
+Z25 Mx1 3 std 6 textio
+R18
+R19
+Z26 !s100 WUaH];<AEkF2IO5Jb^?8K0
+Ptypes
+Z27 w1510162906
+R13
+Z28 8D:/GitHub/VHDL/course/types.vhd
+Z29 FD:/GitHub/VHDL/course/types.vhd
 l0
 L1
-Z27 VD[C=e2[9DNlA4j0MZ<I461
-R14
+Z30 VD[C=e2[9DNlA4j0MZ<I461
+R17
 32
-R15
-R16
-Z28 !s100 ?_m3CM5Z@lhCN]I5Ib6Fc2
+R18
+R19
+Z31 !s100 ?_m3CM5Z@lhCN]I5Ib6Fc2
