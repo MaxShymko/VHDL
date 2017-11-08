@@ -3,13 +3,4 @@ Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
 -- Loading package standard
 -- Compiling package types
 
-} {} {}} D:/GitHub/VHDL/course/funcs.vhd {0 {vcom -work work -2002 -explicit -vopt D:/GitHub/VHDL/course/funcs.vhd
-Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
--- Loading package standard
--- Compiling package funcs
-** Error: D:/GitHub/VHDL/course/funcs.vhd(4): (vcom-1136) Unknown identifier "ant_arr".
-** Error: D:/GitHub/VHDL/course/funcs.vhd(4): Function declaration reserved word RETURN must be followed by type mark.
-** Error: D:/GitHub/VHDL/course/funcs.vhd(4): Subprogram body 'next_step' not allowed in this region.
-** Error: D:/GitHub/VHDL/course/funcs.vhd(14): VHDL Compiler exiting
-
-} {5.0 9.0} {}}
+} {} {}}
