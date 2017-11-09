@@ -9,26 +9,24 @@ end main;
 
 architecture struct of main is
 
-signal next_ant : ant_arr := (0=>MATRIX_SIZE-2, 1=>MATRIX_SIZE-2); -- pos of ant
-signal startPos : ant_arr := (0=>MATRIX_SIZE-2, 1=>MATRIX_SIZE-2); -- anthill
+signal next_ant : ant_arr := (0 => MATRIX_SIZE-2, 1 => MATRIX_SIZE-2); -- pos of ant
+signal startPos : ant_arr := (0 => MATRIX_SIZE-2, 1 => MATRIX_SIZE-2); -- anthill
+
+-- pheromone initialize
 signal pheromone : pheromone_arr := (
 	0 => (others => -1),
-	1 => (1=>1,2=>2,3=>3,4=>1,5=>1,others => -1),
-	2 => (1=>1,2=>2,3=>4,4=>2,5=>3,others => -1),
-	3 => (1=>0,2=>2,3=>0,4=>5,5=>3,others => -1),
-	4 => (1=>0,2=>0,3=>0,4=>6,5=>0,others => -1),
-	5 => (1=>0,2=>0,3=>0,4=>3,5=>7,others => -1),
-	6 => (others => -1)
+	MATRIX_SIZE-1 => (others => -1),
+	others => (0 => -1, MATRIX_SIZE-1 => -1, others => 0)
 	);
---signal pheromone : pheromone_arr;
 
+-- eat initialize
 signal eat : eat_arr := (
-	0 => (true, false,false,false,true ),
-	1 => (false,false,false,false,false),
-	2 => (false,false,true, false,false),
-	3 => (false,false,false,false,false),
-	4 => (true, false,false,false,false)
+	0 => (0 => true, 4 => true , others => false),
+	2 => (2 => true, others => false),
+	4 => (0 => true, others => false),
+	others => (others => false)
 	);
+
 signal goHome : boolean := false;
 
 begin
@@ -40,28 +38,16 @@ begin
 	file output_data_file : text open write_mode is "results.txt";
 	--
 
-	variable ant_near : ant_near_arr;
-	variable best_way : natural range 0 to 7;
-	variable initialize : boolean := false;
+	variable ant_near : ant_near_arr; -- neighbor cells
+	variable best_way : natural range 0 to 7; -- index of the ant_near
+	variable initialize : boolean := false; -- init flag
 
 	begin
 
-		
 		if(initialize = false) then
 			initialize := true;
 
-			-- pheromone initialize
---			for i in 0 to MATRIX_SIZE-1 loop
---				for j in 0 to MATRIX_SIZE-1 loop
---					if(i = 0 or j = 0 or i = MATRIX_SIZE-1 or j = MATRIX_SIZE-1) then
---						pheromone(i, j) <= -1;
---					else
---						pheromone(i, j) <= 0;
---					end if;
---				end loop;
---			end loop;
-
-			-- first string in a file: Elements count: (MATRIX_SIZE-2)^2 - eat, 0 - false, 1 - true
+			-- first line in a file: Elements count: (MATRIX_SIZE-2)^2 - eat, 0 - false, 1 - true
 			for i in 0 to MATRIX_SIZE-1-2 loop
 				for j in 0 to MATRIX_SIZE-1-2 loop
 					if(eat(i,j) = true) then
@@ -82,6 +68,7 @@ begin
 			end loop;
 			writeline(output_data_file,outdata_line);
 
+			-- start pos log
 			write(outdata_line,startPos(0));
 			write(outdata_line,string'(" "));
 			write(outdata_line,startPos(1));
@@ -90,6 +77,11 @@ begin
 		--
 
 		if(clk'event and clk = '0') then
+			
+			-- next_ant sequence
+			-- 7  6  4
+			-- 5 ant 2 
+			-- 3  1  0
 			ant_near := (
 				0 => (next_ant(0) + 1, next_ant(1) + 1),
 				1 => (next_ant(0) + 1, next_ant(1)),
@@ -101,6 +93,7 @@ begin
 				7 => (next_ant(0) - 1, next_ant(1) - 1)
 				);
 			
+			-- find first near cell /= -1
 			for i in 0 to 7 loop
 				if(pheromone(ant_near(i)(0),ant_near(i)(1)) >= 0) then
 					best_way := i;
@@ -110,38 +103,46 @@ begin
 
 			if(goHome = true) then
 
-				if(next_ant(0) = startPos(0) and next_ant(1) = startPos(1)) then -- hit on an anthill
+				-- hit on an anthill
+				if(next_ant(0) = startPos(0) and next_ant(1) = startPos(1)) then
 					goHome <= false;
 
 				else
+					-- find the best way
 					for i in 1 to 7 loop
 						if(pheromone(ant_near(i)(0),ant_near(i)(1)) > pheromone(ant_near(best_way)(0),ant_near(best_way)(1))) then
 							best_way := i;
 						end if;
 					end loop;
 
+					-- dec previous cell
 					if(pheromone(next_ant(0), next_ant(1)) > 0) then
 						pheromone(next_ant(0), next_ant(1)) <= pheromone(next_ant(0), next_ant(1)) - 1;
 					end if;
 
+					-- update next_state
 					next_ant <= (ant_near(best_way)(0), ant_near(best_way)(1));
 				end if;
 
 			elsif(goHome = false) then
-				if(eat(next_ant(0)-1,next_ant(1)-1) = true) then -- hit on an food
+
+				-- hit on an food
+				if(eat(next_ant(0)-1,next_ant(1)-1) = true) then
 					goHome <= true;
 					eat(next_ant(0)-1,next_ant(1)-1) <= false;
 
 				else
-
+					-- find the best way
 					for i in 1 to 7 loop
 						if((pheromone(ant_near(i)(0),ant_near(i)(1)) <= pheromone(ant_near(best_way)(0),ant_near(best_way)(1))) and (pheromone(ant_near(i)(0),ant_near(i)(1)) /= -1)) then
 							best_way := i;
 						end if;
 					end loop;
 
+					-- inc two pheromone to cell
 					pheromone(next_ant(0), next_ant(1)) <= pheromone(next_ant(0), next_ant(1)) + 2;
 
+					-- update next_state
 					next_ant <= (ant_near(best_way)(0), ant_near(best_way)(1));
 				end if;
 			end if;

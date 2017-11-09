@@ -11,16 +11,16 @@ Z4 o-quiet -auto_acc_if_foreign -work work
 Z5 n@_opt
 Z6 OE;O;6.5b;42
 T_opt1
-Z7 V91Cih`k756>^1hiRG0H550
+Z7 V05LCAYzjckH27cTPO]SNQ3
 R2
-Z8 =1-b4b52f7248b3-5a036892-199-fc4
+Z8 =1-b4b52f7248b3-5a046631-137-510
 R4
 Z9 n@_opt1
 R6
 Emain
-Z10 w1510172811
+Z10 w1510237732
 Z11 DPx21 C:\modeltech_6.5b\std 6 textio 0 22 m2KQDRRhmF833<<DjYdL70
-Z12 DPx26 D:\GitHub\VHDL\course\work 5 types 0 22 D[C=e2[9DNlA4j0MZ<I461
+Z12 DPx26 D:\GitHub\VHDL\course\work 5 types 0 22 cP7SBg:8b6@?]TR5MJf1G2
 Z13 DPx22 C:\modeltech_6.5b\ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
 32
 Z14 dD:\GitHub\VHDL\course
@@ -42,23 +42,23 @@ Z22 DEx26 D:\GitHub\VHDL\course\work 4 main 0 22 `>_Q>D0QlooehOZE>;9d21
 Z23 Mx3 22 C:\modeltech_6.5b\ieee 14 std_logic_1164
 Z24 Mx2 26 D:\GitHub\VHDL\course\work 5 types
 Z25 Mx1 21 C:\modeltech_6.5b\std 6 textio
-l34
+l31
 L10
-Z26 V8CK27h2?S?WG;<6zfXzi:2
+Z26 VDXmJ];@F7_aF`O]l=hH6j3
 R18
 R19
 R20
-Z27 !s100 WUaH];<AEkF2IO5Jb^?8K0
+Z27 !s100 ^VK8kGcOKdO88TbOgS;Pk1
 Ptypes
 32
-Z28 w1510162906
+Z28 w1510236373
 R14
 Z29 8D:/GitHub/VHDL/course/types.vhd
 Z30 FD:/GitHub/VHDL/course/types.vhd
 l0
 L1
-Z31 VD[C=e2[9DNlA4j0MZ<I461
+Z31 VcP7SBg:8b6@?]TR5MJf1G2
 R18
 R19
 R20
-Z32 !s100 ?_m3CM5Z@lhCN]I5Ib6Fc2
+Z32 !s100 ]nNVio^_N8noh:7FofH<W2
