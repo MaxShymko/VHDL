@@ -1,6 +1,7 @@
 Library IEEE, work;
 Use IEEE.std_logic_1164.all;
 Use work.types.all;
+Use IEEE.MATH_REAL.all;
 Use STD.textio.all; -- file
 entity main is
 	port(clk : in std_logic;
@@ -21,9 +22,12 @@ signal pheromone : pheromone_arr := (
 
 -- eat initialize
 signal eat : eat_arr := (
-	0 => (0 => true, 4 => true , others => false),
+	0 => (0 => true, 4 => true,  6=> true, others => false),
 	2 => (2 => true, others => false),
+	3 => (0 => true, 4 => true,  6=> true, others => false),
 	4 => (0 => true, others => false),
+	6 => (0 => true, 4 => true,  6=> true, 8=> true, others => false),
+	8 => (1 => true, 3 => true,  7=> true, 9=> true, others => false),
 	others => (others => false)
 	);
 
@@ -41,6 +45,12 @@ begin
 	variable ant_near : ant_near_arr; -- neighbor cells
 	variable best_way : natural range 0 to 7; -- index of the ant_near
 	variable initialize : boolean := false; -- init flag
+	variable equal_count : real range 0.0 to 8.0 := 0.0;
+
+	-- for random
+	variable seed1, seed2 : positive;
+	variable rand : real;
+	variable int_rand : integer range 0 to 7;
 
 	begin
 
@@ -100,6 +110,7 @@ begin
 					exit;
 				end if;
 			end loop;
+			equal_count := 0.0;
 
 			if(goHome = true) then
 
@@ -109,13 +120,35 @@ begin
 
 				else
 					-- find the best way
+					-- get all max values
 					for i in 1 to 7 loop
 						if(pheromone(ant_near(i)(0),ant_near(i)(1)) > pheromone(ant_near(best_way)(0),ant_near(best_way)(1))) then
 							best_way := i;
 						end if;
 					end loop;
 
-					-- dec previous cell
+					-- get max values and update equal_count
+					for i in 0 to 7 loop
+						if(pheromone(ant_near(i)(0),ant_near(i)(1)) = pheromone(ant_near(best_way)(0),ant_near(best_way)(1))) then
+							equal_count := equal_count + 1.0;
+						end if;
+					end loop;
+
+					-- random choose from equals
+					UNIFORM(seed1, seed2, rand);
+	        		int_rand := INTEGER(TRUNC(rand * equal_count));
+	        		for i in 0 to 7 loop
+						if(pheromone(ant_near(i)(0),ant_near(i)(1)) = pheromone(ant_near(best_way)(0),ant_near(best_way)(1))) then
+							if(int_rand = 0) then
+								best_way := i;
+								exit;
+							else
+								int_rand := int_rand - 1;
+							end if;
+						end if;
+					end loop;
+
+					-- decrement previous cell
 					if(pheromone(next_ant(0), next_ant(1)) > 0) then
 						pheromone(next_ant(0), next_ant(1)) <= pheromone(next_ant(0), next_ant(1)) - 1;
 					end if;
@@ -133,11 +166,38 @@ begin
 
 				else
 					-- find the best way
-					for i in 1 to 7 loop
+					-- get all min values
+					for i in 0 to 7 loop
 						if((pheromone(ant_near(i)(0),ant_near(i)(1)) <= pheromone(ant_near(best_way)(0),ant_near(best_way)(1))) and (pheromone(ant_near(i)(0),ant_near(i)(1)) /= -1)) then
 							best_way := i;
+							if(eat(ant_near(i)(0)-1,ant_near(i)(1)-1) = true) then
+								exit;
+							end if;
 						end if;
 					end loop;
+
+					if(eat(ant_near(best_way)(0)-1,ant_near(best_way)(1)-1) = false) then
+						-- get all min values and update equal_count
+						for i in 0 to 7 loop
+							if(pheromone(ant_near(i)(0),ant_near(i)(1)) = pheromone(ant_near(best_way)(0),ant_near(best_way)(1))) then
+								equal_count := equal_count + 1.0;
+							end if;
+						end loop;
+
+						-- random choose from equals
+						UNIFORM(seed1, seed2, rand);
+		        		int_rand := INTEGER(TRUNC(rand * equal_count));
+		        		for i in 0 to 7 loop
+							if(pheromone(ant_near(i)(0),ant_near(i)(1)) = pheromone(ant_near(best_way)(0),ant_near(best_way)(1))) then
+								if(int_rand = 0) then
+									best_way := i;
+									exit;
+								else
+									int_rand := int_rand - 1;
+								end if;
+							end if;
+						end loop;
+					end if;
 
 					-- inc two pheromone to cell
 					pheromone(next_ant(0), next_ant(1)) <= pheromone(next_ant(0), next_ant(1)) + 2;

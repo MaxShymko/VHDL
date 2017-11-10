@@ -1,4 +1,14 @@
-D:/GitHub/VHDL/course/types.vhd {1 {vcom -work work -2002 -explicit -vopt D:/GitHub/VHDL/course/types.vhd
+D:/GitHub/VHDL/course/main.vhd {1 {vcom -work work -2002 -explicit -vopt D:/GitHub/VHDL/course/main.vhd
+Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package types
+-- Loading package math_real
+-- Loading package textio
+-- Compiling entity main
+-- Compiling architecture struct of main
+
+} {} {}} D:/GitHub/VHDL/course/types.vhd {1 {vcom -work work -2002 -explicit -vopt D:/GitHub/VHDL/course/types.vhd
 Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
 -- Loading package standard
 -- Compiling package types

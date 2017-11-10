@@ -11,54 +11,90 @@ Z4 o-quiet -auto_acc_if_foreign -work work
 Z5 n@_opt
 Z6 OE;O;6.5b;42
 T_opt1
-V05LCAYzjckH27cTPO]SNQ3
+VHO1_V[6ACF`S>N5V_nlCb0
 R2
-Z7 =1-b4b52f7248b3-5a046631-137-510
+Z7 =1-b4b52f7248b3-5a05e130-2c9-2048
 R4
 Z8 n@_opt1
 R6
+T_opt2
+Z9 VNCDlC@PlLT3XiMYP`SJci3
+Z10 04 5 6 work stuff struct 1
+Z11 =1-b4b52f7248b3-5a058995-cf-1160
+R4
+Z12 n@_opt2
+R6
 Emain
-Z9 w1510237732
-Z10 DPx3 std 6 textio 0 22 m2KQDRRhmF833<<DjYdL70
-Z11 DPx4 work 5 types 0 22 cP7SBg:8b6@?]TR5MJf1G2
-Z12 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
-Z13 dD:\GitHub\VHDL\course
-Z14 8D:/GitHub/VHDL/course/main.vhd
-Z15 FD:/GitHub/VHDL/course/main.vhd
+Z13 w1510334762
+Z14 DPx3 std 6 textio 0 22 m2KQDRRhmF833<<DjYdL70
+Z15 DPx4 ieee 9 math_real 0 22 zjAF7SKfg_RPI0GT^n1N`1
+Z16 DPx4 work 5 types 0 22 cP7SBg:8b6@?]TR5MJf1G2
+Z17 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z18 dD:\GitHub\VHDL\course
+Z19 8D:/GitHub/VHDL/course/main.vhd
+Z20 FD:/GitHub/VHDL/course/main.vhd
 l0
-L5
-Z16 V`>_Q>D0QlooehOZE>;9d21
-Z17 OE;C;6.5b;42
+L6
+Z21 VA9m]F1P3?dWC=;hfmXf4o0
+Z22 OE;C;6.5b;42
 32
-Z18 o-work work -2002 -explicit
-Z19 tExplicit 1
-Z20 !s100 8kcf]:TK@a=RfX;kO`8Xh1
+Z23 o-work work -2002 -explicit
+Z24 tExplicit 1
+Z25 !s100 F15m1a[IS]lcc`UF>j`mF0
 Astruct
-R10
-R11
-R12
-Z21 DEx4 work 4 main 0 22 `>_Q>D0QlooehOZE>;9d21
-l31
-L10
-Z22 VDXmJ];@F7_aF`O]l=hH6j3
+R14
+R15
+R16
 R17
+Z26 DEx4 work 4 main 0 22 A9m]F1P3?dWC=;hfmXf4o0
+l36
+L11
+Z27 V_O_a`^IY7Hz4MVJFM1M2P0
+R22
 32
-Z23 Mx3 4 ieee 14 std_logic_1164
-Z24 Mx2 4 work 5 types
-Z25 Mx1 3 std 6 textio
+Z28 Mx4 4 ieee 14 std_logic_1164
+Z29 Mx3 4 work 5 types
+Z30 Mx2 4 ieee 9 math_real
+Z31 Mx1 3 std 6 textio
+R23
+R24
+Z32 !s100 n6e@NhRKI7XbG4abFFBkX1
+Estuff
+Z33 w1510312334
+R15
 R18
-R19
-Z26 !s100 ^VK8kGcOKdO88TbOgS;Pk1
+Z34 8D:/GitHub/VHDL/course/stuff.vhd
+Z35 FD:/GitHub/VHDL/course/stuff.vhd
+l0
+L3
+Z36 Vn[8gGKjTE0GONzMkKKe[Y2
+R22
+32
+R23
+R24
+Z37 !s100 UTQ^hfChg^8P>?KHA0>>j2
+Astruct
+R15
+Z38 DEx4 work 5 stuff 0 22 n[8gGKjTE0GONzMkKKe[Y2
+l12
+L10
+Z39 VE6>@XDb_VA5m8UaCGEdb_3
+R22
+32
+Z40 Mx1 4 ieee 9 math_real
+R23
+R24
+Z41 !s100 0U?Mj4E1;Hb`VX0=BQNfQ1
 Ptypes
-Z27 w1510236373
-R13
-Z28 8D:/GitHub/VHDL/course/types.vhd
-Z29 FD:/GitHub/VHDL/course/types.vhd
+Z42 w1510236373
+R18
+Z43 8D:/GitHub/VHDL/course/types.vhd
+Z44 FD:/GitHub/VHDL/course/types.vhd
 l0
 L1
-Z30 VcP7SBg:8b6@?]TR5MJf1G2
-R17
+Z45 VcP7SBg:8b6@?]TR5MJf1G2
+R22
 32
-R18
-R19
-Z31 !s100 ]nNVio^_N8noh:7FofH<W2
+R23
+R24
+Z46 !s100 ]nNVio^_N8noh:7FofH<W2
