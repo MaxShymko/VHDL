@@ -1,0 +1,159 @@
+m255
+K3
+13
+cModel Technology
+dD:\GitHub\VHDL\course
+Ppackage1
+Z0 w1510494720
+Z1 dD:\GitHub\VHDL\lab5
+Z2 8D:/GitHub/VHDL/lab5/package1.vhd
+Z3 FD:/GitHub/VHDL/lab5/package1.vhd
+l0
+L1
+VKbZ3dm3_dJH@ozF8ZldI`0
+Z4 OE;C;6.5b;42
+32
+b1
+Z5 o-work work -2002 -explicit
+Z6 tExplicit 1
+!s100 dYOYzcg[UdDcfOlS:hIob1
+Bbody
+DBx4 work 8 package1 0 22 KbZ3dm3_dJH@ozF8ZldI`0
+32
+l0
+L8
+V2`XQEeIzdb7@kHk=[W]:W1
+R4
+R5
+R6
+nbody
+!s100 l3l=BCa=<4a9[W=6mZaT]1
+Ppackage2
+Z7 w1510493849
+R1
+Z8 8D:/GitHub/VHDL/lab5/package2.vhd
+Z9 FD:/GitHub/VHDL/lab5/package2.vhd
+l0
+L1
+VHAe2AKEdROcY2hho;;jmz3
+R4
+32
+b1
+R5
+R6
+!s100 hif7:YLA[jKNiFK6mDZ?Q2
+Bbody
+DBx4 work 8 package2 0 22 HAe2AKEdROcY2hho;;jmz3
+32
+l0
+L7
+V_:_Inl;[hY>^hTfUZS7mi2
+R4
+R5
+R6
+nbody
+!s100 W2ZJeF=dRG^Wm;>W1]h2X2
+Etask1
+Z10 w1510494724
+Z11 DPx4 work 8 package1 0 22 KbZ3dm3_dJH@ozF8ZldI`0
+R1
+Z12 8D:/GitHub/VHDL/lab5/task1.vhd
+Z13 FD:/GitHub/VHDL/lab5/task1.vhd
+l0
+L4
+Ve0AQ_J;K_5UXbO>mGanmM2
+R4
+32
+R5
+R6
+!s100 ]Rhkh[>eLe0nnRfPj1:012
+Astruct
+R11
+DEx4 work 5 task1 0 22 e0AQ_J;K_5UXbO>mGanmM2
+32
+Z14 Mx1 4 work 8 package1
+l12
+L11
+VC::4^bC456[9SH0oRP0[_3
+R4
+R5
+R6
+!s100 A4bdEJX?e5NQ4C5mZ2Q=B1
+Etask2
+Z15 w1510493645
+Z16 DPx4 work 8 package2 0 22 HAe2AKEdROcY2hho;;jmz3
+R1
+Z17 8D:/GitHub/VHDL/lab5/task2.vhd
+Z18 FD:/GitHub/VHDL/lab5/task2.vhd
+l0
+L4
+V=I9kJKl_B`NYLND=Wacf]0
+R4
+32
+R5
+R6
+!s100 G>iXSd`i5N3nGI[@WUC;K1
+Astruct
+R16
+DEx4 work 5 task2 0 22 =I9kJKl_B`NYLND=Wacf]0
+32
+Z19 Mx1 4 work 8 package2
+l12
+L11
+V8VamBj9M^AH2993@JLgeB0
+R4
+R5
+R6
+!s100 mo^DPKV:P]K>EO;oOe1e40
+Etest1
+Z20 w1510494728
+R11
+R1
+Z21 8D:/GitHub/VHDL/lab5/test1.vhd
+Z22 FD:/GitHub/VHDL/lab5/test1.vhd
+l0
+L4
+V_9T?03kc6E85B45a[^31=3
+R4
+32
+R5
+R6
+!s100 f;Fo[^JVA?jN2EXH<9Pic1
+Abeh
+R11
+DEx4 work 5 test1 0 22 _9T?03kc6E85B45a[^31=3
+32
+R14
+l19
+L7
+VaQKHDSQ84h`jD7kO@V=Vi1
+R4
+R5
+R6
+!s100 LFU=UA9E<XiX?YGXE=d=Z0
+Etest2
+Z23 w1510494678
+R16
+R1
+Z24 8D:/GitHub/VHDL/lab5/test2.vhd
+Z25 FD:/GitHub/VHDL/lab5/test2.vhd
+l0
+L4
+V]W;859:1b@:E`hIm]1Vn73
+R4
+32
+R5
+R6
+!s100 LeLCZA1bnlUVg_<=G[f`H0
+Abeh
+R16
+DEx4 work 5 test2 0 22 ]W;859:1b@:E`hIm]1Vn73
+32
+R19
+l18
+L7
+V_U;UhKEf`3mTzYi2dLJVa2
+R4
+R5
+R6
+!s100 1]d:PNicDAZ?@8[4>a6R_0

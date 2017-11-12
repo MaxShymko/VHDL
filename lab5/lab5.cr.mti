@@ -1,0 +1,15 @@
+D:/GitHub/VHDL/lab5/task2.vhd {1 {vcom -work work -2002 -explicit -vopt D:/GitHub/VHDL/lab5/task2.vhd
+Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
+-- Loading package standard
+-- Loading package package2
+-- Compiling entity task2
+-- Compiling architecture struct of task2
+
+} {} {}} D:/GitHub/VHDL/lab5/package2.vhd {1 {vcom -work work -2002 -explicit -vopt D:/GitHub/VHDL/lab5/package2.vhd
+Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
+-- Loading package standard
+-- Compiling package package2
+-- Compiling package body package2
+-- Loading package package2
+
+} {} {}}
