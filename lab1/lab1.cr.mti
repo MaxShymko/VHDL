@@ -1,0 +1,13 @@
+D:/GitHub/VHDL/lab1/main.vhd {1 {vcom -work work -2002 -explicit -vopt D:/GitHub/VHDL/lab1/main.vhd
+Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
+-- Loading package standard
+-- Compiling entity main
+-- Compiling architecture struct of main
+
+} {} {}} D:/GitHub/VHDL/lab1/main_test.vhd {1 {vcom -work work -2002 -explicit -vopt D:/GitHub/VHDL/lab1/main_test.vhd
+Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
+-- Loading package standard
+-- Compiling entity main_test
+-- Compiling architecture behavior of main_test
+
+} {} {}}

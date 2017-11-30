@@ -1,0 +1,58 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\GitHub\VHDL\lab2
+T_opt
+VdEOC`@4c=@ka8VYG_YF^C3
+04 9 8 work main_test behavior 1
+=1-b4b52f7248b3-5a206421-25e-3530
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OE;O;6.5b;42
+Emain
+Z1 w1504789629
+Z2 dD:\GitHub\VHDL\lab1
+Z3 8D:/GitHub/VHDL/lab1/main.vhd
+Z4 FD:/GitHub/VHDL/lab1/main.vhd
+l0
+L1
+VmYYWG^_L6Am2JQ5fZ5Kk=2
+Z5 OE;C;6.5b;42
+32
+Z6 o-work work -2002 -explicit
+Z7 tExplicit 1
+!s100 ]<JJk>H:jfW7768DfE>k]2
+Astruct
+DEx4 work 4 main 0 22 mYYWG^_L6Am2JQ5fZ5Kk=2
+32
+l5
+L4
+V`:kc?O>FIlEi_Il09c5zo0
+R5
+R6
+R7
+!s100 ]K4mD=9GPBA0SblWoc<B03
+Emain_test
+Z8 w1507542602
+R2
+Z9 8D:/GitHub/VHDL/lab1/main_test.vhd
+Z10 FD:/GitHub/VHDL/lab1/main_test.vhd
+l0
+L1
+V9@joa_`4Dh;aAGJ8hTMGa3
+R5
+32
+R6
+R7
+!s100 RSc?lY[Dado<j^ez<BObC1
+Abehavior
+DEx4 work 9 main_test 0 22 9@joa_`4Dh;aAGJ8hTMGa3
+32
+l9
+L3
+V8d_nBQTnOADC:<MD2?:`R1
+R5
+R6
+R7
+!s100 iM>WKz_8ND@:H2go0DLCk3

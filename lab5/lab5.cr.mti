@@ -1,4 +1,18 @@
-D:/GitHub/VHDL/lab5/task2.vhd {1 {vcom -work work -2002 -explicit -vopt D:/GitHub/VHDL/lab5/task2.vhd
+D:/GitHub/VHDL/lab5/test1.vhd {1 {vcom -work work -2002 -explicit -vopt D:/GitHub/VHDL/lab5/test1.vhd
+Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
+-- Loading package standard
+-- Loading package package1
+-- Compiling entity test1
+-- Compiling architecture beh of test1
+
+} {} {}} D:/GitHub/VHDL/lab5/package1.vhd {1 {vcom -work work -2002 -explicit -vopt D:/GitHub/VHDL/lab5/package1.vhd
+Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
+-- Loading package standard
+-- Compiling package package1
+-- Compiling package body package1
+-- Loading package package1
+
+} {} {}} D:/GitHub/VHDL/lab5/task2.vhd {1 {vcom -work work -2002 -explicit -vopt D:/GitHub/VHDL/lab5/task2.vhd
 Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
 -- Loading package standard
 -- Loading package package2
@@ -11,5 +25,19 @@ Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
 -- Compiling package package2
 -- Compiling package body package2
 -- Loading package package2
+
+} {} {}} D:/GitHub/VHDL/lab5/test2.vhd {1 {vcom -work work -2002 -explicit -vopt D:/GitHub/VHDL/lab5/test2.vhd
+Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
+-- Loading package standard
+-- Loading package package2
+-- Compiling entity test2
+-- Compiling architecture beh of test2
+
+} {} {}} D:/GitHub/VHDL/lab5/task1.vhd {1 {vcom -work work -2002 -explicit -vopt D:/GitHub/VHDL/lab5/task1.vhd
+Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
+-- Loading package standard
+-- Loading package package1
+-- Compiling entity task1
+-- Compiling architecture struct of task1
 
 } {} {}}

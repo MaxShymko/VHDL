@@ -1,67 +1,67 @@
-C:/modeltech_6.5b/examples/LABS/lab2/A2.vhd {1 {vcom -work work -2002 -explicit -vopt C:/modeltech_6.5b/examples/LABS/lab2/A2.vhd
-Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
--- Loading package standard
--- Compiling entity a2
--- Compiling architecture a2_arch of a2
-
-} {} {}} C:/modeltech_6.5b/examples/LABS/lab2/NO2.vhd {1 {vcom -work work -2002 -explicit -vopt C:/modeltech_6.5b/examples/LABS/lab2/NO2.vhd
-Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
--- Loading package standard
--- Compiling entity no2
--- Compiling architecture no2_arch of no2
-
-} {} {}} C:/modeltech_6.5b/examples/LABS/lab2/NA3O2.vhd {1 {vcom -work work -2002 -explicit -vopt C:/modeltech_6.5b/examples/LABS/lab2/NA3O2.vhd
-Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
--- Loading package standard
--- Compiling entity na3o2
--- Compiling architecture na3o2_arch of na3o2
-
-} {} {}} C:/modeltech_6.5b/examples/LABS/lab2/test_scheme.vhd {1 {vcom -work work -2002 -explicit -vopt C:/modeltech_6.5b/examples/LABS/lab2/test_scheme.vhd
+D:/GitHub/VHDL/lab2/test_scheme.vhd {1 {vcom -work work -2002 -explicit -vopt D:/GitHub/VHDL/lab2/test_scheme.vhd
 Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
 -- Loading package standard
 -- Compiling entity test_scheme
 -- Compiling architecture behavior of test_scheme
 
-} {} {}} C:/modeltech_6.5b/examples/LABS/lab2/NAO2.vhd {1 {vcom -work work -2002 -explicit -vopt C:/modeltech_6.5b/examples/LABS/lab2/NAO2.vhd
+} {} {}} D:/GitHub/VHDL/lab2/NAO2.vhd {1 {vcom -work work -2002 -explicit -vopt D:/GitHub/VHDL/lab2/NAO2.vhd
 Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
 -- Loading package standard
 -- Compiling entity nao2
 -- Compiling architecture nao2_arch of nao2
 
-} {} {}} C:/modeltech_6.5b/examples/LABS/lab2/scheme.vhd {1 {vcom -work work -2002 -explicit -vopt C:/modeltech_6.5b/examples/LABS/lab2/scheme.vhd
+} {} {}} D:/GitHub/VHDL/lab2/scheme.vhd {1 {vcom -work work -2002 -explicit -vopt D:/GitHub/VHDL/lab2/scheme.vhd
 Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
 -- Loading package standard
 -- Compiling entity scheme
 -- Compiling architecture str of scheme
 
-} {} {}} C:/modeltech_6.5b/examples/LABS/lab2/NEX2.vhd {1 {vcom -work work -2002 -explicit -vopt C:/modeltech_6.5b/examples/LABS/lab2/NEX2.vhd
-Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
--- Loading package standard
--- Compiling entity nex2
--- Compiling architecture nex2_arch of nex2
-
-} {} {}} C:/modeltech_6.5b/examples/LABS/lab2/N03.vhd {1 {vcom -work work -2002 -explicit -vopt C:/modeltech_6.5b/examples/LABS/lab2/N03.vhd
-Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
--- Loading package standard
--- Compiling entity no3
--- Compiling architecture no3_arch of no3
-
-} {} {}} C:/modeltech_6.5b/examples/LABS/lab2/NAOA2.vhd {1 {vcom -work work -2002 -explicit -vopt C:/modeltech_6.5b/examples/LABS/lab2/NAOA2.vhd
-Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
--- Loading package standard
--- Compiling entity naoa2
--- Compiling architecture naoa2_arch of naoa2
-
-} {} {}} C:/modeltech_6.5b/examples/LABS/lab2/NOA3.vhd {1 {vcom -work work -2002 -explicit -vopt C:/modeltech_6.5b/examples/LABS/lab2/NOA3.vhd
+} {} {}} D:/GitHub/VHDL/lab2/NOA3.vhd {1 {vcom -work work -2002 -explicit -vopt D:/GitHub/VHDL/lab2/NOA3.vhd
 Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
 -- Loading package standard
 -- Compiling entity noa3
 -- Compiling architecture noa3_arch of noa3
 
-} {} {}} C:/modeltech_6.5b/examples/LABS/lab2/N.vhd {1 {vcom -work work -2002 -explicit -vopt C:/modeltech_6.5b/examples/LABS/lab2/N.vhd
+} {} {}} D:/GitHub/VHDL/lab2/NEX2.vhd {1 {vcom -work work -2002 -explicit -vopt D:/GitHub/VHDL/lab2/NEX2.vhd
+Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
+-- Loading package standard
+-- Compiling entity nex2
+-- Compiling architecture nex2_arch of nex2
+
+} {} {}} D:/GitHub/VHDL/lab2/NAOA2.vhd {1 {vcom -work work -2002 -explicit -vopt D:/GitHub/VHDL/lab2/NAOA2.vhd
+Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
+-- Loading package standard
+-- Compiling entity naoa2
+-- Compiling architecture naoa2_arch of naoa2
+
+} {} {}} D:/GitHub/VHDL/lab2/N03.vhd {1 {vcom -work work -2002 -explicit -vopt D:/GitHub/VHDL/lab2/N03.vhd
+Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
+-- Loading package standard
+-- Compiling entity no3
+-- Compiling architecture no3_arch of no3
+
+} {} {}} D:/GitHub/VHDL/lab2/N.vhd {1 {vcom -work work -2002 -explicit -vopt D:/GitHub/VHDL/lab2/N.vhd
 Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
 -- Loading package standard
 -- Compiling entity n
 -- Compiling architecture n_arch of n
+
+} {} {}} D:/GitHub/VHDL/lab2/NO2.vhd {1 {vcom -work work -2002 -explicit -vopt D:/GitHub/VHDL/lab2/NO2.vhd
+Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
+-- Loading package standard
+-- Compiling entity no2
+-- Compiling architecture no2_arch of no2
+
+} {} {}} D:/GitHub/VHDL/lab2/NA3O2.vhd {1 {vcom -work work -2002 -explicit -vopt D:/GitHub/VHDL/lab2/NA3O2.vhd
+Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
+-- Loading package standard
+-- Compiling entity na3o2
+-- Compiling architecture na3o2_arch of na3o2
+
+} {} {}} D:/GitHub/VHDL/lab2/A2.vhd {1 {vcom -work work -2002 -explicit -vopt D:/GitHub/VHDL/lab2/A2.vhd
+Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
+-- Loading package standard
+-- Compiling entity a2
+-- Compiling architecture a2_arch of a2
 
 } {} {}}

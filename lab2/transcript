@@ -1,0 +1,95 @@
+# Reading C:/modeltech_6.5b/tcl/vsim/pref.tcl 
+# //  ModelSim SE 6.5b May 21 2009 
+# //
+# //  Copyright 1991-2009 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# OpenFile D:/GitHub/VHDL/lab2/LAB2.mpf 
+# Loading project LAB2
+# Error opening C:/modeltech_6.5b/examples/LABS/lab2/test_scheme.vhd
+# Path name 'C:/modeltech_6.5b/examples/LABS/lab2/test_scheme.vhd' doesn't exist.
+# Compile of A2.vhd was successful.
+# Compile of N.vhd was successful.
+# Compile of N03.vhd was successful.
+# Compile of NA3O2.vhd was successful.
+# Compile of NAO2.vhd was successful.
+# Compile of NAOA2.vhd was successful.
+# Compile of NEX2.vhd was successful.
+# Compile of NO2.vhd was successful.
+# Compile of NOA3.vhd was successful.
+# Compile of scheme.vhd was successful.
+# Compile of test_scheme.vhd was successful.
+# 11 compiles, 0 failed with no errors. 
+vsim -gui -novopt work.test_scheme
+# vsim -gui -novopt work.test_scheme 
+# Loading std.standard
+# Refreshing D:\GitHub\VHDL\lab2\work.test_scheme(behavior)
+# Loading work.test_scheme(behavior)
+# Refreshing D:\GitHub\VHDL\lab2\work.scheme(str)
+# Loading work.scheme(str)
+# Refreshing D:\GitHub\VHDL\lab2\work.n(n_arch)
+# Loading work.n(n_arch)
+# Refreshing D:\GitHub\VHDL\lab2\work.a2(a2_arch)
+# Loading work.a2(a2_arch)
+# Refreshing D:\GitHub\VHDL\lab2\work.no2(no2_arch)
+# Loading work.no2(no2_arch)
+# Refreshing D:\GitHub\VHDL\lab2\work.nex2(nex2_arch)
+# Loading work.nex2(nex2_arch)
+# Refreshing D:\GitHub\VHDL\lab2\work.no3(no3_arch)
+# Loading work.no3(no3_arch)
+# Refreshing D:\GitHub\VHDL\lab2\work.naoa2(naoa2_arch)
+# Loading work.naoa2(naoa2_arch)
+# Refreshing D:\GitHub\VHDL\lab2\work.noa3(noa3_arch)
+# Loading work.noa3(noa3_arch)
+# Refreshing D:\GitHub\VHDL\lab2\work.na3o2(na3o2_arch)
+# Loading work.na3o2(na3o2_arch)
+# Refreshing D:\GitHub\VHDL\lab2\work.nao2(nao2_arch)
+# Loading work.nao2(nao2_arch)
+# Updating msgviewer database...
+run -all
+# Updating msgviewer database...
+quit -sim
+# reading C:\modeltech_6.5b\win32/../modelsim.ini
+# Loading project lab1
+# Compile of main.vhd was successful.
+# Compile of main_test.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+do sim.do
+# vsim main_test 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading work.main_test(behavior)#1
+# Updating msgviewer database...
+# ** Error: (vish-4014) No objects found matching '*'.
+# Error in macro ./sim.do line 2
+# (vish-4014) No objects found matching '*'.
+#     while executing
+# "add wave *"
+# Compile of main.vhd was successful.
+# Compile of main_test.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+do sim.do
+# vsim main_test 
+# Loading std.standard
+# Loading work.main_test(behavior)#1
+# ** Error: (vish-4014) No objects found matching '*'.
+# Error in macro ./sim.do line 2
+# (vish-4014) No objects found matching '*'.
+#     while executing
+# "add wave *"
+quit -sim
+do sim.do
+# vsim -novopt main_test 
+# Loading std.standard
+# Refreshing D:\GitHub\VHDL\lab1\work.main_test(behavior)
+# Loading work.main_test(behavior)
+# Refreshing D:\GitHub\VHDL\lab1\work.main(struct)
+# Loading work.main(struct)
+# Updating msgviewer database...
+# Updating msgviewer database...
+quit -sim

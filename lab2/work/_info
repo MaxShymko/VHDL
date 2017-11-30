@@ -5,9 +5,9 @@ cModel Technology
 dC:\modeltech_6.5b\examples
 Ea2
 Z0 w1506333024
-Z1 dC:\modeltech_6.5b\examples\LABS\lab2
-Z2 8C:/modeltech_6.5b/examples/LABS/lab2/A2.vhd
-Z3 FC:/modeltech_6.5b/examples/LABS/lab2/A2.vhd
+Z1 dD:\GitHub\VHDL\lab2
+Z2 8D:/GitHub/VHDL/lab2/A2.vhd
+Z3 FD:/GitHub/VHDL/lab2/A2.vhd
 l0
 L1
 VNEjkbX@VD]ibJA2Rf@`Y@2
@@ -29,8 +29,8 @@ R6
 En
 Z7 w1506333021
 R1
-Z8 8C:/modeltech_6.5b/examples/LABS/lab2/N.vhd
-Z9 FC:/modeltech_6.5b/examples/LABS/lab2/N.vhd
+Z8 8D:/GitHub/VHDL/lab2/N.vhd
+Z9 FD:/GitHub/VHDL/lab2/N.vhd
 l0
 L1
 V]f0F79752;eD79^cCK^U?3
@@ -52,8 +52,8 @@ R6
 Ena3o2
 Z10 w1506333014
 R1
-Z11 8C:/modeltech_6.5b/examples/LABS/lab2/NA3O2.vhd
-Z12 FC:/modeltech_6.5b/examples/LABS/lab2/NA3O2.vhd
+Z11 8D:/GitHub/VHDL/lab2/NA3O2.vhd
+Z12 FD:/GitHub/VHDL/lab2/NA3O2.vhd
 l0
 L1
 V^c953S5^5oCd9T:TgmkhZ3
@@ -75,8 +75,8 @@ R6
 Enao2
 Z13 w1506333012
 R1
-Z14 8C:/modeltech_6.5b/examples/LABS/lab2/NAO2.vhd
-Z15 FC:/modeltech_6.5b/examples/LABS/lab2/NAO2.vhd
+Z14 8D:/GitHub/VHDL/lab2/NAO2.vhd
+Z15 FD:/GitHub/VHDL/lab2/NAO2.vhd
 l0
 L1
 V_G]I56a=iBNbiTTCo[fmD2
@@ -98,8 +98,8 @@ R6
 Enaoa2
 Z16 w1506333008
 R1
-Z17 8C:/modeltech_6.5b/examples/LABS/lab2/NAOA2.vhd
-Z18 FC:/modeltech_6.5b/examples/LABS/lab2/NAOA2.vhd
+Z17 8D:/GitHub/VHDL/lab2/NAOA2.vhd
+Z18 FD:/GitHub/VHDL/lab2/NAOA2.vhd
 l0
 L1
 V:CWKFKShzUU4Dm5B?D[WY1
@@ -121,8 +121,8 @@ R6
 Enex2
 Z19 w1506333005
 R1
-Z20 8C:/modeltech_6.5b/examples/LABS/lab2/NEX2.vhd
-Z21 FC:/modeltech_6.5b/examples/LABS/lab2/NEX2.vhd
+Z20 8D:/GitHub/VHDL/lab2/NEX2.vhd
+Z21 FD:/GitHub/VHDL/lab2/NEX2.vhd
 l0
 L1
 VX7fUZ[a__ALNR:k<?_=FO3
@@ -144,8 +144,8 @@ R6
 Eno2
 Z22 w1506333002
 R1
-Z23 8C:/modeltech_6.5b/examples/LABS/lab2/NO2.vhd
-Z24 FC:/modeltech_6.5b/examples/LABS/lab2/NO2.vhd
+Z23 8D:/GitHub/VHDL/lab2/NO2.vhd
+Z24 FD:/GitHub/VHDL/lab2/NO2.vhd
 l0
 L1
 V<S2eK8QcRF`;ljGUTB[N11
@@ -167,8 +167,8 @@ R6
 Eno3
 Z25 w1506333018
 R1
-Z26 8C:/modeltech_6.5b/examples/LABS/lab2/N03.vhd
-Z27 FC:/modeltech_6.5b/examples/LABS/lab2/N03.vhd
+Z26 8D:/GitHub/VHDL/lab2/N03.vhd
+Z27 FD:/GitHub/VHDL/lab2/N03.vhd
 l0
 L1
 Vi<4oGG0=G4eZXWzm>=:RX0
@@ -190,8 +190,8 @@ R6
 Enoa3
 Z28 w1506332998
 R1
-Z29 8C:/modeltech_6.5b/examples/LABS/lab2/NOA3.vhd
-Z30 FC:/modeltech_6.5b/examples/LABS/lab2/NOA3.vhd
+Z29 8D:/GitHub/VHDL/lab2/NOA3.vhd
+Z30 FD:/GitHub/VHDL/lab2/NOA3.vhd
 l0
 L1
 VD7FT5b0<i9;P@4zjG5:zI3
@@ -211,10 +211,10 @@ R5
 R6
 !s100 lmK^S>Li>?P>jB<;IdMIM1
 Escheme
-Z31 w1506090408
+Z31 w1506952145
 R1
-Z32 8C:/modeltech_6.5b/examples/LABS/lab2/scheme.vhd
-Z33 FC:/modeltech_6.5b/examples/LABS/lab2/scheme.vhd
+Z32 8D:/GitHub/VHDL/lab2/scheme.vhd
+Z33 FD:/GitHub/VHDL/lab2/scheme.vhd
 l0
 L1
 VXBdY7AX=7VkRG6b^d`]f53
@@ -235,9 +235,9 @@ R6
 !s100 z:B^NJn`MEI3IUJMNWmeF0
 Eshema
 Z34 w1506081154
-R1
-R32
-R33
+Z35 dC:\modeltech_6.5b\examples\LABS\lab2
+Z36 8C:/modeltech_6.5b/examples/LABS/lab2/scheme.vhd
+Z37 FC:/modeltech_6.5b/examples/LABS/lab2/scheme.vhd
 l0
 L1
 VTc?43emX>hBJ`B8K[T_gn3
@@ -257,10 +257,10 @@ R5
 R6
 !s100 ]c6AAMBQ?VSJH^6he7ab23
 Etest_scheme
-Z35 w1506090603
+Z38 w1506090603
 R1
-Z36 8C:/modeltech_6.5b/examples/LABS/lab2/test_scheme.vhd
-Z37 FC:/modeltech_6.5b/examples/LABS/lab2/test_scheme.vhd
+Z39 8D:/GitHub/VHDL/lab2/test_scheme.vhd
+Z40 FD:/GitHub/VHDL/lab2/test_scheme.vhd
 l0
 L1
 VnTfGo<g^b<9>@i3KMM8>I0

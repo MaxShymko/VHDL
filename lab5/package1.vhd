@@ -1,5 +1,5 @@
 package package1 is
-  constant N : natural := 5; -- matrix demension
+  constant N : natural := 5; -- matrix dimension
   type matrix is array (natural range 0 to N-1, natural range 0 to N-1) of integer range -100 to 100;
   function func_getSum (mx: matrix) return integer;
   procedure proc_getSum (mx: in matrix; sum: out integer);
