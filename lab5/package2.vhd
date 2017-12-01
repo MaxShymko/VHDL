@@ -1,6 +1,6 @@
 package package2 is
-  constant N : natural := 10; -- array length
-  type massive is array (natural range 0 to N-1) of integer;
+  constant N : natural := 6; -- array length
+  type massive is array (natural range 0 to N-1) of integer  range -32768 to 32767;
   function func_getMin (mas: massive) return integer;
 end package2;
 

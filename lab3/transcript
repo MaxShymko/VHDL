@@ -9,45 +9,5 @@
 # //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
 # //  AND IS SUBJECT TO LICENSE TERMS.
 # //
-# OpenFile C:/modeltech_6.5b/examples/LABS/lab3/lab_3.mpf 
+# OpenFile D:/GitHub/VHDL/lab3/lab_3.mpf 
 # Loading project lab_3
-# Compile of add.vhd was successful.
-# Compile of add.vhd was successful.
-# Compile of full_scheme_2.vhd was successful.
-# Compile of full_scheme_1.vhd was successful.
-# Compile of full_scheme_1.vhd was successful.
-# Compile of full_scheme_2.vhd was successful.
-# Compile of full_scheme_2.vhd was successful.
-# Compile of element.vhd was successful.
-vsim -gui -novopt work.test
-# vsim -gui -novopt work.test 
-# Loading std.standard
-# Loading work.test(behavior)
-# Refreshing C:\modeltech_6.5b\examples\LABS\lab3\work.full_scheme_2(struct)
-# Loading work.full_scheme_2(struct)
-# Refreshing C:\modeltech_6.5b\examples\LABS\lab3\work.element(struct)
-# Loading work.element(struct)
-# Refreshing C:\modeltech_6.5b\examples\LABS\lab3\work.add(struct)
-# Loading work.add(struct)
-# Loading work.add1(struct_1)
-# Loading work.mult(struct)
-# Loading work.mult_2(structure)
-# Updating msgviewer database...
-run -all
-# Updating msgviewer database...
-run
-# Updating msgviewer database...
-vsim -gui -novopt work.test
-# vsim -gui -novopt work.test 
-# Loading std.standard
-# Loading work.test(behavior)
-# Loading work.full_scheme_2(struct)
-# Loading work.element(struct)
-# Loading work.add(struct)
-# Loading work.add1(struct_1)
-# Loading work.mult(struct)
-# Loading work.mult_2(structure)
-run -all
-# Updating msgviewer database...
-run
-# Updating msgviewer database...

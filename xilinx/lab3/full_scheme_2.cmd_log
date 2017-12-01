@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/lab3/full_scheme_2.xst" -ofn "D:/GitHub/VHDL/xilinx/lab3/full_scheme_2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 full_scheme_2.ngc full_scheme_2.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o full_scheme_2_map.ncd full_scheme_2.ngd full_scheme_2.pcf 
+par -w -intstyle ise -ol high -t 1 full_scheme_2_map.ncd full_scheme_2.ncd full_scheme_2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml full_scheme_2.twx full_scheme_2.ncd -o full_scheme_2.twr full_scheme_2.pcf 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/lab3/full_scheme_2.xst" -ofn "D:/GitHub/VHDL/xilinx/lab3/full_scheme_2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 full_scheme_2.ngc full_scheme_2.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o full_scheme_2_map.ncd full_scheme_2.ngd full_scheme_2.pcf 
+par -w -intstyle ise -ol high -t 1 full_scheme_2_map.ncd full_scheme_2.ncd full_scheme_2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml full_scheme_2.twx full_scheme_2.ncd -o full_scheme_2.twr full_scheme_2.pcf 

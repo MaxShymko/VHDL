@@ -1,0 +1,347 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: task1.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "task1.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "task1"
+Output Format                      : NGC
+Target Device                      : xc3s1000-4-ft256
+
+---- Source Options
+Top Module Name                    : task1
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/GitHub/VHDL/lab5/package1.vhd" in Library work.
+Architecture package1 of Entity package1 is up to date.
+Compiling vhdl file "D:/GitHub/VHDL/lab5/task1.vhd" in Library work.
+Architecture struct of Entity task1 is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <task1> in library <work> (architecture <struct>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <task1> in library <work> (Architecture <struct>).
+WARNING:Xst:819 - "D:/GitHub/VHDL/lab5/task1.vhd" line 14: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <mx<0>>, <mx<1>>, <mx<2>>, <mx<3>>, <mx<4>>
+Entity <task1> analyzed. Unit <task1> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <task1>.
+    Related source file is "D:/GitHub/VHDL/lab5/task1.vhd".
+WARNING:Xst:647 - Input <mx<0><1:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <mx<1><0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <mx<1><2:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <mx<2><0:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <mx<2><3:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <mx<3><0:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <mx<3><4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <mx<4><0:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit adder for signal <proc_sum>.
+    Found 32-bit adder for signal <func_sum$add0001> created at line 14.
+    Found 33-bit adder for signal <func_sum$add0002> created at line 14.
+    Found 32-bit adder for signal <proc_sum$addsub0000> created at line 23.
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+Unit <task1> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 3
+ 33-bit adder                                          : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <task1> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block task1, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : task1.ngr
+Top Level Output File Name         : task1
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 264
+
+Cell Usage :
+# BELS                             : 180
+#      GND                         : 1
+#      LUT2                        : 42
+#      LUT3                        : 9
+#      LUT4                        : 7
+#      MULT_AND                    : 22
+#      MUXCY                       : 48
+#      XORCY                       : 51
+# IO Buffers                       : 104
+#      IBUF                        : 40
+#      OBUF                        : 64
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1000ft256-4 
+
+ Number of Slices:                       30  out of   7680     0%  
+ Number of 4 input LUTs:                 58  out of  15360     0%  
+ Number of IOs:                         264
+ Number of bonded IOBs:                 104  out of    173    60%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 19.851ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 417420 / 64
+-------------------------------------------------------------------------
+Delay:               19.851ns (Levels of Logic = 39)
+  Source:            mx<0><0><0> (PAD)
+  Destination:       proc_sum<31> (PAD)
+
+  Data Path: mx<0><0><0> to proc_sum<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.821   1.140  mx_0__0__0_IBUF (mx_0__0__0_IBUF)
+     LUT2:I0->O            1   0.551   0.000  Madd_func_sum_add0001_lut<0> (Madd_func_sum_add0001_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  Madd_func_sum_add0001_cy<0> (Madd_func_sum_add0001_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_func_sum_add0001_cy<1> (Madd_func_sum_add0001_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_func_sum_add0001_cy<2> (Madd_func_sum_add0001_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_func_sum_add0001_cy<3> (Madd_func_sum_add0001_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_func_sum_add0001_cy<4> (Madd_func_sum_add0001_cy<4>)
+     XORCY:CI->O           1   0.904   1.140  Madd_func_sum_add0001_xor<5> (func_sum_add0001<5>)
+     LUT2:I0->O            1   0.551   0.000  Madd_func_sum_add0002_Madd_lut<5> (Madd_func_sum_add0002_Madd_lut<5>)
+     MUXCY:S->O            1   0.500   0.000  Madd_func_sum_add0002_Madd_cy<5> (Madd_func_sum_add0002_Madd_cy<5>)
+     XORCY:CI->O           2   0.904   0.945  Madd_func_sum_add0002_Madd_xor<6> (func_sum_add0002<6>)
+     LUT3:I2->O            1   0.551   1.140  Madd_proc_sumC51 (Madd_proc_sumC5)
+     LUT4:I0->O            1   0.551   0.000  Madd_proc_sum_Madd_lut<7> (Madd_proc_sum_Madd_lut<7>)
+     MUXCY:S->O            1   0.500   0.000  Madd_proc_sum_Madd_cy<7> (Madd_proc_sum_Madd_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_proc_sum_Madd_cy<8> (Madd_proc_sum_Madd_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_proc_sum_Madd_cy<9> (Madd_proc_sum_Madd_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_proc_sum_Madd_cy<10> (Madd_proc_sum_Madd_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_proc_sum_Madd_cy<11> (Madd_proc_sum_Madd_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_proc_sum_Madd_cy<12> (Madd_proc_sum_Madd_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_proc_sum_Madd_cy<13> (Madd_proc_sum_Madd_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_proc_sum_Madd_cy<14> (Madd_proc_sum_Madd_cy<14>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_proc_sum_Madd_cy<15> (Madd_proc_sum_Madd_cy<15>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_proc_sum_Madd_cy<16> (Madd_proc_sum_Madd_cy<16>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_proc_sum_Madd_cy<17> (Madd_proc_sum_Madd_cy<17>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_proc_sum_Madd_cy<18> (Madd_proc_sum_Madd_cy<18>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_proc_sum_Madd_cy<19> (Madd_proc_sum_Madd_cy<19>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_proc_sum_Madd_cy<20> (Madd_proc_sum_Madd_cy<20>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_proc_sum_Madd_cy<21> (Madd_proc_sum_Madd_cy<21>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_proc_sum_Madd_cy<22> (Madd_proc_sum_Madd_cy<22>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_proc_sum_Madd_cy<23> (Madd_proc_sum_Madd_cy<23>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_proc_sum_Madd_cy<24> (Madd_proc_sum_Madd_cy<24>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_proc_sum_Madd_cy<25> (Madd_proc_sum_Madd_cy<25>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_proc_sum_Madd_cy<26> (Madd_proc_sum_Madd_cy<26>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_proc_sum_Madd_cy<27> (Madd_proc_sum_Madd_cy<27>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_proc_sum_Madd_cy<28> (Madd_proc_sum_Madd_cy<28>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_proc_sum_Madd_cy<29> (Madd_proc_sum_Madd_cy<29>)
+     MUXCY:CI->O           0   0.064   0.000  Madd_proc_sum_Madd_cy<30> (Madd_proc_sum_Madd_cy<30>)
+     XORCY:CI->O           2   0.904   0.877  Madd_proc_sum_Madd_xor<31> (func_sum_31_OBUF)
+     OBUF:I->O                 5.644          proc_sum_31_OBUF (proc_sum<31>)
+    ----------------------------------------
+    Total                     19.851ns (14.609ns logic, 5.242ns route)
+                                       (73.6% logic, 26.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.05 secs
+ 
+--> 
+
+Total memory usage is 258236 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

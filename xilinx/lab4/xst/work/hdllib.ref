@@ -1,0 +1,11 @@
+EN inv NULL D:/GitHub/VHDL/lab4/INV.vhd sub00/vhpl00 1512127389
+AR fsm_a arch D:/GitHub/VHDL/lab4/scheme_3.vhd sub00/vhpl10 1512127979
+AR scheme_2 struct D:/GitHub/VHDL/lab4/scheme_2.vhd sub00/vhpl07 1512127847
+EN scheme_1 NULL D:/GitHub/VHDL/lab4/scheme_1.vhd sub00/vhpl04 1512127393
+EN scheme_2 NULL D:/GitHub/VHDL/lab4/scheme_2.vhd sub00/vhpl06 1512127846
+AR scheme_1 struct D:/GitHub/VHDL/lab4/scheme_1.vhd sub00/vhpl05 1512127394
+EN noaa NULL D:/GitHub/VHDL/lab4/NOAA.vhd sub00/vhpl02 1512127391
+AR noaa struct D:/GitHub/VHDL/lab4/NOAA.vhd sub00/vhpl03 1512127392
+AR inv struct D:/GitHub/VHDL/lab4/INV.vhd sub00/vhpl01 1512127390
+EN fsm_a NULL D:/GitHub/VHDL/lab4/scheme_3.vhd sub00/vhpl09 1512127978
+PH vv_vls NULL D:/GitHub/VHDL/lab4/scheme_3.vhd sub00/vhpl08 1512127977

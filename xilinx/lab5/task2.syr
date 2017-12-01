@@ -1,0 +1,340 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: task2.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "task2.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "task2"
+Output Format                      : NGC
+Target Device                      : xc3s1000-4-ft256
+
+---- Source Options
+Top Module Name                    : task2
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/GitHub/VHDL/lab5/package2.vhd" in Library work.
+Package <package2> compiled.
+Package body <package2> compiled.
+Compiling vhdl file "D:/GitHub/VHDL/lab5/task2.vhd" in Library work.
+Architecture struct of Entity task2 is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <task2> in library <work> (architecture <struct>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <task2> in library <work> (Architecture <struct>).
+WARNING:Xst:790 - "D:/GitHub/VHDL/lab5/package2.vhd" line 13: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "D:/GitHub/VHDL/lab5/package2.vhd" line 13: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "D:/GitHub/VHDL/lab5/package2.vhd" line 13: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "D:/GitHub/VHDL/lab5/package2.vhd" line 13: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "D:/GitHub/VHDL/lab5/package2.vhd" line 17: Index value(s) does not match array range, simulation mismatch.
+Entity <task2> analyzed. Unit <task2> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <task2>.
+    Related source file is "D:/GitHub/VHDL/lab5/task2.vhd".
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <min0$mux0004> of Case statement line 17 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <min0$mux0004> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Using one-hot encoding for signal <min0$mux0004>.
+    Using one-hot encoding for signal <min0$mux0000>.
+    Using one-hot encoding for signal <min0$mux0001>.
+    Using one-hot encoding for signal <min0$mux0002>.
+    Using one-hot encoding for signal <min0$mux0003>.
+    Found 16-bit comparator less for signal <min0$cmp_lt0000> created at line 13.
+    Found 16-bit comparator less for signal <min0$cmp_lt0001> created at line 13.
+    Found 16-bit comparator less for signal <min0$cmp_lt0002> created at line 13.
+    Found 16-bit comparator less for signal <min0$cmp_lt0003> created at line 13.
+    Found 16-bit comparator less for signal <min0$cmp_lt0004> created at line 13.
+    Summary:
+	inferred   5 Comparator(s).
+Unit <task2> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Comparators                                          : 5
+ 16-bit comparator less                                : 5
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Comparators                                          : 5
+ 16-bit comparator less                                : 5
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <task2> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block task2, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : task2.ngr
+Top Level Output File Name         : task2
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 128
+
+Cell Usage :
+# BELS                             : 241
+#      LUT2                        : 16
+#      LUT3                        : 65
+#      LUT4                        : 64
+#      MUXCY                       : 80
+#      MUXF5                       : 15
+#      VCC                         : 1
+# IO Buffers                       : 128
+#      IBUF                        : 96
+#      OBUF                        : 32
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1000ft256-4 
+
+ Number of Slices:                       84  out of   7680     1%  
+ Number of 4 input LUTs:                145  out of  15360     0%  
+ Number of IOs:                         128
+ Number of bonded IOBs:                 128  out of    173    73%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 32.349ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 174284800 / 32
+-------------------------------------------------------------------------
+Delay:               32.349ns (Levels of Logic = 28)
+  Source:            mas<1><0> (PAD)
+  Destination:       min<31> (PAD)
+
+  Data Path: mas<1><0> to min<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.821   1.246  mas_1__0_IBUF (mas_1__0_IBUF)
+     LUT2:I0->O            1   0.551   0.000  Mcompar_min0_cmp_lt0000_lut<0> (Mcompar_min0_cmp_lt0000_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  Mcompar_min0_cmp_lt0000_cy<0> (Mcompar_min0_cmp_lt0000_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_min0_cmp_lt0000_cy<1> (Mcompar_min0_cmp_lt0000_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_min0_cmp_lt0000_cy<2> (Mcompar_min0_cmp_lt0000_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_min0_cmp_lt0000_cy<3> (Mcompar_min0_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_min0_cmp_lt0000_cy<4> (Mcompar_min0_cmp_lt0000_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_min0_cmp_lt0000_cy<5> (Mcompar_min0_cmp_lt0000_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_min0_cmp_lt0000_cy<6> (Mcompar_min0_cmp_lt0000_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_min0_cmp_lt0000_cy<7> (Mcompar_min0_cmp_lt0000_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_min0_cmp_lt0000_cy<8> (Mcompar_min0_cmp_lt0000_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_min0_cmp_lt0000_cy<9> (Mcompar_min0_cmp_lt0000_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_min0_cmp_lt0000_cy<10> (Mcompar_min0_cmp_lt0000_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_min0_cmp_lt0000_cy<11> (Mcompar_min0_cmp_lt0000_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_min0_cmp_lt0000_cy<12> (Mcompar_min0_cmp_lt0000_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_min0_cmp_lt0000_cy<13> (Mcompar_min0_cmp_lt0000_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_min0_cmp_lt0000_cy<14> (Mcompar_min0_cmp_lt0000_cy<14>)
+     MUXCY:CI->O          32   0.303   2.192  Mcompar_min0_cmp_lt0000_cy<15> (Mcompar_min0_cmp_lt0000_cy<15>)
+     LUT3:I0->O            2   0.551   0.877  mas0_mux0000<15>1 (mas0_mux0000<15>)
+     MUXCY:DI->O          32   1.128   2.192  Mcompar_min0_cmp_lt0001_cy<15> (Mcompar_min0_cmp_lt0001_cy<15>)
+     LUT3:I0->O            2   0.551   0.877  mas0_mux0001<15> (mas0_mux0001<15>)
+     MUXCY:DI->O          32   1.128   2.192  Mcompar_min0_cmp_lt0002_cy<15> (Mcompar_min0_cmp_lt0002_cy<15>)
+     LUT3:I0->O            2   0.551   0.877  mas0_mux0002<15>1 (mas0_mux0002<15>)
+     MUXCY:DI->O          32   1.128   2.192  Mcompar_min0_cmp_lt0003_cy<15> (Mcompar_min0_cmp_lt0003_cy<15>)
+     LUT3:I0->O            1   0.551   0.801  mas0_mux0003<15>1 (mas0_mux0003<15>)
+     MUXCY:DI->O          16   1.128   1.576  Mcompar_min0_cmp_lt0004_cy<15> (Mcompar_min0_cmp_lt0004_cy<15>)
+     LUT3:I0->O           17   0.551   1.345  min<16> (min_16_OBUF)
+     OBUF:I->O                 5.644          min_31_OBUF (min<31>)
+    ----------------------------------------
+    Total                     32.349ns (15.982ns logic, 16.367ns route)
+                                       (49.4% logic, 50.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.05 secs
+ 
+--> 
+
+Total memory usage is 261756 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

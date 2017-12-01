@@ -1,0 +1,8 @@
+PB package1 package1 D:/GitHub/VHDL/lab5/package1.vhd sub00/vhpl01 1512124063
+AR task2 struct D:/GitHub/VHDL/lab5/task2.vhd sub00/vhpl07 1512124622
+PH package1 NULL D:/GitHub/VHDL/lab5/package1.vhd sub00/vhpl00 1512124062
+PH package2 NULL D:/GitHub/VHDL/lab5/package2.vhd sub00/vhpl04 1512124619
+EN task1 NULL D:/GitHub/VHDL/lab5/task1.vhd sub00/vhpl02 1512124064
+EN task2 NULL D:/GitHub/VHDL/lab5/task2.vhd sub00/vhpl06 1512124621
+AR task1 struct D:/GitHub/VHDL/lab5/task1.vhd sub00/vhpl03 1512124065
+PB package2 package2 D:/GitHub/VHDL/lab5/package2.vhd sub00/vhpl05 1512124620

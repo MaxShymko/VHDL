@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/lab4/FSM_A.xst" -ofn "D:/GitHub/VHDL/xilinx/lab4/FSM_A.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 FSM_A.ngc FSM_A.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o FSM_A_map.ncd FSM_A.ngd FSM_A.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_A_map.ncd FSM_A.ncd FSM_A.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FSM_A.twx FSM_A.ncd -o FSM_A.twr FSM_A.pcf 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/lab4/FSM_A.xst" -ofn "D:/GitHub/VHDL/xilinx/lab4/FSM_A.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/lab4/FSM_A.xst" -ofn "D:/GitHub/VHDL/xilinx/lab4/FSM_A.syr" 

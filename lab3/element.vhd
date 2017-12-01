@@ -3,12 +3,10 @@ entity element is
     y2,my2,my1: out BIT);
 end element;
 architecture struct of element is
-component
-  mult port(a1,b1,mc2,mc1: in BIT;
+component mult port(a1,b1,mc2,mc1: in BIT;
   mp2,mp1: out BIT);
 end component;
-component
-  add port(c1,c2,c3: in BIT;
+component add port(c1,c2,c3: in BIT;
   p2,p1: out BIT);
 end component;
 signal t: BIT;

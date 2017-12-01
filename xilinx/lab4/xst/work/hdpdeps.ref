@@ -1,0 +1,26 @@
+V3 18
+FL D:/GitHub/VHDL/lab4/INV.vhd 2017/11/03.08:44:21 P.20131013
+EN work/INV 1512127389 FL D:/GitHub/VHDL/lab4/INV.vhd PB ieee/std_logic_1164 1381692176
+AR work/INV/struct 1512127390 \
+      FL D:/GitHub/VHDL/lab4/INV.vhd EN work/INV 1512127389
+FL D:/GitHub/VHDL/lab4/NOAA.vhd 2017/11/03.08:44:03 P.20131013
+EN work/NOAA 1512127391 FL D:/GitHub/VHDL/lab4/NOAA.vhd PB ieee/std_logic_1164 1381692176
+AR work/NOAA/struct 1512127392 \
+      FL D:/GitHub/VHDL/lab4/NOAA.vhd EN work/NOAA 1512127391
+FL D:/GitHub/VHDL/lab4/scheme_1.vhd 2017/11/30.17:28:13 P.20131013
+EN work/scheme_1 1512127393 FL D:/GitHub/VHDL/lab4/scheme_1.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/scheme_1/struct 1512127394 \
+      FL D:/GitHub/VHDL/lab4/scheme_1.vhd EN work/scheme_1 1512127393 CP INV \
+      CP NOAA
+FL D:/GitHub/VHDL/lab4/scheme_2.vhd 2017/11/03.14:37:46 P.20131013
+EN work/scheme_2 1512127846 FL D:/GitHub/VHDL/lab4/scheme_2.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/scheme_2/struct 1512127847 \
+      FL D:/GitHub/VHDL/lab4/scheme_2.vhd EN work/scheme_2 1512127846
+FL D:/GitHub/VHDL/lab4/scheme_3.vhd 2017/11/03.14:10:35 P.20131013
+PH work/vv_vls 1512127977 FL D:/GitHub/VHDL/lab4/scheme_3.vhd
+EN work/FSM_A 1512127978 \
+      FL D:/GitHub/VHDL/lab4/scheme_3.vhd PH work/vv_vls 1512127977
+AR work/FSM_A/arch 1512127979 \
+      FL D:/GitHub/VHDL/lab4/scheme_3.vhd EN work/FSM_A 1512127978

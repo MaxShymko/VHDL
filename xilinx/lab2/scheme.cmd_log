@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/lab2/scheme.xst" -ofn "D:/GitHub/VHDL/xilinx/lab2/scheme.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 scheme.ngc scheme.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o scheme_map.ncd scheme.ngd scheme.pcf 
+par -w -intstyle ise -ol high -t 1 scheme_map.ncd scheme.ncd scheme.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml scheme.twx scheme.ncd -o scheme.twr scheme.pcf 

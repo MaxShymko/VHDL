@@ -1,8 +1,8 @@
-C:/modeltech_6.5b/examples/LABS/lab3/mult.vhd {1 {vcom -work work -2002 -explicit -vopt C:/modeltech_6.5b/examples/LABS/lab3/mult.vhd
+C:/modeltech_6.5b/examples/LABS/lab3/element.vhd {1 {vcom -work work -2002 -explicit -vopt C:/modeltech_6.5b/examples/LABS/lab3/element.vhd
 Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
 -- Loading package standard
--- Compiling entity mult
--- Compiling architecture struct of mult
+-- Compiling entity element
+-- Compiling architecture struct of element
 
 } {} {}} C:/modeltech_6.5b/examples/LABS/lab3/add1.vhd {1 {vcom -work work -2002 -explicit -vopt C:/modeltech_6.5b/examples/LABS/lab3/add1.vhd
 Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
@@ -10,17 +10,11 @@ Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
 -- Compiling entity add1
 -- Compiling architecture struct_1 of add1
 
-} {} {}} C:/modeltech_6.5b/examples/LABS/lab3/element.vhd {1 {vcom -work work -2002 -explicit -vopt C:/modeltech_6.5b/examples/LABS/lab3/element.vhd
+} {} {}} C:/modeltech_6.5b/examples/LABS/lab3/mult.vhd {1 {vcom -work work -2002 -explicit -vopt C:/modeltech_6.5b/examples/LABS/lab3/mult.vhd
 Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
 -- Loading package standard
--- Compiling entity element
--- Compiling architecture struct of element
-
-} {} {}} C:/modeltech_6.5b/examples/LABS/lab3/full_scheme_1.vhd {1 {vcom -work work -2002 -explicit -vopt C:/modeltech_6.5b/examples/LABS/lab3/full_scheme_1.vhd
-Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
--- Loading package standard
--- Compiling entity full_scheme_1
--- Compiling architecture struct of full_scheme_1
+-- Compiling entity mult
+-- Compiling architecture struct of mult
 
 } {} {}} C:/modeltech_6.5b/examples/LABS/lab3/mult_2.vhd {1 {vcom -work work -2002 -explicit -vopt C:/modeltech_6.5b/examples/LABS/lab3/mult_2.vhd
 Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
@@ -28,17 +22,23 @@ Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
 -- Compiling entity mult_2
 -- Compiling architecture structure of mult_2
 
-} {} {}} C:/modeltech_6.5b/examples/LABS/lab3/test.vhd {1 {vcom -work work -2002 -explicit -vopt C:/modeltech_6.5b/examples/LABS/lab3/test.vhd
+} {} {}} C:/modeltech_6.5b/examples/LABS/lab3/full_scheme_1.vhd {1 {vcom -work work -2002 -explicit -vopt C:/modeltech_6.5b/examples/LABS/lab3/full_scheme_1.vhd
 Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
 -- Loading package standard
--- Compiling entity test
--- Compiling architecture behavior of test
+-- Compiling entity full_scheme_1
+-- Compiling architecture struct of full_scheme_1
 
 } {} {}} C:/modeltech_6.5b/examples/LABS/lab3/full_scheme_2.vhd {1 {vcom -work work -2002 -explicit -vopt C:/modeltech_6.5b/examples/LABS/lab3/full_scheme_2.vhd
 Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
 -- Loading package standard
 -- Compiling entity full_scheme_2
 -- Compiling architecture struct of full_scheme_2
+
+} {} {}} C:/modeltech_6.5b/examples/LABS/lab3/test.vhd {1 {vcom -work work -2002 -explicit -vopt C:/modeltech_6.5b/examples/LABS/lab3/test.vhd
+Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
+-- Loading package standard
+-- Compiling entity test
+-- Compiling architecture behavior of test
 
 } {} {}} C:/modeltech_6.5b/examples/LABS/lab3/add.vhd {1 {vcom -work work -2002 -explicit -vopt C:/modeltech_6.5b/examples/LABS/lab3/add.vhd
 Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009

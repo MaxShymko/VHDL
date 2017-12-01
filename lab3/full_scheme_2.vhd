@@ -23,3 +23,4 @@ begin
   p2 <= t_y2(N);
   mp2 <= t_my2(N);
 end struct;
+

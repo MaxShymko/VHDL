@@ -1,0 +1,17 @@
+V3 12
+FL D:/GitHub/VHDL/lab5/package1.vhd 2017/11/12.17:20:07 P.20131013
+PH work/package1 1512124062 FL D:/GitHub/VHDL/lab5/package1.vhd
+PB work/package1 1512124063 \
+      FL D:/GitHub/VHDL/lab5/package1.vhd PH work/package1 1512124062
+FL D:/GitHub/VHDL/lab5/package2.vhd 2017/12/01.13:36:54 P.20131013
+PH work/package2 1512124619 FL D:/GitHub/VHDL/lab5/package2.vhd
+PB work/package2 1512124620 \
+      FL D:/GitHub/VHDL/lab5/package2.vhd PH work/package2 1512124619
+FL D:/GitHub/VHDL/lab5/task1.vhd 2017/11/12.16:52:04 P.20131013
+EN work/task1 1512124064 FL D:/GitHub/VHDL/lab5/task1.vhd PB work/package1 1512124063
+AR work/task1/struct 1512124065 \
+      FL D:/GitHub/VHDL/lab5/task1.vhd EN work/task1 1512124064
+FL D:/GitHub/VHDL/lab5/task2.vhd 2017/11/12.16:34:05 P.20131013
+EN work/task2 1512124621 FL D:/GitHub/VHDL/lab5/task2.vhd PB work/package2 1512124620
+AR work/task2/struct 1512124622 \
+      FL D:/GitHub/VHDL/lab5/task2.vhd EN work/task2 1512124621

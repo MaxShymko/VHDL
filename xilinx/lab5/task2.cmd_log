@@ -1,0 +1,30 @@
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/lab5/task2.xst" -ofn "D:/GitHub/VHDL/xilinx/lab5/task2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 task2.ngc task2.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o task2_map.ncd task2.ngd task2.pcf 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/lab5/task2.xst" -ofn "D:/GitHub/VHDL/xilinx/lab5/task2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 task2.ngc task2.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o task2_map.ncd task2.ngd task2.pcf 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/lab5/task2.xst" -ofn "D:/GitHub/VHDL/xilinx/lab5/task2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 task2.ngc task2.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o task2_map.ncd task2.ngd task2.pcf 
+par -w -intstyle ise -ol high -t 1 task2_map.ncd task2.ncd task2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml task2.twx task2.ncd -o task2.twr task2.pcf 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/lab5/task2.xst" -ofn "D:/GitHub/VHDL/xilinx/lab5/task2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 task2.ngc task2.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o task2_map.ncd task2.ngd task2.pcf 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/lab5/task2.xst" -ofn "D:/GitHub/VHDL/xilinx/lab5/task2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 task2.ngc task2.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o task2_map.ncd task2.ngd task2.pcf 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/lab5/task2.xst" -ofn "D:/GitHub/VHDL/xilinx/lab5/task2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 task2.ngc task2.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o task2_map.ncd task2.ngd task2.pcf 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/lab5/task2.xst" -ofn "D:/GitHub/VHDL/xilinx/lab5/task2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 task2.ngc task2.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o task2_map.ncd task2.ngd task2.pcf 
+par -w -intstyle ise -ol high -t 1 task2_map.ncd task2.ncd task2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml task2.twx task2.ncd -o task2.twr task2.pcf 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/lab5/task2.xst" -ofn "D:/GitHub/VHDL/xilinx/lab5/task2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 task2.ngc task2.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o task2_map.ncd task2.ngd task2.pcf 
+par -w -intstyle ise -ol high -t 1 task2_map.ncd task2.ncd task2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml task2.twx task2.ncd -o task2.twr task2.pcf 

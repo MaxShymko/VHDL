@@ -1,0 +1,6 @@
+vhdl work "../../lab3/add1.vhd"
+vhdl work "../../lab3/mult_2.vhd"
+vhdl work "../../lab3/mult.vhd"
+vhdl work "../../lab3/add.vhd"
+vhdl work "../../lab3/element.vhd"
+vhdl work "../../lab3/full_scheme_1.vhd"
