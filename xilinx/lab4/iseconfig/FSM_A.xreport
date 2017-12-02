@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-12-01T14:22:56</DateModified>
-  <ModuleName>scheme_1</ModuleName>
+  <DateModified>2017-12-01T17:12:42</DateModified>
+  <ModuleName>FSM_A</ModuleName>
   <SummaryTimeStamp>2017-12-01T14:21:34</SummaryTimeStamp>
   <SavedFilePath>D:/GitHub/VHDL/xilinx/lab4/iseconfig/FSM_A.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/GitHub/VHDL/xilinx/lab4</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>D:/GitHub/VHDL/xilinx/lab4\</ImplementationReportsDirectory>
   <DateInitialized>2017-12-01T14:22:56</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

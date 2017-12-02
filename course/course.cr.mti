@@ -1,16 +1,25 @@
-D:/GitHub/VHDL/course/types.vhd {1 {vcom -work work -2002 -explicit -vopt D:/GitHub/VHDL/course/types.vhd
-Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
--- Loading package standard
--- Compiling package types
-
-} {} {}} D:/GitHub/VHDL/course/main.vhd {1 {vcom -work work -2002 -explicit -vopt D:/GitHub/VHDL/course/main.vhd
+D:/GitHub/VHDL/course/test.vhd {1 {vcom -work work -2002 -explicit -vopt D:/GitHub/VHDL/course/test.vhd
 Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
 -- Loading package standard
 -- Loading package std_logic_1164
--- Loading package types
--- Loading package math_real
+-- Loading package package1
 -- Loading package textio
--- Compiling entity main
--- Compiling architecture struct of main
+-- Compiling entity test
+-- Compiling architecture struct of test
+
+} {} {}} D:/GitHub/VHDL/course/package1.vhd {1 {vcom -work work -2002 -explicit -vopt D:/GitHub/VHDL/course/package1.vhd
+Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling package package1
+
+} {} {}} D:/GitHub/VHDL/course/model.vhd {1 {vcom -work work -2002 -explicit -vopt D:/GitHub/VHDL/course/model.vhd
+Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package package1
+-- Loading package math_real
+-- Compiling entity model
+-- Compiling architecture struct of model
 
 } {} {}}

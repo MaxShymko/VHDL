@@ -4,97 +4,230 @@ K3
 cModel Technology
 Z0 dC:\modeltech_6.5b\examples\LABS\lab4
 T_opt
-Z1 Vmd413BNG4zl>o?F3Zm0ce1
-Z2 04 4 6 work main struct 1
-Z3 =1-b4b52f7248b3-5a033995-18c-2738
-Z4 o-quiet -auto_acc_if_foreign -work work
-Z5 n@_opt
-Z6 OE;O;6.5b;42
+Vmd413BNG4zl>o?F3Zm0ce1
+04 4 6 work main struct 1
+=1-b4b52f7248b3-5a033995-18c-2738
+Z1 o-quiet -auto_acc_if_foreign -work work
+n@_opt
+Z2 OE;O;6.5b;42
 T_opt1
-VHO1_V[6ACF`S>N5V_nlCb0
+V[[UAQn@8Z89kj[JLFI[Fn3
+04 4 6 work test struct 1
+=1-b4b52f7248b3-5a229073-24b-15e0
+R1
+n@_opt1
 R2
-Z7 =1-b4b52f7248b3-5a05e130-2c9-2048
-R4
-Z8 n@_opt1
-R6
 T_opt2
-Z9 VNCDlC@PlLT3XiMYP`SJci3
-Z10 04 5 6 work stuff struct 1
-Z11 =1-b4b52f7248b3-5a058995-cf-1160
-R4
-Z12 n@_opt2
-R6
+VNCDlC@PlLT3XiMYP`SJci3
+04 5 6 work stuff struct 1
+=1-b4b52f7248b3-5a058995-cf-1160
+R1
+n@_opt2
+R2
 Emain
-Z13 w1510334762
-Z14 DPx3 std 6 textio 0 22 m2KQDRRhmF833<<DjYdL70
-Z15 DPx4 ieee 9 math_real 0 22 zjAF7SKfg_RPI0GT^n1N`1
-Z16 DPx4 work 5 types 0 22 cP7SBg:8b6@?]TR5MJf1G2
-Z17 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
-Z18 dD:\GitHub\VHDL\course
-Z19 8D:/GitHub/VHDL/course/main.vhd
-Z20 FD:/GitHub/VHDL/course/main.vhd
+Z3 w1512212106
+Z4 DPx3 std 6 textio 0 22 m2KQDRRhmF833<<DjYdL70
+Z5 DPx4 ieee 9 math_real 0 22 zjAF7SKfg_RPI0GT^n1N`1
+DPx4 work 5 types 0 22 z[XKNkPY4VOlXmiI:<NL73
+Z6 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z7 dD:\GitHub\VHDL\course
+Z8 8D:/GitHub/VHDL/course/main.vhd
+Z9 FD:/GitHub/VHDL/course/main.vhd
 l0
 L6
-Z21 VA9m]F1P3?dWC=;hfmXf4o0
-Z22 OE;C;6.5b;42
+VA9m]F1P3?dWC=;hfmXf4o0
+Z10 OE;C;6.5b;42
 32
-Z23 o-work work -2002 -explicit
-Z24 tExplicit 1
-Z25 !s100 F15m1a[IS]lcc`UF>j`mF0
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1
+!s100 F15m1a[IS]lcc`UF>j`mF0
 Astruct
-R14
-R15
-R16
-R17
-Z26 DEx4 work 4 main 0 22 A9m]F1P3?dWC=;hfmXf4o0
+R4
+R5
+DPx4 work 5 types 0 22 Nd=Ck706ClSNnYQ:KPfnT0
+R6
+DEx4 work 4 main 0 22 A9m]F1P3?dWC=;hfmXf4o0
 l36
 L11
-Z27 V_O_a`^IY7Hz4MVJFM1M2P0
-R22
+V<60d?Q4VnMEfi7k`aRJF21
+R10
 32
-Z28 Mx4 4 ieee 14 std_logic_1164
-Z29 Mx3 4 work 5 types
-Z30 Mx2 4 ieee 9 math_real
-Z31 Mx1 3 std 6 textio
-R23
-R24
-Z32 !s100 n6e@NhRKI7XbG4abFFBkX1
-Estuff
-Z33 w1510312334
+Mx4 4 ieee 14 std_logic_1164
+Mx3 4 work 5 types
+Mx2 4 ieee 9 math_real
+Z13 Mx1 3 std 6 textio
+R11
+R12
+!s100 ]hBdT_bIF;G;WN0mKGgoJ1
+Emodel
+Z14 w1512226970
+R5
+Z15 DPx4 work 8 package1 0 22 d2bfR1o5Qd<XQOhbS:kX?2
+R6
+R7
+Z16 8D:/GitHub/VHDL/course/model.vhd
+Z17 FD:/GitHub/VHDL/course/model.vhd
+l0
+L6
+V5@=8P<5;1i^BFheJ[iOl62
+R10
+32
+R11
+R12
+!s100 49z8cNmQke=k9fiihW?0h1
+Astruct
+R5
 R15
-R18
-Z34 8D:/GitHub/VHDL/course/stuff.vhd
-Z35 FD:/GitHub/VHDL/course/stuff.vhd
+R6
+DEx4 work 5 model 0 22 5@=8P<5;1i^BFheJ[iOl62
+32
+Z18 Mx3 4 ieee 14 std_logic_1164
+Z19 Mx2 4 work 8 package1
+Z20 Mx1 4 ieee 9 math_real
+l29
+L12
+VhheNS?`5zoej;nkK:F?@@1
+R10
+R11
+R12
+!s100 79U?]AEkh[BVjHVOAAl<N0
+Ppackage1
+R6
+32
+Z21 Mx1 4 ieee 14 std_logic_1164
+w1512226396
+R7
+8D:/GitHub/VHDL/course/package1.vhd
+FD:/GitHub/VHDL/course/package1.vhd
+l0
+L4
+Vd2bfR1o5Qd<XQOhbS:kX?2
+R10
+R11
+R12
+!s100 @Mdln<6N74mR6_z8=RF5d2
+Estuff
+Z22 w1510312334
+R5
+R7
+Z23 8D:/GitHub/VHDL/course/stuff.vhd
+Z24 FD:/GitHub/VHDL/course/stuff.vhd
 l0
 L3
-Z36 Vn[8gGKjTE0GONzMkKKe[Y2
-R22
+Vn[8gGKjTE0GONzMkKKe[Y2
+R10
 32
-R23
-R24
-Z37 !s100 UTQ^hfChg^8P>?KHA0>>j2
+R11
+R12
+!s100 UTQ^hfChg^8P>?KHA0>>j2
 Astruct
-R15
-Z38 DEx4 work 5 stuff 0 22 n[8gGKjTE0GONzMkKKe[Y2
+R5
+DEx4 work 5 stuff 0 22 n[8gGKjTE0GONzMkKKe[Y2
 l12
 L10
-Z39 VE6>@XDb_VA5m8UaCGEdb_3
-R22
+VE6>@XDb_VA5m8UaCGEdb_3
+R10
 32
-Z40 Mx1 4 ieee 9 math_real
-R23
-R24
-Z41 !s100 0U?Mj4E1;Hb`VX0=BQNfQ1
-Ptypes
-Z42 w1510236373
-R18
-Z43 8D:/GitHub/VHDL/course/types.vhd
-Z44 FD:/GitHub/VHDL/course/types.vhd
+R20
+R11
+R12
+!s100 0U?Mj4E1;Hb`VX0=BQNfQ1
+Etest
+Z25 w1512226814
+R4
+R15
+R6
+R7
+Z26 8D:/GitHub/VHDL/course/test.vhd
+Z27 FD:/GitHub/VHDL/course/test.vhd
 l0
-L1
-Z45 VcP7SBg:8b6@?]TR5MJf1G2
-R22
+L6
+V3mfPYJkUEBbn=T^JV;[_A0
+R10
 32
-R23
-R24
-Z46 !s100 ]nNVio^_N8noh:7FofH<W2
+R11
+R12
+!s100 ;JjiUFnTT<B=OW6N6<nFU0
+Astruct
+R4
+R15
+R6
+DEx4 work 4 test 0 22 3mfPYJkUEBbn=T^JV;[_A0
+32
+R18
+R19
+R13
+l34
+L9
+VdgR@2m?LQhWaDdR5]HLbo0
+R10
+R11
+R12
+!s100 C;Kc?`][U64e3]E2iM<l12
+Etest2_module
+Z28 w1512225889
+R6
+R7
+Z29 8C:/Users/Prolific/Desktop/test2_module.vhd
+Z30 FC:/Users/Prolific/Desktop/test2_module.vhd
+l0
+L5
+Ve3c4[JSWfBiCc1eWSgfD40
+R10
+32
+R11
+R12
+!s100 jVjC`a_E<b`_kC2kZPLV@3
+Astruct
+R6
+DEx4 work 12 test2_module 0 22 e3c4[JSWfBiCc1eWSgfD40
+l16
+L11
+VYLTHLAH3Y<YieHC7BdN_@0
+R10
+32
+R21
+R11
+R12
+!s100 oTC;mSDiQKM]GjhU:kmZ73
+Etest2_test
+Z31 w1512225016
+R6
+R7
+Z32 8C:/Users/Prolific/Desktop/test2_test.vhd
+Z33 FC:/Users/Prolific/Desktop/test2_test.vhd
+l0
+L4
+Vgm72^_]^LTW0n1g:E`;LB1
+R10
+32
+R11
+R12
+!s100 V?^b_Ti6C>AV56RSOO0TT2
+Astruct
+R6
+DEx4 work 10 test2_test 0 22 gm72^_]^LTW0n1g:E`;LB1
+l19
+L7
+VBO1JXJJ0hUbfVQRk2Y4Q22
+R10
+32
+R21
+R11
+R12
+!s100 ;J?:PI7eQoRcDT0OdB2H[2
+Ptypes
+R6
+w1512221462
+R7
+8D:/GitHub/VHDL/course/types.vhd
+FD:/GitHub/VHDL/course/types.vhd
+l0
+L4
+Vz[XKNkPY4VOlXmiI:<NL73
+R10
+32
+R21
+R11
+R12
+!s100 f7X0WC8Jno598BA`Q9<Zz1
