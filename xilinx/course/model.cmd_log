@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/model.xst" -ofn "D:/GitHub/VHDL/xilinx/course/model.syr" 

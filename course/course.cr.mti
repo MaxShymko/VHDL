@@ -7,19 +7,21 @@ Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
 -- Compiling entity test
 -- Compiling architecture struct of test
 
+} {} {}} D:/GitHub/VHDL/course/model.vhd {1 {vcom -work work -2002 -explicit -vopt D:/GitHub/VHDL/course/model.vhd
+Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package package1
+-- Compiling entity model
+-- Compiling architecture struct of model
+
 } {} {}} D:/GitHub/VHDL/course/package1.vhd {1 {vcom -work work -2002 -explicit -vopt D:/GitHub/VHDL/course/package1.vhd
 Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
 -- Loading package standard
 -- Loading package std_logic_1164
 -- Compiling package package1
-
-} {} {}} D:/GitHub/VHDL/course/model.vhd {1 {vcom -work work -2002 -explicit -vopt D:/GitHub/VHDL/course/model.vhd
-Model Technology ModelSim SE vcom 6.5b Compiler 2009.05 May 21 2009
--- Loading package standard
--- Loading package std_logic_1164
+-- Compiling package body package1
 -- Loading package package1
--- Loading package math_real
--- Compiling entity model
--- Compiling architecture struct of model
 
 } {} {}}

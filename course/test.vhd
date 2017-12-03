@@ -15,17 +15,29 @@ component model is
 end component;
 
 signal clk : std_logic;
+--signal eat : eat_arr := (
+--		0 => ("1000101000"),
+--		1 => ("0000000000"),
+--		2 => ("0010000000"),
+--		3 => ("1000101000"),
+--		4 => ("1000000000"),
+--		5 => ("0000000000"),
+--		6 => ("1000101010"),
+--		7 => ("0000000000"),
+--		8 => ("0101000101"),
+--		9 => ("0000000000"));
+
 signal eat : eat_arr := (
-		0 => ("1000101000"),
-		1 => ("0000000000"),
-		2 => ("0010000000"),
-		3 => ("1000101000"),
-		4 => ("1000000000"),
-		5 => ("0000000000"),
-		6 => ("1000101010"),
-		7 => ("0000000000"),
-		8 => ("0101000101"),
-		9 => ("0000000000"));
+		0 => ("1010101001"),
+		1 => ("0100101001"),
+		2 => ("0010010010"),
+		3 => ("1000101001"),
+		4 => ("1000010100"),
+		5 => ("0001010100"),
+		6 => ("1010101010"),
+		7 => ("0101001000"),
+		8 => ("0101010100"),
+		9 => ("0101010000"));
 
 signal ant : ant_arr;
 
@@ -35,13 +47,11 @@ begin
 	
 	p1 : model port map (clk, eat, ant);
 
-	--eat <= (others => (others => '1'));
-
 	log_process: process(clk)
 		variable outdata_line : line;
 		file output_data_file : text open write_mode is "results.txt";
 	begin
-	
+
 		if(clk'event and clk = '1') then
 
 			-- log initialize
@@ -67,7 +77,7 @@ begin
 						write(outdata_line, string'("-1 0 0 0 0 0 0 0 0 0 0 -1 "));
 					end if;
 				end loop;
-				writeline(output_data_file,outdata_line);			
+				writeline(output_data_file,outdata_line);
 			
 			elsif(initialize = '1') then
 				write(outdata_line,ant(0));

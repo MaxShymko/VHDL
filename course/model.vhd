@@ -1,7 +1,7 @@
 Library IEEE, work;
 Use IEEE.std_logic_1164.all;
+use ieee.numeric_std.all;
 Use work.package1.all;
-Use IEEE.MATH_REAL.all;
 
 entity model is
 	port(clk : in std_logic;
@@ -26,17 +26,19 @@ signal pheromone : pheromone_arr := (
 signal goHome : std_logic := '0';
 signal initialize, eat_ready : std_logic := '0';
 
+signal tmp_random_result: integer := 1;
+
 begin
 
 	main_process: process(clk)
 
 		variable ant_near : ant_near_arr; -- neighbor cells
 		variable best_way : natural range 0 to 7; -- index of the ant_near
-		variable equal_count : real range 0.0 to 8.0 := 0.0;
+		variable equal_count : integer range 0 to 8 := 0;
 
 		-- for random
-		variable seed1, seed2 : positive;
-		variable rand : real;
+		--variable seed1, seed2 : positive;
+		--variable rand : real;
 		variable int_rand : integer range 0 to 7;
 
 	begin
@@ -70,7 +72,7 @@ begin
 						exit;
 					end if;
 				end loop;
-				equal_count := 0.0;
+				equal_count := 0;
 
 				if(goHome = '1') then
 
@@ -90,13 +92,14 @@ begin
 						-- get max values and update equal_count
 						for i in 0 to 7 loop
 							if(pheromone(ant_near(i)(0),ant_near(i)(1)) = pheromone(ant_near(best_way)(0),ant_near(best_way)(1))) then
-								equal_count := equal_count + 1.0;
+								equal_count := equal_count + 1;
 							end if;
 						end loop;
 
 						-- random choose from equals
-						UNIFORM(seed1, seed2, rand);
-		        		int_rand := INTEGER(TRUNC(rand * equal_count));
+		        		tmp_random_result <= random(tmp_random_result);
+		        		int_rand := tmp_random_result mod equal_count;
+
 		        		for i in 0 to 7 loop
 							if(pheromone(ant_near(i)(0),ant_near(i)(1)) = pheromone(ant_near(best_way)(0),ant_near(best_way)(1))) then
 								if(int_rand = 0) then
@@ -140,13 +143,14 @@ begin
 							-- get all min values and update equal_count
 							for i in 0 to 7 loop
 								if(pheromone(ant_near(i)(0),ant_near(i)(1)) = pheromone(ant_near(best_way)(0),ant_near(best_way)(1))) then
-									equal_count := equal_count + 1.0;
+									equal_count := equal_count + 1;
 								end if;
 							end loop;
 
 							-- random choose from equals
-							UNIFORM(seed1, seed2, rand);
-			        		int_rand := INTEGER(TRUNC(rand * equal_count));
+			        		tmp_random_result <= random(tmp_random_result);
+		        			int_rand := tmp_random_result mod equal_count;
+
 			        		for i in 0 to 7 loop
 								if(pheromone(ant_near(i)(0),ant_near(i)(1)) = pheromone(ant_near(best_way)(0),ant_near(best_way)(1))) then
 									if(int_rand = 0) then
