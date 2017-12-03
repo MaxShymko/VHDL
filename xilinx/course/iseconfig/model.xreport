@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-12-03T15:38:23</DateModified>
+  <DateModified>2017-12-03T17:26:43</DateModified>
   <ModuleName>model</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2017-12-03T17:24:12</SummaryTimeStamp>
   <SavedFilePath>D:/GitHub/VHDL/xilinx/course/iseconfig/model.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/GitHub/VHDL/xilinx/course</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>D:/GitHub/VHDL/xilinx/course\</ImplementationReportsDirectory>
   <DateInitialized>2017-12-03T15:38:23</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

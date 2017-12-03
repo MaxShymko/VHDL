@@ -11,8 +11,5 @@
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/GitHub/VHDL/course/model.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/GitHub/VHDL/course/package1.vhd&quot; into library work</arg>
-</msg>
-
 </messages>
 

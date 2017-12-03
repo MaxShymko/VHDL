@@ -11,8 +11,18 @@
 # //
 # OpenFile D:/GitHub/VHDL/course/course.mpf 
 # Loading project course
+# Compile of model.vhd was successful.
+# Compile of test.vhd was successful.
+# Compile of package1.vhd was successful.
+# Compile of stuff.vhd was successful.
+# 4 compiles, 0 failed with no errors. 
+# Compile of model.vhd was successful.
+# Compile of test.vhd was successful.
+# Compile of package1.vhd was successful.
+# Compile of stuff.vhd was successful.
+# 4 compiles, 0 failed with no errors. 
 do test_sim.do
-# vsim -novopt test 
+# vsim -coverage -novopt work.test 
 # Loading std.standard
 # Loading ieee.std_logic_1164(body)
 # Refreshing D:\GitHub\VHDL\course\work.package1(body)
@@ -23,37 +33,20 @@ do test_sim.do
 # Loading ieee.numeric_std(body)
 # Refreshing D:\GitHub\VHDL\course\work.model(struct)
 # Loading work.model(struct)
-# Updating msgviewer database...
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Prolific  Hostname: PC  ProcessID: 10040
-#           Attempting to use alternate WLF file "./wlftwf46m5".
+#           Attempting to use alternate WLF file "./wlftebq8a8".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftwf46m5
-# Updating msgviewer database...
-quit -sim
-do test_sim.do
-# vsim -novopt test 
-# Loading std.standard
-# Loading ieee.std_logic_1164(body)
-# Loading work.package1(body)
-# Loading std.textio(body)
-# Loading work.test(struct)
-# Loading ieee.numeric_std(body)
-# Loading work.model(struct)
-# Updating msgviewer database...
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Prolific  Hostname: PC  ProcessID: 10040
-#           Attempting to use alternate WLF file "./wlftmtj2zy".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftmtj2zy
-# Updating msgviewer database...
+#           Using alternate file: ./wlftebq8a8
+# Report created in covhtmlreport/index.html
 quit -sim
 # Compile of model.vhd was successful.
 # Compile of test.vhd was successful.
 # Compile of package1.vhd was successful.
-# 3 compiles, 0 failed with no errors. 
+# Compile of stuff.vhd was successful.
+# 4 compiles, 0 failed with no errors. 
 do test_sim.do
-# vsim -novopt test 
+# vsim -coverage -novopt work.test 
 # Loading std.standard
 # Loading ieee.std_logic_1164(body)
 # Refreshing D:\GitHub\VHDL\course\work.package1(body)
@@ -64,20 +57,20 @@ do test_sim.do
 # Loading ieee.numeric_std(body)
 # Refreshing D:\GitHub\VHDL\course\work.model(struct)
 # Loading work.model(struct)
-# Updating msgviewer database...
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Prolific  Hostname: PC  ProcessID: 10040
-#           Attempting to use alternate WLF file "./wlftiffizn".
+#           Attempting to use alternate WLF file "./wlftmq22a0".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftiffizn
-# Updating msgviewer database...
+#           Using alternate file: ./wlftmq22a0
+# Report created in covhtmlreport/index.html
 quit -sim
 # Compile of model.vhd was successful.
 # Compile of test.vhd was successful.
 # Compile of package1.vhd was successful.
-# 3 compiles, 0 failed with no errors. 
+# Compile of stuff.vhd was successful.
+# 4 compiles, 0 failed with no errors. 
 do test_sim.do
-# vsim -novopt test 
+# vsim -coverage -novopt work.test 
 # Loading std.standard
 # Loading ieee.std_logic_1164(body)
 # Refreshing D:\GitHub\VHDL\course\work.package1(body)
@@ -88,11 +81,114 @@ do test_sim.do
 # Loading ieee.numeric_std(body)
 # Refreshing D:\GitHub\VHDL\course\work.model(struct)
 # Loading work.model(struct)
-# Updating msgviewer database...
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Prolific  Hostname: PC  ProcessID: 10040
-#           Attempting to use alternate WLF file "./wlft5h9zrs".
+#           Attempting to use alternate WLF file "./wlfthxsxry".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft5h9zrs
-# Updating msgviewer database...
+#           Using alternate file: ./wlfthxsxry
+# Report created in covhtmlreport/index.html
+quit -sim
+# Compile of model.vhd was successful.
+# Compile of test.vhd was successful.
+# Compile of package1.vhd was successful.
+# Compile of stuff.vhd was successful.
+# 4 compiles, 0 failed with no errors. 
+do test_sim.do
+# vsim -coverage -novopt work.test 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Refreshing D:\GitHub\VHDL\course\work.package1(body)
+# Loading work.package1(body)
+# Loading std.textio(body)
+# Refreshing D:\GitHub\VHDL\course\work.test(struct)
+# Loading work.test(struct)
+# Loading ieee.numeric_std(body)
+# Refreshing D:\GitHub\VHDL\course\work.model(struct)
+# Loading work.model(struct)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Prolific  Hostname: PC  ProcessID: 10040
+#           Attempting to use alternate WLF file "./wlfts6ww70".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfts6ww70
+# Report created in covhtmlreport/index.html
+quit -sim
+# Compile of model.vhd was successful.
+# Compile of test.vhd was successful.
+# Compile of package1.vhd was successful.
+# Compile of stuff.vhd was successful.
+# 4 compiles, 0 failed with no errors. 
+do test_sim.do
+# vsim -coverage -novopt work.test 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Refreshing D:\GitHub\VHDL\course\work.package1(body)
+# Loading work.package1(body)
+# Loading std.textio(body)
+# Refreshing D:\GitHub\VHDL\course\work.test(struct)
+# Loading work.test(struct)
+# Loading ieee.numeric_std(body)
+# Refreshing D:\GitHub\VHDL\course\work.model(struct)
+# Loading work.model(struct)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Prolific  Hostname: PC  ProcessID: 10040
+#           Attempting to use alternate WLF file "./wlftiahx5y".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftiahx5y
+# Report created in covhtmlreport/index.html
+quit -sim
+do test_sim.do
+# vsim -coverage -novopt work.test 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading work.package1(body)
+# Loading std.textio(body)
+# Loading work.test(struct)
+# Loading ieee.numeric_std(body)
+# Loading work.model(struct)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Prolific  Hostname: PC  ProcessID: 10040
+#           Attempting to use alternate WLF file "./wlftfn8db3".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftfn8db3
+# Report created in covhtmlreport/index.html
+quit -sim
+do test_sim.do
+# vsim -coverage -novopt work.test 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading work.package1(body)
+# Loading std.textio(body)
+# Loading work.test(struct)
+# Loading ieee.numeric_std(body)
+# Loading work.model(struct)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Prolific  Hostname: PC  ProcessID: 10040
+#           Attempting to use alternate WLF file "./wlftdbcrd8".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftdbcrd8
+# Report created in covhtmlreport/index.html
+quit -sim
+# Compile of model.vhd was successful.
+# Compile of test.vhd was successful.
+# Compile of package1.vhd was successful.
+# Compile of stuff.vhd was successful.
+# 4 compiles, 0 failed with no errors. 
+do test_sim.do
+# vsim -coverage -novopt work.test 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Refreshing D:\GitHub\VHDL\course\work.package1(body)
+# Loading work.package1(body)
+# Loading std.textio(body)
+# Refreshing D:\GitHub\VHDL\course\work.test(struct)
+# Loading work.test(struct)
+# Loading ieee.numeric_std(body)
+# Refreshing D:\GitHub\VHDL\course\work.model(struct)
+# Loading work.model(struct)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Prolific  Hostname: PC  ProcessID: 10040
+#           Attempting to use alternate WLF file "./wlftkt2c7j".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftkt2c7j
+# Report created in covhtmlreport/index.html
 quit -sim

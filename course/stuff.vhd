@@ -6,16 +6,14 @@ entity stuff is
 end stuff;
 
 architecture struct of stuff is
-component random is
-	port(clk: in std_logic;
-		max_val: in integer;
-		result: out integer);
-end component random;
-
-signal result: integer := 1;
+signal result, t_result: integer := 1;
 signal clk: std_logic;
 begin
 	
-	p1: random port map (clk, 10, result);
+	p1: process(clk)
+	begin
+		t_result <= random(t_result);
+		result <= getMod(t_result, 2);
+	end process;
 
 end struct;

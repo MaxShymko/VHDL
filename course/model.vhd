@@ -12,7 +12,6 @@ end model;
 architecture struct of model is
 
 signal next_ant : ant_arr := (0 => MATRIX_SIZE-2, 1 => MATRIX_SIZE-2); -- pos of ant
-signal startPos : ant_arr := (0 => MATRIX_SIZE-2, 1 => MATRIX_SIZE-2); -- anthill
 
 signal eat: eat_arr;
 
@@ -24,7 +23,7 @@ signal pheromone : pheromone_arr := (
 	);
 
 signal goHome : std_logic := '0';
-signal initialize, eat_ready : std_logic := '0';
+signal initialize : std_logic := '0';
 
 signal tmp_random_result: integer := 1;
 
@@ -32,13 +31,12 @@ begin
 
 	main_process: process(clk)
 
+		variable startPos : ant_arr := (0 => MATRIX_SIZE-2, 1 => MATRIX_SIZE-2); -- anthill
 		variable ant_near : ant_near_arr; -- neighbor cells
 		variable best_way : natural range 0 to 7; -- index of the ant_near
 		variable equal_count : integer range 0 to 8 := 0;
 
 		-- for random
-		--variable seed1, seed2 : positive;
-		--variable rand : real;
 		variable int_rand : integer range 0 to 7;
 
 	begin
@@ -98,7 +96,8 @@ begin
 
 						-- random choose from equals
 		        		tmp_random_result <= random(tmp_random_result);
-		        		int_rand := tmp_random_result mod equal_count;
+		        		--int_rand := tmp_random_result mod equal_count;
+		        		int_rand := getMod(tmp_random_result, equal_count);
 
 		        		for i in 0 to 7 loop
 							if(pheromone(ant_near(i)(0),ant_near(i)(1)) = pheromone(ant_near(best_way)(0),ant_near(best_way)(1))) then
@@ -149,7 +148,8 @@ begin
 
 							-- random choose from equals
 			        		tmp_random_result <= random(tmp_random_result);
-		        			int_rand := tmp_random_result mod equal_count;
+		        			--int_rand := tmp_random_result mod equal_count;
+		        			int_rand := getMod(tmp_random_result, equal_count);
 
 			        		for i in 0 to 7 loop
 								if(pheromone(ant_near(i)(0),ant_near(i)(1)) = pheromone(ant_near(best_way)(0),ant_near(best_way)(1))) then

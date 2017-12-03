@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.32 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.32 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: model.prj
 
@@ -42,7 +42,7 @@ Ignore Synthesis Constraint File   : NO
 ---- Target Parameters
 Output File Name                   : "model"
 Output Format                      : NGC
-Target Device                      : xc3s1000-4-ft256
+Target Device                      : xc3s5000-4-fg900
 
 ---- Source Options
 Top Module Name                    : model
@@ -68,7 +68,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 8
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -105,8 +105,7 @@ Slice Utilization Ratio Delta      : 5
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "D:/GitHub/VHDL/course/package1.vhd" in Library work.
-Package <package1> compiled.
-Package body <package1> compiled.
+Architecture package1 of Entity package1 is up to date.
 Compiling vhdl file "D:/GitHub/VHDL/course/model.vhd" in Library work.
 Entity <model> compiled.
 Entity <model> (Architecture <struct>) compiled.
@@ -121,11 +120,11 @@ Analyzing hierarchy for entity <model> in library <work> (architecture <struct>)
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <model> in library <work> (Architecture <struct>).
-WARNING:Xst:1610 - "D:/GitHub/VHDL/course/model.vhd" line 57: Width mismatch. <ant_near> has a width of 64 bits but assigned expression is 70-bit wide.
-ERROR:Xst:1763 - "D:/GitHub/VHDL/course/model.vhd" line 101: Operator <MODULUS> must have constant modulo operand.
+WARNING:Xst:1610 - "D:/GitHub/VHDL/course/model.vhd" line 55: Width mismatch. <ant_near> has a width of 64 bits but assigned expression is 70-bit wide.
+ERROR:Xst:827 - "D:/GitHub/VHDL/course/model.vhd" line 33: Signal ant<0> cannot be synthesized, bad synchronous description. The description style you are using to describe a synchronous element (register, memory, etc.) is not supported in the current software release.
 --> 
 
-Total memory usage is 256700 kilobytes
+Total memory usage is 668988 kilobytes
 
 Number of errors   :    1 (   0 filtered)
 Number of warnings :    1 (   0 filtered)
