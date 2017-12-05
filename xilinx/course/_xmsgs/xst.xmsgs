@@ -5,10 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="1610" delta="new" >&quot;<arg fmt="%s" index="1">D:/GitHub/VHDL/course/model.vhd</arg>&quot; line <arg fmt="%d" index="2">55</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">ant_near</arg>&gt; has a width of <arg fmt="%d" index="4">64</arg> bits but assigned expression is <arg fmt="%d" index="5">70</arg>-bit wide.
+<msg type="warning" file="Xst" num="1610" delta="new" >&quot;<arg fmt="%s" index="1">D:/GitHub/VHDL/course/model.vhd</arg>&quot; line <arg fmt="%d" index="2">52</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">ant_near</arg>&gt; has a width of <arg fmt="%d" index="4">48</arg> bits but assigned expression is <arg fmt="%d" index="5">54</arg>-bit wide.
 </msg>
 
-<msg type="error" file="Xst" num="827" delta="old" >&quot;<arg fmt="%s" index="1">D:/GitHub/VHDL/course/model.vhd</arg>&quot; line <arg fmt="%d" index="2">33</arg>: Signal <arg fmt="%s" index="3">ant&lt;0&gt;</arg> cannot be synthesized, bad synchronous description. The description style you are using to describe a synchronous element (register, memory, etc.) is not supported in the current software release.
+<msg type="error" file="Xst" num="827" delta="new" >&quot;<arg fmt="%s" index="1">D:/GitHub/VHDL/course/model.vhd</arg>&quot; line <arg fmt="%d" index="2">32</arg>: Signal <arg fmt="%s" index="3">eat&lt;0&gt;&lt;0&gt;</arg> cannot be synthesized, bad synchronous description. The description style you are using to describe a synchronous element (register, memory, etc.) is not supported in the current software release.
 </msg>
 
 </messages>

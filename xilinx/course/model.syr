@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Reading design: model.prj
 
@@ -105,10 +105,10 @@ Slice Utilization Ratio Delta      : 5
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "D:/GitHub/VHDL/course/package1.vhd" in Library work.
-Architecture package1 of Entity package1 is up to date.
+Package <package1> compiled.
+Package body <package1> compiled.
 Compiling vhdl file "D:/GitHub/VHDL/course/model.vhd" in Library work.
-Entity <model> compiled.
-Entity <model> (Architecture <struct>) compiled.
+Architecture struct of Entity model is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -120,11 +120,11 @@ Analyzing hierarchy for entity <model> in library <work> (architecture <struct>)
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <model> in library <work> (Architecture <struct>).
-WARNING:Xst:1610 - "D:/GitHub/VHDL/course/model.vhd" line 55: Width mismatch. <ant_near> has a width of 64 bits but assigned expression is 70-bit wide.
-ERROR:Xst:827 - "D:/GitHub/VHDL/course/model.vhd" line 33: Signal ant<0> cannot be synthesized, bad synchronous description. The description style you are using to describe a synchronous element (register, memory, etc.) is not supported in the current software release.
+WARNING:Xst:1610 - "D:/GitHub/VHDL/course/model.vhd" line 52: Width mismatch. <ant_near> has a width of 48 bits but assigned expression is 54-bit wide.
+ERROR:Xst:827 - "D:/GitHub/VHDL/course/model.vhd" line 32: Signal eat<0><0> cannot be synthesized, bad synchronous description. The description style you are using to describe a synchronous element (register, memory, etc.) is not supported in the current software release.
 --> 
 
-Total memory usage is 668988 kilobytes
+Total memory usage is 658748 kilobytes
 
 Number of errors   :    1 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

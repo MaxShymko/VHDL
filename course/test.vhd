@@ -15,24 +15,8 @@ component model is
 end component;
 
 signal clk : std_logic;
-signal eat : eat_arr := (
-		0 => ("1000101000"),
-		1 => ("0000000000"),
-		2 => ("0010000000"),
-		3 => ("1000101000"),
-		4 => ("1000000000"),
-		5 => ("0000000000"),
-		6 => ("1000101010"),
-		7 => ("0000000000"),
-		8 => ("0101000101"),
-		9 => ("0000000000"));
-
---signal eat : eat_arr := (
---	MATRIX_SIZE-2 => (MATRIX_SIZE-2 => '1', others => '0'),
---	others => (others => '0'))
-
+signal eat : eat_arr;
 signal ant : ant_arr;
-
 signal initialize: std_logic := '0';
 
 begin
@@ -40,9 +24,25 @@ begin
 	p1 : model port map (clk, eat, ant);
 
 	log_process: process(clk)
+		variable indata_line : line;
+		file input_data_file : text open read_mode is "input_data_file.txt";
 		variable outdata_line : line;
-		file output_data_file : text open write_mode is "results.txt";
+		file output_data_file : text open write_mode is "output_data_file.txt";
+		variable tmp_eat : bit_vector(0 to MATRIX_SIZE-1-2);
 	begin
+
+		if(clk'event and clk = '0') then
+
+			if(initialize = '0') then
+
+				for i in 0 to MATRIX_SIZE-1-2 loop
+			    readline (input_data_file, indata_line);
+			    read (indata_line, tmp_eat);
+			    eat(i) <= To_StdLogicVector(tmp_eat);
+			  end loop;
+
+			end if;
+		end if;
 
 		if(clk'event and clk = '1') then
 
@@ -63,11 +63,13 @@ begin
 				writeline(output_data_file,outdata_line);
 				-- second line in a file: Elements count: (MATRIX_SIZE)^2 - pheromone
 				for i in 0 to MATRIX_SIZE-1 loop
-					if(i = 0 or i = MATRIX_SIZE-1) then
-						write(outdata_line, string'("-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 "));
-					else
-						write(outdata_line, string'("-1 0 0 0 0 0 0 0 0 0 0 -1 "));
-					end if;
+					for j in 0 to MATRIX_SIZE-1 loop
+						if(i = 0 or j = 0 or i = MATRIX_SIZE-1 or j = MATRIX_SIZE-1) then
+							write(outdata_line, string'("-1 "));
+						else
+							write(outdata_line, string'("0 "));
+						end if;
+					end loop;
 				end loop;
 				writeline(output_data_file,outdata_line);
 			

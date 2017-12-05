@@ -43,10 +43,7 @@ begin
 
 		if(clk'event and clk = '0') then
 
-			if(initialize = '0') then
-				eat <= start_eat;
-				initialize <= '1';
-			elsif(initialize = '1') then
+			if(initialize = '1') then
 
 				-- next_ant sequence
 				-- 7  6  4
@@ -174,8 +171,12 @@ begin
 			end if;
 
 		elsif(clk'event and clk = '1') then
-			if(initialize = '1') then
-				ant <= next_ant;
+			ant <= next_ant;
+			if(initialize = '0') then
+				if(isEatExist(start_eat) = '1') then
+					eat <= start_eat;
+					initialize <= '1';
+				end if;
 			end if;
 		end if;
 	end process;

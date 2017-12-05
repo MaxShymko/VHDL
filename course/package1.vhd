@@ -3,7 +3,10 @@ Use IEEE.std_logic_1164.all;
 
 package package1 is
 
-	constant MATRIX_SIZE: natural := 10 + 2;
+	constant dimension : natural := 5;
+
+
+	constant MATRIX_SIZE: natural := dimension + 2;
 
 	type ant_arr is array (natural range 0 to 1) of integer range 0 to MATRIX_SIZE - 1;
 	type ant_near_arr is array (natural range 0 to 7) of ant_arr;
@@ -12,6 +15,7 @@ package package1 is
 
 	function random(prev_num: integer) return integer;
 	function getMod(num: integer; max_val: integer) return integer;
+	function isEatExist(eat: eat_arr) return std_logic;
 
 end package1;
 
@@ -39,5 +43,19 @@ package body package1 is
 		end case;
 		return result;
 	end getMod;
+
+	-- return 0 if there is no eat
+	function isEatExist(eat: eat_arr) return std_logic is
+	variable result: std_logic := '0';
+	begin
+		for i in 0 to MATRIX_SIZE-1-2 loop
+			for j in 0 to MATRIX_SIZE-1-2 loop
+				if(eat(i)(j) = '1') then
+					result := '1';
+				end if;
+			end loop;
+		end loop;
+		return result;
+	end isEatExist;
 
 end package body package1;
