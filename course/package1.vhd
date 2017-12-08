@@ -3,7 +3,7 @@ Use IEEE.std_logic_1164.all;
 
 package package1 is
 
-	constant dimension : natural := 5;
+	constant dimension : natural := 4;
 
 
 	constant MATRIX_SIZE: natural := dimension + 2;
@@ -22,25 +22,26 @@ end package1;
 package body package1 is
 
 	function random(prev_num: integer) return integer is
-	variable result: integer range 0 to 2147483647;
+	constant a: integer := 16807;
+	constant m: integer := 2147483647;
 	begin
-		result := ((5**13)*(prev_num)) mod 2147483647;
-		return result;
+		return ((5**13)*(prev_num)) mod 1073741824;
 	end random;
 
 	function getMod(num: integer; max_val: integer) return integer is
-	variable result: integer range 0 to 7;
+	variable t_num: integer range -8 to 7 := 0;
+	variable result: integer range 0 to 7 := 0;
 	begin
-		case max_val is
-			when 8 => result := num mod 8;
-			when 7 => result := num mod 7;
-			when 6 => result := num mod 6;
-			when 5 => result := num mod 5;
-			when 4 => result := num mod 4;
-			when 3 => result := num mod 3;
-			when 2 => result := num mod 2;
-			when others => result := 0;
-		end case;
+		t_num := num mod 8;
+
+		for i in 0 to 7 loop
+			if(t_num < 0) then
+				exit;
+			end if;
+			result := t_num;
+			t_num := t_num - max_val;
+		end loop;
+		
 		return result;
 	end getMod;
 

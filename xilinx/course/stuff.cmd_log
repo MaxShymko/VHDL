@@ -1,0 +1,48 @@
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/stuff.xst" -ofn "D:/GitHub/VHDL/xilinx/course/stuff.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/stuff.xst" -ofn "D:/GitHub/VHDL/xilinx/course/stuff.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/stuff.xst" -ofn "D:/GitHub/VHDL/xilinx/course/stuff.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/stuff.xst" -ofn "D:/GitHub/VHDL/xilinx/course/stuff.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/stuff.xst" -ofn "D:/GitHub/VHDL/xilinx/course/stuff.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/stuff.xst" -ofn "D:/GitHub/VHDL/xilinx/course/stuff.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/stuff.xst" -ofn "D:/GitHub/VHDL/xilinx/course/stuff.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 stuff.ngc stuff.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o stuff_map.ncd stuff.ngd stuff.pcf 
+par -w -intstyle ise -ol high -t 1 stuff_map.ncd stuff.ncd stuff.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml stuff.twx stuff.ncd -o stuff.twr stuff.pcf 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/stuff.xst" -ofn "D:/GitHub/VHDL/xilinx/course/stuff.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/stuff.xst" -ofn "D:/GitHub/VHDL/xilinx/course/stuff.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/stuff.xst" -ofn "D:/GitHub/VHDL/xilinx/course/stuff.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 stuff.ngc stuff.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o stuff_map.ncd stuff.ngd stuff.pcf 
+par -w -intstyle ise -ol high -t 1 stuff_map.ncd stuff.ncd stuff.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml stuff.twx stuff.ncd -o stuff.twr stuff.pcf 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/stuff.xst" -ofn "D:/GitHub/VHDL/xilinx/course/stuff.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/stuff.xst" -ofn "D:/GitHub/VHDL/xilinx/course/stuff.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/stuff.xst" -ofn "D:/GitHub/VHDL/xilinx/course/stuff.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/stuff.xst" -ofn "D:/GitHub/VHDL/xilinx/course/stuff.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/stuff.xst" -ofn "D:/GitHub/VHDL/xilinx/course/stuff.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 stuff.ngc stuff.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o stuff_map.ncd stuff.ngd stuff.pcf 
+par -w -intstyle ise -ol high -t 1 stuff_map.ncd stuff.ncd stuff.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml stuff.twx stuff.ncd -o stuff.twr stuff.pcf 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/stuff.xst" -ofn "D:/GitHub/VHDL/xilinx/course/stuff.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/stuff.xst" -ofn "D:/GitHub/VHDL/xilinx/course/stuff.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/stuff.xst" -ofn "D:/GitHub/VHDL/xilinx/course/stuff.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/stuff.xst" -ofn "D:/GitHub/VHDL/xilinx/course/stuff.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/stuff.xst" -ofn "D:/GitHub/VHDL/xilinx/course/stuff.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/stuff.xst" -ofn "D:/GitHub/VHDL/xilinx/course/stuff.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/stuff.xst" -ofn "D:/GitHub/VHDL/xilinx/course/stuff.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/stuff.xst" -ofn "D:/GitHub/VHDL/xilinx/course/stuff.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/stuff.xst" -ofn "D:/GitHub/VHDL/xilinx/course/stuff.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/stuff.xst" -ofn "D:/GitHub/VHDL/xilinx/course/stuff.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/stuff.xst" -ofn "D:/GitHub/VHDL/xilinx/course/stuff.syr" 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/stuff.xst" -ofn "D:/GitHub/VHDL/xilinx/course/stuff.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 stuff.ngc stuff.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o stuff_map.ncd stuff.ngd stuff.pcf 
+par -w -intstyle ise -ol high -t 1 stuff_map.ncd stuff.ncd stuff.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml stuff.twx stuff.ncd -o stuff.twr stuff.pcf 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/stuff.xst" -ofn "D:/GitHub/VHDL/xilinx/course/stuff.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 stuff.ngc stuff.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o stuff_map.ncd stuff.ngd stuff.pcf 
+par -w -intstyle ise -ol high -t 1 stuff_map.ncd stuff.ncd stuff.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml stuff.twx stuff.ncd -o stuff.twr stuff.pcf 

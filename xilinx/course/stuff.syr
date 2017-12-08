@@ -1,0 +1,1300 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: stuff.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "stuff.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "stuff"
+Output Format                      : NGC
+Target Device                      : xc3s1000-4-ft256
+
+---- Source Options
+Top Module Name                    : stuff
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/GitHub/VHDL/course/package1.vhd" in Library work.
+Package <package1> compiled.
+Package body <package1> compiled.
+Compiling vhdl file "D:/GitHub/VHDL/course/stuff.vhd" in Library work.
+Architecture struct of Entity stuff is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <stuff> in library <work> (architecture <struct>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <stuff> in library <work> (Architecture <struct>).
+WARNING:Xst:1610 - "D:/GitHub/VHDL/course/stuff.vhd" line 55: Width mismatch. <ant_near> has a width of 32 bits but assigned expression is 44-bit wide.
+WARNING:Xst:819 - "D:/GitHub/VHDL/course/stuff.vhd" line 34: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <initialize>, <next_ant>, <goHome>, <tmp_random_result>
+Entity <stuff> analyzed. Unit <stuff> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <stuff>.
+    Related source file is "D:/GitHub/VHDL/course/stuff.vhd".
+WARNING:Xst:646 - Signal <int_rand> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <best_way$mux0010> of Case statement line 0 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <best_way$mux0010> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+WARNING:Xst:737 - Found 16-bit latch for signal <pheromone<3>_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 16-bit latch for signal <pheromone<3>_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 16-bit latch for signal <pheromone<3>_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 16-bit latch for signal <pheromone<3>_3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 16-bit latch for signal <pheromone<0>_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 16-bit latch for signal <pheromone<0>_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 16-bit latch for signal <pheromone<0>_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 16-bit latch for signal <pheromone<0>_3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 2-bit latch for signal <next_ant_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 2-bit latch for signal <next_ant_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <initialize>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 16-bit latch for signal <pheromone<2>_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 16-bit latch for signal <pheromone<2>_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 16-bit latch for signal <pheromone<2>_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 16-bit latch for signal <pheromone<2>_3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <best_way>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <goHome>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 16-bit latch for signal <pheromone<1>_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 16-bit latch for signal <pheromone<1>_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 16-bit latch for signal <pheromone<1>_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 16-bit latch for signal <pheromone<1>_3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <tmp_random_result>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Using one-hot encoding for signal <best_way$mux0008>.
+    Using one-hot encoding for signal <best_way$mux0009>.
+    Using one-hot encoding for signal <best_way$mux0010>.
+    Using one-hot encoding for signal <best_way$mux0013>.
+    Using one-hot encoding for signal <best_way$mux0011>.
+    Using one-hot encoding for signal <best_way$mux0014>.
+    Using one-hot encoding for signal <best_way$mux0012>.
+    Using one-hot encoding for signal <best_way$mux0015>.
+    Using one-hot encoding for signal <best_way$mux0020>.
+    Using one-hot encoding for signal <best_way$mux0016>.
+    Using one-hot encoding for signal <best_way$mux0022>.
+    Using one-hot encoding for signal <best_way$mux0018>.
+    Using one-hot encoding for signal <best_way$mux0024>.
+    Using one-hot encoding for signal <best_way$mux0030>.
+    Using one-hot encoding for signal <best_way$mux0026>.
+    Using one-hot encoding for signal <best_way$mux0028>.
+    Using one-hot encoding for signal <best_way$mux0033>.
+    Using one-hot encoding for signal <best_way$mux0036>.
+    Using one-hot encoding for signal <best_way$mux0034>.
+    Using one-hot encoding for signal <best_way$mux0037>.
+    Using one-hot encoding for signal <best_way$mux0035>.
+    Using one-hot encoding for signal <best_way$mux0038>.
+    Using one-hot encoding for signal <best_way$mux0041>.
+    Using one-hot encoding for signal <best_way$mux0039>.
+    Using one-hot encoding for signal <best_way$mux0043>.
+    Using one-hot encoding for signal <best_way$mux0040>.
+    Using one-hot encoding for signal <best_way$mux0045>.
+    Using one-hot encoding for signal <best_way$mux0051>.
+    Using one-hot encoding for signal <best_way$mux0047>.
+    Using one-hot encoding for signal <best_way$mux0053>.
+    Using one-hot encoding for signal <best_way$mux0049>.
+    Using one-hot encoding for signal <best_way$mux0055>.
+    Using one-hot encoding for signal <best_way$mux0032>.
+    Using one-hot encoding for signal <best_way$mux0058>.
+WARNING:Xst:643 - "D:/GitHub/VHDL/course/stuff.vhd" line 28: The result of a 32x32-bit multiplication is partially used. Only the 32 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:737 - Found 1-bit latch for signal <eat<0>_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <eat<0>_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <eat<1>_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <eat<1>_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 4-bit register for signal <ant>.
+    Found 16-bit adder for signal <$add0000> created at line 173.
+    Found 32x32-bit multiplier for signal <$mult0000> created at line 28.
+    Found 16-bit subtractor for signal <$sub0000> created at line 118.
+    Found 3-bit subtractor for signal <$sub0001> created at line 130.
+    Found 2-bit adder for signal <ant_near$add0000> created at line 55.
+    Found 2-bit adder for signal <ant_near$add0001> created at line 55.
+    Found 2-bit subtractor for signal <ant_near$sub0000> created at line 55.
+    Found 2-bit subtractor for signal <ant_near$sub0001> created at line 55.
+    Found 16-bit comparator equal for signal <best_way$cmp_eq0000> created at line 106.
+    Found 16-bit comparator equal for signal <best_way$cmp_eq0002> created at line 161.
+    Found 16-bit comparator greatequal for signal <best_way$cmp_ge0000> created at line 68.
+    Found 16-bit comparator greatequal for signal <best_way$cmp_ge0001> created at line 68.
+    Found 16-bit comparator greatequal for signal <best_way$cmp_ge0002> created at line 68.
+    Found 16-bit comparator greatequal for signal <best_way$cmp_ge0003> created at line 68.
+    Found 16-bit comparator greatequal for signal <best_way$cmp_ge0004> created at line 68.
+    Found 16-bit comparator greatequal for signal <best_way$cmp_ge0005> created at line 68.
+    Found 16-bit comparator greatequal for signal <best_way$cmp_ge0006> created at line 68.
+    Found 16-bit comparator greatequal for signal <best_way$cmp_ge0007> created at line 68.
+    Found 16-bit comparator greater for signal <best_way$cmp_gt0000> created at line 85.
+    Found 16-bit comparator greater for signal <best_way$cmp_gt0001> created at line 85.
+    Found 16-bit comparator greater for signal <best_way$cmp_gt0002> created at line 85.
+    Found 16-bit comparator greater for signal <best_way$cmp_gt0003> created at line 85.
+    Found 16-bit comparator greater for signal <best_way$cmp_gt0004> created at line 85.
+    Found 16-bit comparator greater for signal <best_way$cmp_gt0005> created at line 85.
+    Found 16-bit comparator greater for signal <best_way$cmp_gt0006> created at line 85.
+    Found 16-bit comparator greater for signal <best_way$cmp_gt0007> created at line 85.
+    Found 16-bit comparator lessequal for signal <best_way$cmp_le0000> created at line 136.
+    Found 16-bit comparator lessequal for signal <best_way$cmp_le0001> created at line 136.
+    Found 16-bit comparator lessequal for signal <best_way$cmp_le0002> created at line 136.
+    Found 16-bit comparator lessequal for signal <best_way$cmp_le0003> created at line 136.
+    Found 16-bit comparator lessequal for signal <best_way$cmp_le0004> created at line 136.
+    Found 16-bit comparator lessequal for signal <best_way$cmp_le0005> created at line 136.
+    Found 16-bit comparator lessequal for signal <best_way$cmp_le0006> created at line 136.
+    Found 16-bit comparator lessequal for signal <best_way$cmp_le0007> created at line 136.
+    Found 4-bit adder for signal <equal_count$addsub0000> created at line 93.
+    Found 4-bit adder for signal <equal_count$addsub0001> created at line 93.
+    Found 4-bit adder for signal <equal_count$addsub0002> created at line 93.
+    Found 4-bit adder for signal <equal_count$addsub0003> created at line 93.
+    Found 4-bit adder for signal <equal_count$addsub0004> created at line 93.
+    Found 4-bit adder for signal <equal_count$addsub0005> created at line 148.
+    Found 4-bit adder for signal <equal_count$addsub0006> created at line 93.
+    Found 4-bit adder for signal <equal_count$addsub0007> created at line 148.
+    Found 4-bit adder for signal <equal_count$addsub0008> created at line 93.
+    Found 4-bit adder for signal <equal_count$addsub0009> created at line 148.
+    Found 4-bit adder for signal <equal_count$addsub0010> created at line 148.
+    Found 4-bit adder for signal <equal_count$addsub0011> created at line 148.
+    Found 4-bit adder for signal <equal_count$addsub0012> created at line 148.
+    Found 4-bit adder for signal <equal_count$addsub0013> created at line 148.
+    Found 16-bit comparator equal for signal <equal_count$cmp_eq0000> created at line 92.
+    Found 16-bit comparator equal for signal <equal_count$cmp_eq0001> created at line 92.
+    Found 16-bit comparator equal for signal <equal_count$cmp_eq0002> created at line 92.
+    Found 16-bit comparator equal for signal <equal_count$cmp_eq0003> created at line 92.
+    Found 16-bit comparator equal for signal <equal_count$cmp_eq0004> created at line 92.
+    Found 16-bit comparator equal for signal <equal_count$cmp_eq0005> created at line 147.
+    Found 16-bit comparator equal for signal <equal_count$cmp_eq0006> created at line 92.
+    Found 16-bit comparator equal for signal <equal_count$cmp_eq0007> created at line 147.
+    Found 16-bit comparator equal for signal <equal_count$cmp_eq0008> created at line 92.
+    Found 16-bit comparator equal for signal <equal_count$cmp_eq0009> created at line 147.
+    Found 16-bit comparator equal for signal <equal_count$cmp_eq0010> created at line 147.
+    Found 16-bit comparator equal for signal <equal_count$cmp_eq0011> created at line 147.
+    Found 16-bit comparator equal for signal <equal_count$cmp_eq0012> created at line 147.
+    Found 16-bit comparator equal for signal <equal_count$cmp_eq0013> created at line 147.
+    Found 3-bit subtractor for signal <int_rand$addsub0000> created at line 111.
+    Found 3-bit subtractor for signal <int_rand$addsub0001> created at line 111.
+    Found 3-bit subtractor for signal <int_rand$addsub0002> created at line 111.
+    Found 3-bit subtractor for signal <int_rand$addsub0003> created at line 111.
+    Found 3-bit subtractor for signal <int_rand$addsub0004> created at line 111.
+    Found 3-bit subtractor for signal <int_rand$addsub0005> created at line 111.
+    Found 3-bit subtractor for signal <int_rand$addsub0006> created at line 111.
+    Found 3-bit subtractor for signal <int_rand$addsub0007> created at line 166.
+    Found 3-bit subtractor for signal <int_rand$addsub0008> created at line 166.
+    Found 3-bit subtractor for signal <int_rand$addsub0009> created at line 166.
+    Found 3-bit subtractor for signal <int_rand$addsub0010> created at line 166.
+    Found 3-bit subtractor for signal <int_rand$addsub0011> created at line 166.
+    Found 3-bit subtractor for signal <int_rand$addsub0012> created at line 166.
+    Found 3-bit subtractor for signal <int_rand$addsub0013> created at line 166.
+    Found 16-bit comparator equal for signal <int_rand$cmp_eq0000> created at line 106.
+    Found 16-bit comparator equal for signal <int_rand$cmp_eq0002> created at line 106.
+    Found 16-bit comparator equal for signal <int_rand$cmp_eq0004> created at line 106.
+    Found 16-bit comparator equal for signal <int_rand$cmp_eq0006> created at line 106.
+    Found 16-bit comparator equal for signal <int_rand$cmp_eq0008> created at line 106.
+    Found 16-bit comparator equal for signal <int_rand$cmp_eq0010> created at line 106.
+    Found 16-bit comparator equal for signal <int_rand$cmp_eq0012> created at line 106.
+    Found 16-bit comparator equal for signal <int_rand$cmp_eq0014> created at line 161.
+    Found 16-bit comparator equal for signal <int_rand$cmp_eq0016> created at line 161.
+    Found 16-bit comparator equal for signal <int_rand$cmp_eq0018> created at line 161.
+    Found 16-bit comparator equal for signal <int_rand$cmp_eq0020> created at line 161.
+    Found 16-bit comparator equal for signal <int_rand$cmp_eq0022> created at line 161.
+    Found 16-bit comparator equal for signal <int_rand$cmp_eq0024> created at line 161.
+    Found 16-bit comparator equal for signal <int_rand$cmp_eq0026> created at line 161.
+    Found 15-bit 3-to-1 multiplexer for signal <pheromone$mux0000<15:1>>.
+    Found 15-bit 3-to-1 multiplexer for signal <pheromone$mux0000<0>>.
+    Found 15-bit 3-to-1 multiplexer for signal <pheromone$mux0001<15:1>>.
+    Found 15-bit 3-to-1 multiplexer for signal <pheromone$mux0001<0>>.
+    Found 15-bit 3-to-1 multiplexer for signal <pheromone$mux0002<15:1>>.
+    Found 15-bit 3-to-1 multiplexer for signal <pheromone$mux0002<0>>.
+    Found 15-bit 3-to-1 multiplexer for signal <pheromone$mux0003<15:1>>.
+    Found 15-bit 3-to-1 multiplexer for signal <pheromone$mux0003<0>>.
+    Found 16-bit 3-to-1 multiplexer for signal <pheromone$mux0004> created at line 68.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0005> created at line 68.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0006>.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0007>.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0008>.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0009>.
+    Found 16-bit 3-to-1 multiplexer for signal <pheromone$mux0010> created at line 68.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0011> created at line 68.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0012>.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0013>.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0014>.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0015>.
+    Found 16-bit 3-to-1 multiplexer for signal <pheromone$mux0016> created at line 68.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0017> created at line 68.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0018> created at line 68.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0019> created at line 68.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0024> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0029> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0034> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0039> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0044> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0049> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0054> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0059> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0064> created at line 92.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0069> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0074> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0079> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0084> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0089> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0094> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0099> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0100> created at line 117.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0105> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0110> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0115> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0120> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0125> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0130> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0135> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0140> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0145> created at line 147.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0150> created at line 161.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0155> created at line 161.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0160> created at line 161.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0165> created at line 161.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0170> created at line 161.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0175> created at line 161.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0180> created at line 161.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0181> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0182> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0183> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0184> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0185> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0186> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0187> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0188> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0189> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0190> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0191> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0192> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0193> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0194> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0195> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0196> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0197> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0198> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0199> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0200> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0201> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0202> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0203> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0204> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0205> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0206> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0207> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0208> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0209> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0210> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0211> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0212> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0213> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0214> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0215> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0216> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0217> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0218> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0219> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0220> created at line 85.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0221> created at line 92.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0222> created at line 92.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0223> created at line 92.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0224> created at line 92.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0225> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0226> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0227> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0228> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0229> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0230> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0231> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0232> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0233> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0234> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0235> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0236> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0237> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0238> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0239> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0240> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0241> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0242> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0243> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0244> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0245> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0246> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0247> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0248> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0249> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0250> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0251> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0252> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0253> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0254> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0255> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0256> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0257> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0258> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0259> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0260> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0261> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0262> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0263> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0264> created at line 136.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0265> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0266> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0267> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0268> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0269> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0270> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0271> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0272> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0273> created at line 147.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0274> created at line 147.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0275> created at line 147.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0276> created at line 147.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0277> created at line 161.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0278> created at line 161.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0279> created at line 161.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0280> created at line 161.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0281> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0282> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0283> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0284> created at line 106.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0285> created at line 161.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0286> created at line 161.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0287> created at line 161.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0288> created at line 161.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0289> created at line 161.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0290> created at line 161.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0291> created at line 161.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0292> created at line 161.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0293> created at line 161.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0294> created at line 161.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0295> created at line 161.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0296> created at line 161.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0297> created at line 161.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0298> created at line 161.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0299> created at line 161.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0300> created at line 161.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0301> created at line 161.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0302> created at line 161.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0303> created at line 161.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0304> created at line 161.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0305> created at line 161.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0306> created at line 161.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0307> created at line 161.
+    Found 16-bit 4-to-1 multiplexer for signal <pheromone$mux0308> created at line 161.
+    Found 16-bit comparator greater for signal <pheromone<3>_0$cmp_gt0000> created at line 117.
+    Found 4-bit subtractor for signal <result0$addsub0005> created at line 42.
+    Found 4-bit subtractor for signal <result0$addsub0010> created at line 42.
+    Found 4-bit subtractor for signal <result0$addsub0014> created at line 42.
+    Found 4-bit subtractor for signal <result0$addsub0017> created at line 42.
+    Found 4-bit subtractor for signal <result0$addsub0019> created at line 42.
+    Found 4-bit subtractor for signal <result0$addsub0020> created at line 42.
+    Found 3-bit subtractor for signal <result0$addsub0021>.
+    Found 3-bit subtractor for signal <result0$addsub0022>.
+    Found 3-bit subtractor for signal <result0$addsub0023>.
+    Found 3-bit subtractor for signal <result0$addsub0024>.
+    Found 3-bit subtractor for signal <result0$addsub0025>.
+    Found 3-bit subtractor for signal <result0$addsub0026>.
+    Found 4-bit subtractor for signal <result0$addsub0027> created at line 42.
+    Found 4-bit subtractor for signal <result0$addsub0028> created at line 42.
+    Found 4-bit subtractor for signal <result0$addsub0029> created at line 42.
+    Found 4-bit subtractor for signal <result0$addsub0030> created at line 42.
+    Found 4-bit subtractor for signal <result0$addsub0031> created at line 42.
+    Found 4-bit subtractor for signal <result0$addsub0032> created at line 42.
+    Found 3-bit subtractor for signal <result0$addsub0033> created at line 42.
+    Found 4-bit subtractor for signal <result0$addsub0034> created at line 42.
+    Found 4-bit subtractor for signal <result0$addsub0035> created at line 42.
+    Found 4-bit subtractor for signal <result0$addsub0036> created at line 42.
+    Found 4-bit subtractor for signal <result0$addsub0037> created at line 42.
+    Found 4-bit subtractor for signal <result0$addsub0038> created at line 42.
+    Found 4-bit subtractor for signal <result0$addsub0039> created at line 42.
+    Found 4-bit subtractor for signal <result0$addsub0040> created at line 42.
+    Found 4-bit subtractor for signal <result0$addsub0041> created at line 42.
+    Found 4-bit subtractor for signal <result0$addsub0042> created at line 42.
+    Found 4-bit subtractor for signal <result0$addsub0043> created at line 42.
+    Found 4-bit comparator less for signal <result0$cmp_lt0000> created at line 38.
+    Found 4-bit comparator less for signal <result0$cmp_lt0001> created at line 38.
+    Found 4-bit comparator less for signal <result0$cmp_lt0002> created at line 38.
+    Found 4-bit comparator less for signal <result0$cmp_lt0003> created at line 38.
+    Found 4-bit comparator less for signal <result0$cmp_lt0004> created at line 38.
+    Found 4-bit comparator less for signal <result0$cmp_lt0005> created at line 38.
+    Found 4-bit comparator less for signal <result0$cmp_lt0006> created at line 38.
+    Found 4-bit subtractor for signal <result1$addsub0005> created at line 42.
+    Found 4-bit subtractor for signal <result1$addsub0010> created at line 42.
+    Found 4-bit subtractor for signal <result1$addsub0014> created at line 42.
+    Found 4-bit subtractor for signal <result1$addsub0017> created at line 42.
+    Found 4-bit subtractor for signal <result1$addsub0019> created at line 42.
+    Found 4-bit subtractor for signal <result1$addsub0020> created at line 42.
+    Found 3-bit subtractor for signal <result1$addsub0021>.
+    Found 3-bit subtractor for signal <result1$addsub0022>.
+    Found 3-bit subtractor for signal <result1$addsub0023>.
+    Found 3-bit subtractor for signal <result1$addsub0024>.
+    Found 3-bit subtractor for signal <result1$addsub0025>.
+    Found 3-bit subtractor for signal <result1$addsub0026>.
+    Found 4-bit subtractor for signal <result1$addsub0027> created at line 42.
+    Found 4-bit subtractor for signal <result1$addsub0028> created at line 42.
+    Found 4-bit subtractor for signal <result1$addsub0029> created at line 42.
+    Found 4-bit subtractor for signal <result1$addsub0030> created at line 42.
+    Found 4-bit subtractor for signal <result1$addsub0031> created at line 42.
+    Found 4-bit subtractor for signal <result1$addsub0032> created at line 42.
+    Found 3-bit subtractor for signal <result1$addsub0033> created at line 42.
+    Found 4-bit subtractor for signal <result1$addsub0034> created at line 42.
+    Found 4-bit subtractor for signal <result1$addsub0035> created at line 42.
+    Found 4-bit subtractor for signal <result1$addsub0036> created at line 42.
+    Found 4-bit subtractor for signal <result1$addsub0037> created at line 42.
+    Found 4-bit subtractor for signal <result1$addsub0038> created at line 42.
+    Found 4-bit subtractor for signal <result1$addsub0039> created at line 42.
+    Found 4-bit subtractor for signal <result1$addsub0040> created at line 42.
+    Found 4-bit subtractor for signal <result1$addsub0041> created at line 42.
+    Found 4-bit subtractor for signal <result1$addsub0042> created at line 42.
+    Found 4-bit subtractor for signal <result1$addsub0043> created at line 42.
+    Found 4-bit comparator less for signal <result1$cmp_lt0000> created at line 38.
+    Found 4-bit comparator less for signal <result1$cmp_lt0001> created at line 38.
+    Found 4-bit comparator less for signal <result1$cmp_lt0002> created at line 38.
+    Found 4-bit comparator less for signal <result1$cmp_lt0003> created at line 38.
+    Found 4-bit comparator less for signal <result1$cmp_lt0004> created at line 38.
+    Found 4-bit comparator less for signal <result1$cmp_lt0005> created at line 38.
+    Found 4-bit comparator less for signal <result1$cmp_lt0006> created at line 38.
+    Found 1-bit register for signal <t_next_ant>.
+    Found 32-bit 8-to-1 multiplexer for signal <tmp_random_result$mux0004> created at line 75.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+	inferred  93 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+	inferred  69 Comparator(s).
+	inferred 2928 Multiplexer(s).
+Unit <stuff> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 32x32-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 93
+ 16-bit adder                                          : 1
+ 16-bit subtractor                                     : 1
+ 2-bit adder                                           : 2
+ 2-bit subtractor                                      : 2
+ 3-bit subtractor                                      : 29
+ 4-bit adder                                           : 14
+ 4-bit subtractor                                      : 44
+# Registers                                            : 2
+ 2-bit register                                        : 2
+# Latches                                              : 26
+ 1-bit latch                                           : 6
+ 16-bit latch                                          : 16
+ 2-bit latch                                           : 2
+ 32-bit latch                                          : 1
+ 8-bit latch                                           : 1
+# Comparators                                          : 69
+ 16-bit comparator equal                               : 30
+ 16-bit comparator greatequal                          : 8
+ 16-bit comparator greater                             : 9
+ 16-bit comparator lessequal                           : 8
+ 4-bit comparator less                                 : 14
+# Multiplexers                                         : 242
+ 1-bit 3-to-1 multiplexer                              : 4
+ 1-bit 4-to-1 multiplexer                              : 60
+ 16-bit 3-to-1 multiplexer                             : 3
+ 16-bit 4-to-1 multiplexer                             : 174
+ 32-bit 8-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1426 - The value init of the FF/Latch 0 hinder the constant cleaning in the block initialize.
+   You should achieve better results by setting this init to 1.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 32x32-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 93
+ 16-bit adder                                          : 1
+ 16-bit subtractor                                     : 1
+ 2-bit adder                                           : 2
+ 2-bit subtractor                                      : 2
+ 3-bit subtractor                                      : 29
+ 4-bit adder                                           : 14
+ 4-bit subtractor                                      : 44
+# Registers                                            : 4
+ Flip-Flops                                            : 4
+# Latches                                              : 26
+ 1-bit latch                                           : 6
+ 16-bit latch                                          : 16
+ 2-bit latch                                           : 2
+ 32-bit latch                                          : 1
+ 8-bit latch                                           : 1
+# Comparators                                          : 69
+ 16-bit comparator equal                               : 30
+ 16-bit comparator greatequal                          : 8
+ 16-bit comparator greater                             : 9
+ 16-bit comparator lessequal                           : 8
+ 4-bit comparator less                                 : 14
+# Multiplexers                                         : 242
+ 1-bit 3-to-1 multiplexer                              : 4
+ 1-bit 4-to-1 multiplexer                              : 60
+ 16-bit 3-to-1 multiplexer                             : 3
+ 16-bit 4-to-1 multiplexer                             : 174
+ 32-bit 8-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch initialize hinder the constant cleaning in the block stuff.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:2677 - Node <tmp_random_result_17> of sequential type is unconnected in block <stuff>.
+WARNING:Xst:2677 - Node <tmp_random_result_18> of sequential type is unconnected in block <stuff>.
+WARNING:Xst:2677 - Node <tmp_random_result_19> of sequential type is unconnected in block <stuff>.
+WARNING:Xst:2677 - Node <tmp_random_result_20> of sequential type is unconnected in block <stuff>.
+WARNING:Xst:2677 - Node <tmp_random_result_21> of sequential type is unconnected in block <stuff>.
+WARNING:Xst:2677 - Node <tmp_random_result_22> of sequential type is unconnected in block <stuff>.
+WARNING:Xst:2677 - Node <tmp_random_result_23> of sequential type is unconnected in block <stuff>.
+WARNING:Xst:2677 - Node <tmp_random_result_24> of sequential type is unconnected in block <stuff>.
+WARNING:Xst:2677 - Node <tmp_random_result_25> of sequential type is unconnected in block <stuff>.
+WARNING:Xst:2677 - Node <tmp_random_result_26> of sequential type is unconnected in block <stuff>.
+WARNING:Xst:2677 - Node <tmp_random_result_27> of sequential type is unconnected in block <stuff>.
+WARNING:Xst:2677 - Node <tmp_random_result_28> of sequential type is unconnected in block <stuff>.
+WARNING:Xst:2677 - Node <tmp_random_result_29> of sequential type is unconnected in block <stuff>.
+WARNING:Xst:2677 - Node <tmp_random_result_30> of sequential type is unconnected in block <stuff>.
+WARNING:Xst:2677 - Node <tmp_random_result_31> of sequential type is unconnected in block <stuff>.
+
+Optimizing unit <stuff> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block stuff, actual ratio is 46.
+Latch pheromone<0>_0_15 has been replicated 1 time(s)
+Latch pheromone<0>_1_15 has been replicated 1 time(s)
+Latch pheromone<0>_2_15 has been replicated 1 time(s)
+Latch pheromone<0>_3_15 has been replicated 1 time(s)
+Latch pheromone<1>_0_15 has been replicated 1 time(s)
+Latch pheromone<1>_1_15 has been replicated 1 time(s)
+Latch pheromone<1>_2_15 has been replicated 1 time(s)
+Latch pheromone<1>_3_15 has been replicated 1 time(s)
+Latch pheromone<2>_0_15 has been replicated 1 time(s)
+Latch pheromone<2>_1_15 has been replicated 1 time(s)
+Latch pheromone<2>_2_15 has been replicated 1 time(s)
+Latch pheromone<2>_3_15 has been replicated 1 time(s)
+Latch pheromone<3>_0_15 has been replicated 1 time(s)
+Latch pheromone<3>_1_15 has been replicated 1 time(s)
+Latch pheromone<3>_2_15 has been replicated 1 time(s)
+Latch pheromone<3>_3_15 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 4
+ Flip-Flops                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : stuff.ngr
+Top Level Output File Name         : stuff
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 9
+
+Cell Usage :
+# BELS                             : 12434
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 196
+#      LUT2_D                      : 22
+#      LUT2_L                      : 11
+#      LUT3                        : 4829
+#      LUT3_D                      : 173
+#      LUT3_L                      : 73
+#      LUT4                        : 2108
+#      LUT4_D                      : 360
+#      LUT4_L                      : 174
+#      MUXCY                       : 526
+#      MUXF5                       : 2408
+#      MUXF6                       : 1024
+#      MUXF7                       : 496
+#      VCC                         : 1
+#      XORCY                       : 31
+# FlipFlops/Latches                : 311
+#      FD                          : 4
+#      LD                          : 306
+#      LDE                         : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 8
+#      IBUF                        : 4
+#      OBUF                        : 4
+# MULTs                            : 1
+#      MULT18X18                   : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1000ft256-4 
+
+ Number of Slices:                     4051  out of   7680    52%  
+ Number of Slice Flip Flops:            307  out of  15360     1%  
+ Number of 4 input LUTs:               7947  out of  15360    51%  
+ Number of IOs:                           9
+ Number of bonded IOBs:                   9  out of    173     5%  
+    IOB Flip Flops:                       4
+ Number of MULT18X18s:                    1  out of     24     4%  
+ Number of GCLKs:                         2  out of      8    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------+------------------------+-------+
+Clock Signal                         | Clock buffer(FF name)  | Load  |
+-------------------------------------+------------------------+-------+
+clk                                  | BUFGP                  | 4     |
+eat<1>_1_not0000(eat<1>_1_not00002:O)| NONE(*)(eat<1>_1)      | 1     |
+eat<1>_0_not0000(eat<1>_0_not0000:O) | NONE(*)(eat<1>_0)      | 1     |
+eat<0>_1_not0000(eat<0>_1_not00002:O)| NONE(*)(eat<0>_1)      | 1     |
+eat<0>_0_not0000(eat<0>_0_not0000:O) | NONE(*)(eat<0>_0)      | 1     |
+initialize1                          | BUFG                   | 302   |
+result_mux0003(result_mux00031:O)    | NONE(*)(initialize)    | 1     |
+-------------------------------------+------------------------+-------+
+(*) These 5 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 211.586ns (Maximum Frequency: 4.726MHz)
+   Minimum input arrival time before clock: 2.647ns
+   Maximum output required time after clock: 7.165ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'initialize1'
+  Clock period: 211.586ns (frequency: 4.726MHz)
+  Total number of paths / destination ports: 140583371646264990000000000000000000000000000000000000000000 / 302
+-------------------------------------------------------------------------
+Delay:               211.586ns (Levels of Logic = 320)
+  Source:            next_ant_0_0 (LATCH)
+  Destination:       next_ant_0_1 (LATCH)
+  Source Clock:      initialize1 falling
+  Destination Clock: initialize1 falling
+
+  Data Path: next_ant_0_0 to next_ant_0_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q             624   0.633   4.602  next_ant_0_0 (next_ant_0_0)
+     LUT3:I2->O            1   0.551   0.000  next_ant<0><1>_2_f5_4611 (next_ant<0><1>_2_f5_4611)
+     MUXF5:I0->O           5   0.360   1.116  next_ant<0><1>_2_f5_2_f5_601 (next_ant<0><1>_mmx_out81)
+     LUT3:I1->O            1   0.551   0.000  Mmux_pheromone_mux001616831_F (N3555)
+     MUXF5:I0->O          17   0.360   1.684  Mmux_pheromone_mux001616831 (pheromone_mux0019<15>)
+     LUT3_D:I0->O          5   0.551   0.989  best_way_mux0008<1>111 (N375)
+     LUT4:I2->O           21   0.551   1.541  best_way_mux0008<1> (best_way_mux0008<1>)
+     LUT4_D:I3->O         12   0.551   1.313  ant_near_mux0000<0>18_SW2 (N1848)
+     LUT4:I1->O           19   0.551   1.518  ant_near_mux0000<0>22_7 (ant_near_mux0000<0>226)
+     LUT3:I2->O            1   0.551   0.000  Mmux_pheromone_mux0024_6_f51 (Mmux_pheromone_mux0024_6_f516)
+     MUXF5:I0->O           1   0.360   0.000  Mmux_pheromone_mux0024_6_f5 (Mmux_pheromone_mux0024_6_f5)
+     MUXF6:I0->O           1   0.342   0.000  Mmux_pheromone_mux0024_4_f6 (Mmux_pheromone_mux0024_4_f6)
+     MUXF7:I0->O           1   0.342   0.996  Mmux_pheromone_mux0024_2_f7 (pheromone_mux0024<0>)
+     LUT2:I1->O            1   0.551   0.000  Mcompar_best_way_cmp_gt0001_lut<0> (Mcompar_best_way_cmp_gt0001_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  Mcompar_best_way_cmp_gt0001_cy<0> (Mcompar_best_way_cmp_gt0001_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0001_cy<1> (Mcompar_best_way_cmp_gt0001_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0001_cy<2> (Mcompar_best_way_cmp_gt0001_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0001_cy<3> (Mcompar_best_way_cmp_gt0001_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0001_cy<4> (Mcompar_best_way_cmp_gt0001_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0001_cy<5> (Mcompar_best_way_cmp_gt0001_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0001_cy<6> (Mcompar_best_way_cmp_gt0001_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0001_cy<7> (Mcompar_best_way_cmp_gt0001_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0001_cy<8> (Mcompar_best_way_cmp_gt0001_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0001_cy<9> (Mcompar_best_way_cmp_gt0001_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0001_cy<10> (Mcompar_best_way_cmp_gt0001_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0001_cy<11> (Mcompar_best_way_cmp_gt0001_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0001_cy<12> (Mcompar_best_way_cmp_gt0001_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0001_cy<13> (Mcompar_best_way_cmp_gt0001_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0001_cy<14> (Mcompar_best_way_cmp_gt0001_cy<14>)
+     MUXCY:CI->O          58   0.303   2.197  Mcompar_best_way_cmp_gt0001_cy<15> (Mcompar_best_way_cmp_gt0001_cy<15>)
+     LUT2_D:I1->O          4   0.551   1.112  best_way_mux0009<6>1 (best_way_mux0009<6>)
+     LUT4:I1->O            1   0.551   0.000  ant_near_mux0002<1>25_F (N3601)
+     MUXF5:I0->O          64   0.360   2.036  ant_near_mux0002<1>25 (ant_near_mux0002<1>)
+     MUXF5:S->O            1   0.621   0.000  Mmux_pheromone_mux0029_4_f5 (Mmux_pheromone_mux0029_4_f5)
+     MUXF6:I1->O           1   0.342   0.000  Mmux_pheromone_mux0029_3_f6 (Mmux_pheromone_mux0029_3_f6)
+     MUXF7:I1->O           1   0.342   0.996  Mmux_pheromone_mux0029_2_f7 (pheromone_mux0029<0>)
+     LUT2:I1->O            1   0.551   0.000  Mcompar_best_way_cmp_gt0000_lut<0> (Mcompar_best_way_cmp_gt0000_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  Mcompar_best_way_cmp_gt0000_cy<0> (Mcompar_best_way_cmp_gt0000_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0000_cy<1> (Mcompar_best_way_cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0000_cy<2> (Mcompar_best_way_cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0000_cy<3> (Mcompar_best_way_cmp_gt0000_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0000_cy<4> (Mcompar_best_way_cmp_gt0000_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0000_cy<5> (Mcompar_best_way_cmp_gt0000_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0000_cy<6> (Mcompar_best_way_cmp_gt0000_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0000_cy<7> (Mcompar_best_way_cmp_gt0000_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0000_cy<8> (Mcompar_best_way_cmp_gt0000_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0000_cy<9> (Mcompar_best_way_cmp_gt0000_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0000_cy<10> (Mcompar_best_way_cmp_gt0000_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0000_cy<11> (Mcompar_best_way_cmp_gt0000_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0000_cy<12> (Mcompar_best_way_cmp_gt0000_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0000_cy<13> (Mcompar_best_way_cmp_gt0000_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0000_cy<14> (Mcompar_best_way_cmp_gt0000_cy<14>)
+     MUXCY:CI->O          34   0.303   1.891  Mcompar_best_way_cmp_gt0000_cy<15> (Mcompar_best_way_cmp_gt0000_cy<15>)
+     LUT4_D:I3->O          7   0.551   1.092  ant_near_mux0005<0>3 (ant_near_mux0004<0>3)
+     LUT4:I3->O           18   0.551   1.485  ant_near_mux0004<0>26 (ant_near_mux0004<0>)
+     LUT3:I2->O            1   0.551   0.000  Mmux_pheromone_mux0034_8 (Mmux_pheromone_mux0034_8)
+     MUXF5:I0->O           1   0.360   0.000  Mmux_pheromone_mux0034_6_f5 (Mmux_pheromone_mux0034_6_f5)
+     MUXF6:I0->O           1   0.342   0.000  Mmux_pheromone_mux0034_4_f6 (Mmux_pheromone_mux0034_4_f6)
+     MUXF7:I0->O           1   0.342   0.827  Mmux_pheromone_mux0034_2_f7 (pheromone_mux0034<0>)
+     LUT4:I3->O            1   0.551   0.000  Mcompar_best_way_cmp_gt0002_lut<0> (Mcompar_best_way_cmp_gt0002_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  Mcompar_best_way_cmp_gt0002_cy<0> (Mcompar_best_way_cmp_gt0002_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0002_cy<1> (Mcompar_best_way_cmp_gt0002_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0002_cy<2> (Mcompar_best_way_cmp_gt0002_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0002_cy<3> (Mcompar_best_way_cmp_gt0002_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0002_cy<4> (Mcompar_best_way_cmp_gt0002_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0002_cy<5> (Mcompar_best_way_cmp_gt0002_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0002_cy<6> (Mcompar_best_way_cmp_gt0002_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0002_cy<7> (Mcompar_best_way_cmp_gt0002_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0002_cy<8> (Mcompar_best_way_cmp_gt0002_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0002_cy<9> (Mcompar_best_way_cmp_gt0002_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0002_cy<10> (Mcompar_best_way_cmp_gt0002_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0002_cy<11> (Mcompar_best_way_cmp_gt0002_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0002_cy<12> (Mcompar_best_way_cmp_gt0002_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0002_cy<13> (Mcompar_best_way_cmp_gt0002_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0002_cy<14> (Mcompar_best_way_cmp_gt0002_cy<14>)
+     MUXCY:CI->O          28   0.303   1.856  Mcompar_best_way_cmp_gt0002_cy<15> (Mcompar_best_way_cmp_gt0002_cy<15>)
+     LUT4_D:I3->O          6   0.551   1.071  ant_near_mux0006<0>0 (ant_near_mux0006<0>0)
+     LUT4:I2->O           18   0.551   1.485  ant_near_mux0006<0>26 (ant_near_mux0006<0>)
+     LUT3:I2->O            1   0.551   0.000  Mmux_pheromone_mux0039_8 (Mmux_pheromone_mux0039_8)
+     MUXF5:I0->O           1   0.360   0.000  Mmux_pheromone_mux0039_6_f5 (Mmux_pheromone_mux0039_6_f5)
+     MUXF6:I0->O           1   0.342   0.000  Mmux_pheromone_mux0039_4_f6 (Mmux_pheromone_mux0039_4_f6)
+     MUXF7:I0->O           1   0.342   0.996  Mmux_pheromone_mux0039_2_f7 (pheromone_mux0039<0>)
+     LUT2:I1->O            1   0.551   0.000  Mcompar_best_way_cmp_gt0003_lut<0> (Mcompar_best_way_cmp_gt0003_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  Mcompar_best_way_cmp_gt0003_cy<0> (Mcompar_best_way_cmp_gt0003_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0003_cy<1> (Mcompar_best_way_cmp_gt0003_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0003_cy<2> (Mcompar_best_way_cmp_gt0003_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0003_cy<3> (Mcompar_best_way_cmp_gt0003_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0003_cy<4> (Mcompar_best_way_cmp_gt0003_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0003_cy<5> (Mcompar_best_way_cmp_gt0003_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0003_cy<6> (Mcompar_best_way_cmp_gt0003_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0003_cy<7> (Mcompar_best_way_cmp_gt0003_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0003_cy<8> (Mcompar_best_way_cmp_gt0003_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0003_cy<9> (Mcompar_best_way_cmp_gt0003_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0003_cy<10> (Mcompar_best_way_cmp_gt0003_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0003_cy<11> (Mcompar_best_way_cmp_gt0003_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0003_cy<12> (Mcompar_best_way_cmp_gt0003_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0003_cy<13> (Mcompar_best_way_cmp_gt0003_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0003_cy<14> (Mcompar_best_way_cmp_gt0003_cy<14>)
+     MUXCY:CI->O          41   0.303   1.931  Mcompar_best_way_cmp_gt0003_cy<15> (Mcompar_best_way_cmp_gt0003_cy<15>)
+     LUT4:I3->O            2   0.551   1.216  ant_near_mux0008<1>2 (ant_near_mux0008<1>2)
+     LUT4:I0->O            1   0.551   0.000  ant_near_mux0008<1>25_F (N3609)
+     MUXF5:I0->O          64   0.360   2.036  ant_near_mux0008<1>25 (ant_near_mux0008<1>)
+     MUXF5:S->O            1   0.621   0.000  Mmux_pheromone_mux0044_4_f5 (Mmux_pheromone_mux0044_4_f5)
+     MUXF6:I1->O           1   0.342   0.000  Mmux_pheromone_mux0044_3_f6 (Mmux_pheromone_mux0044_3_f6)
+     MUXF7:I1->O           1   0.342   0.827  Mmux_pheromone_mux0044_2_f7 (pheromone_mux0044<0>)
+     LUT4:I3->O            1   0.551   0.000  Mcompar_best_way_cmp_gt0004_lut<0> (Mcompar_best_way_cmp_gt0004_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  Mcompar_best_way_cmp_gt0004_cy<0> (Mcompar_best_way_cmp_gt0004_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0004_cy<1> (Mcompar_best_way_cmp_gt0004_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0004_cy<2> (Mcompar_best_way_cmp_gt0004_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0004_cy<3> (Mcompar_best_way_cmp_gt0004_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0004_cy<4> (Mcompar_best_way_cmp_gt0004_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0004_cy<5> (Mcompar_best_way_cmp_gt0004_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0004_cy<6> (Mcompar_best_way_cmp_gt0004_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0004_cy<7> (Mcompar_best_way_cmp_gt0004_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0004_cy<8> (Mcompar_best_way_cmp_gt0004_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0004_cy<9> (Mcompar_best_way_cmp_gt0004_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0004_cy<10> (Mcompar_best_way_cmp_gt0004_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0004_cy<11> (Mcompar_best_way_cmp_gt0004_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0004_cy<12> (Mcompar_best_way_cmp_gt0004_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0004_cy<13> (Mcompar_best_way_cmp_gt0004_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0004_cy<14> (Mcompar_best_way_cmp_gt0004_cy<14>)
+     MUXCY:CI->O          36   0.303   1.902  Mcompar_best_way_cmp_gt0004_cy<15> (Mcompar_best_way_cmp_gt0004_cy<15>)
+     LUT4:I3->O            2   0.551   0.903  ant_near_mux0010<1>2 (ant_near_mux0010<1>2)
+     LUT4:I3->O            1   0.551   0.000  ant_near_mux0010<1>25_G (N3616)
+     MUXF5:I1->O          64   0.360   2.036  ant_near_mux0010<1>25 (ant_near_mux0010<1>)
+     MUXF5:S->O            1   0.621   0.000  Mmux_pheromone_mux0049_4_f5 (Mmux_pheromone_mux0049_4_f5)
+     MUXF6:I1->O           1   0.342   0.000  Mmux_pheromone_mux0049_3_f6 (Mmux_pheromone_mux0049_3_f6)
+     MUXF7:I1->O           1   0.342   0.827  Mmux_pheromone_mux0049_2_f7 (pheromone_mux0049<0>)
+     LUT4:I3->O            1   0.551   0.000  Mcompar_best_way_cmp_gt0005_lut<0> (Mcompar_best_way_cmp_gt0005_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  Mcompar_best_way_cmp_gt0005_cy<0> (Mcompar_best_way_cmp_gt0005_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0005_cy<1> (Mcompar_best_way_cmp_gt0005_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0005_cy<2> (Mcompar_best_way_cmp_gt0005_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0005_cy<3> (Mcompar_best_way_cmp_gt0005_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0005_cy<4> (Mcompar_best_way_cmp_gt0005_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0005_cy<5> (Mcompar_best_way_cmp_gt0005_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0005_cy<6> (Mcompar_best_way_cmp_gt0005_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0005_cy<7> (Mcompar_best_way_cmp_gt0005_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0005_cy<8> (Mcompar_best_way_cmp_gt0005_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0005_cy<9> (Mcompar_best_way_cmp_gt0005_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0005_cy<10> (Mcompar_best_way_cmp_gt0005_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0005_cy<11> (Mcompar_best_way_cmp_gt0005_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0005_cy<12> (Mcompar_best_way_cmp_gt0005_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0005_cy<13> (Mcompar_best_way_cmp_gt0005_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0005_cy<14> (Mcompar_best_way_cmp_gt0005_cy<14>)
+     MUXCY:CI->O          27   0.303   1.850  Mcompar_best_way_cmp_gt0005_cy<15> (Mcompar_best_way_cmp_gt0005_cy<15>)
+     LUT4_D:I3->O          8   0.551   1.278  best_way_mux0014<5>1 (best_way_mux0014<5>)
+     LUT2:I1->O            4   0.551   0.943  ant_near_mux0012<1>0 (ant_near_mux0012<0>0)
+     LUT4:I3->O           16   0.551   1.237  ant_near_mux0012<1>26 (ant_near_mux0012<1>)
+     MUXF5:S->O            1   0.621   0.000  Mmux_pheromone_mux0054_4_f5 (Mmux_pheromone_mux0054_4_f5)
+     MUXF6:I1->O           1   0.342   0.000  Mmux_pheromone_mux0054_3_f6 (Mmux_pheromone_mux0054_3_f6)
+     MUXF7:I1->O           1   0.342   0.827  Mmux_pheromone_mux0054_2_f7 (pheromone_mux0054<0>)
+     LUT4:I3->O            1   0.551   0.000  Mcompar_best_way_cmp_gt0007_lut<0> (Mcompar_best_way_cmp_gt0007_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  Mcompar_best_way_cmp_gt0007_cy<0> (Mcompar_best_way_cmp_gt0007_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0007_cy<1> (Mcompar_best_way_cmp_gt0007_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0007_cy<2> (Mcompar_best_way_cmp_gt0007_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0007_cy<3> (Mcompar_best_way_cmp_gt0007_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0007_cy<4> (Mcompar_best_way_cmp_gt0007_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0007_cy<5> (Mcompar_best_way_cmp_gt0007_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0007_cy<6> (Mcompar_best_way_cmp_gt0007_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0007_cy<7> (Mcompar_best_way_cmp_gt0007_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0007_cy<8> (Mcompar_best_way_cmp_gt0007_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0007_cy<9> (Mcompar_best_way_cmp_gt0007_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0007_cy<10> (Mcompar_best_way_cmp_gt0007_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0007_cy<11> (Mcompar_best_way_cmp_gt0007_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0007_cy<12> (Mcompar_best_way_cmp_gt0007_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0007_cy<13> (Mcompar_best_way_cmp_gt0007_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0007_cy<14> (Mcompar_best_way_cmp_gt0007_cy<14>)
+     MUXCY:CI->O          44   0.303   2.117  Mcompar_best_way_cmp_gt0007_cy<15> (Mcompar_best_way_cmp_gt0007_cy<15>)
+     LUT2:I1->O            2   0.551   1.072  best_way_mux0015<4>1 (best_way_mux0015<4>)
+     LUT4:I1->O            1   0.551   0.000  ant_near_mux0014<1>25_F (N3623)
+     MUXF5:I0->O          64   0.360   2.036  ant_near_mux0014<1>25 (ant_near_mux0014<1>)
+     MUXF5:S->O            1   0.621   0.000  Mmux_pheromone_mux0059_4_f5 (Mmux_pheromone_mux0059_4_f5)
+     MUXF6:I1->O           1   0.342   0.000  Mmux_pheromone_mux0059_3_f6 (Mmux_pheromone_mux0059_3_f6)
+     MUXF7:I1->O           1   0.342   0.827  Mmux_pheromone_mux0059_2_f7 (pheromone_mux0059<0>)
+     LUT4:I3->O            1   0.551   0.000  Mcompar_best_way_cmp_gt0006_lut<0> (Mcompar_best_way_cmp_gt0006_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  Mcompar_best_way_cmp_gt0006_cy<0> (Mcompar_best_way_cmp_gt0006_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0006_cy<1> (Mcompar_best_way_cmp_gt0006_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0006_cy<2> (Mcompar_best_way_cmp_gt0006_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0006_cy<3> (Mcompar_best_way_cmp_gt0006_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0006_cy<4> (Mcompar_best_way_cmp_gt0006_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0006_cy<5> (Mcompar_best_way_cmp_gt0006_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0006_cy<6> (Mcompar_best_way_cmp_gt0006_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0006_cy<7> (Mcompar_best_way_cmp_gt0006_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0006_cy<8> (Mcompar_best_way_cmp_gt0006_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0006_cy<9> (Mcompar_best_way_cmp_gt0006_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0006_cy<10> (Mcompar_best_way_cmp_gt0006_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0006_cy<11> (Mcompar_best_way_cmp_gt0006_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0006_cy<12> (Mcompar_best_way_cmp_gt0006_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0006_cy<13> (Mcompar_best_way_cmp_gt0006_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_gt0006_cy<14> (Mcompar_best_way_cmp_gt0006_cy<14>)
+     MUXCY:CI->O          31   0.303   1.873  Mcompar_best_way_cmp_gt0006_cy<15> (Mcompar_best_way_cmp_gt0006_cy<15>)
+     LUT4:I3->O            8   0.551   1.278  best_way_mux0016<4>1 (best_way_mux0016<4>)
+     LUT4:I1->O            1   0.551   0.000  ant_near_mux0016<1>25_F (N3627)
+     MUXF5:I0->O          64   0.360   2.036  ant_near_mux0016<1>25 (ant_near_mux0016<1>)
+     MUXF5:S->O            1   0.621   0.000  Mmux_pheromone_mux0064_4_f5_6 (Mmux_pheromone_mux0064_4_f57)
+     MUXF6:I1->O           1   0.342   0.000  Mmux_pheromone_mux0064_3_f6_6 (Mmux_pheromone_mux0064_3_f67)
+     MUXF7:I1->O           8   0.342   1.151  Mmux_pheromone_mux0064_2_f7_6 (pheromone_mux0064<1>)
+     LUT4:I2->O            1   0.551   0.000  Mcompar_int_rand_cmp_eq0000_lut<0> (Mcompar_int_rand_cmp_eq0000_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  Mcompar_int_rand_cmp_eq0000_cy<0> (Mcompar_int_rand_cmp_eq0000_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_int_rand_cmp_eq0000_cy<1> (Mcompar_int_rand_cmp_eq0000_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_int_rand_cmp_eq0000_cy<2> (Mcompar_int_rand_cmp_eq0000_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_int_rand_cmp_eq0000_cy<3> (Mcompar_int_rand_cmp_eq0000_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_int_rand_cmp_eq0000_cy<4> (Mcompar_int_rand_cmp_eq0000_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_int_rand_cmp_eq0000_cy<5> (Mcompar_int_rand_cmp_eq0000_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_int_rand_cmp_eq0000_cy<6> (Mcompar_int_rand_cmp_eq0000_cy<6>)
+     MUXCY:CI->O          37   0.303   1.950  Mcompar_int_rand_cmp_eq0000_cy<7> (Madd_equal_count_addsub0000_cy<0>)
+     LUT3_D:I2->O          7   0.551   1.092  equal_count_mux0002<0>1 (Madd_equal_count_addsub0002_cy<0>)
+     LUT4_D:I3->O          2   0.551   0.903  equal_count_mux0004<1>1 (Madd_equal_count_addsub0004_lut<1>)
+     LUT4:I3->O            9   0.551   1.192  Madd_equal_count_addsub0008_cy<1>11 (Madd_equal_count_addsub0008_cy<1>)
+     LUT3_D:I2->O         25   0.551   2.152  equal_count_mux0007<2>1_1 (equal_count_mux0007<2>1)
+     LUT4:I0->O            1   0.551   0.000  result0_addsub0005<3>1_SW2_G (N4104)
+     MUXF5:I1->O           1   0.360   0.827  result0_addsub0005<3>1_SW2 (N1807)
+     LUT4:I3->O            5   0.551   1.116  result0_addsub0014<3>1_SW3 (N2887)
+     LUT3_D:I1->O          1   0.551   0.827  Msub_result0_addsub0032_xor<3>11_SW5 (N3136)
+     LUT4:I3->O            5   0.551   1.260  result0_mux0005<0>1_SW0 (N2193)
+     LUT4:I0->O            1   0.551   0.000  Msub_result0_addsub0022_cy<0>11_F (N4077)
+     MUXF5:I0->O           5   0.360   0.921  Msub_result0_addsub0022_cy<0>11 (Msub_result0_addsub0022_cy<0>)
+     MUXF5:S->O            2   0.621   0.903  result0_mux0002<1>1_SW0 (N2570)
+     LUT4:I3->O            1   0.551   0.827  Msub_result0_addsub0022_lut<2>_SW1_SW2 (N3154)
+     LUT4:I3->O            1   0.551   0.996  Msub_result0_addsub0021_lut<2>_SW0_SW1 (N2770)
+     LUT4:I1->O            2   0.551   0.903  Msub_result0_addsub0021_lut<2> (Msub_result0_addsub0021_lut<2>)
+     LUT4_D:I3->O         18   0.551   1.443  result0_mux0000<2>66_1 (result0_mux0000<2>66)
+     LUT4:I3->O            7   0.551   1.261  best_way_mux0018<3>1 (best_way_mux0018<3>)
+     LUT4:I1->O            1   0.551   0.000  ant_near_mux0018<1>25_G (N3632)
+     MUXF5:I1->O          64   0.360   2.036  ant_near_mux0018<1>25 (ant_near_mux0018<1>)
+     MUXF5:S->O            1   0.621   0.000  Mmux_pheromone_mux0069_4_f5_6 (Mmux_pheromone_mux0069_4_f57)
+     MUXF6:I1->O           1   0.342   0.000  Mmux_pheromone_mux0069_3_f6_6 (Mmux_pheromone_mux0069_3_f67)
+     MUXF7:I1->O           1   0.342   0.869  Mmux_pheromone_mux0069_2_f7_6 (pheromone_mux0069<1>)
+     LUT4:I2->O            1   0.551   0.000  Mcompar_int_rand_cmp_eq0002_lut<0> (Mcompar_int_rand_cmp_eq0002_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  Mcompar_int_rand_cmp_eq0002_cy<0> (Mcompar_int_rand_cmp_eq0002_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_int_rand_cmp_eq0002_cy<1> (Mcompar_int_rand_cmp_eq0002_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_int_rand_cmp_eq0002_cy<2> (Mcompar_int_rand_cmp_eq0002_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_int_rand_cmp_eq0002_cy<3> (Mcompar_int_rand_cmp_eq0002_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_int_rand_cmp_eq0002_cy<4> (Mcompar_int_rand_cmp_eq0002_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_int_rand_cmp_eq0002_cy<5> (Mcompar_int_rand_cmp_eq0002_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_int_rand_cmp_eq0002_cy<6> (Mcompar_int_rand_cmp_eq0002_cy<6>)
+     MUXCY:CI->O          11   0.303   1.170  Mcompar_int_rand_cmp_eq0002_cy<7> (Mcompar_int_rand_cmp_eq0002_cy<7>)
+     LUT4_D:I3->O          9   0.551   1.150  best_way_mux0020<6>11_1 (best_way_mux0020<6>11)
+     LUT4:I3->O            2   0.551   0.903  ant_near_mux0021<1>2 (ant_near_mux0021<1>2)
+     LUT4:I3->O            1   0.551   0.000  ant_near_mux0021<1>25_G (N3566)
+     MUXF5:I1->O          16   0.360   1.237  ant_near_mux0021<1>25 (ant_near_mux0021<1>)
+     MUXF7:S->O            1   0.649   0.869  Mmux_pheromone_mux0074_2_f7_6 (pheromone_mux0074<1>)
+     LUT4:I2->O            1   0.551   0.000  Mcompar_int_rand_cmp_eq0004_lut<0> (Mcompar_int_rand_cmp_eq0004_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  Mcompar_int_rand_cmp_eq0004_cy<0> (Mcompar_int_rand_cmp_eq0004_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_int_rand_cmp_eq0004_cy<1> (Mcompar_int_rand_cmp_eq0004_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_int_rand_cmp_eq0004_cy<2> (Mcompar_int_rand_cmp_eq0004_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_int_rand_cmp_eq0004_cy<3> (Mcompar_int_rand_cmp_eq0004_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_int_rand_cmp_eq0004_cy<4> (Mcompar_int_rand_cmp_eq0004_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_int_rand_cmp_eq0004_cy<5> (Mcompar_int_rand_cmp_eq0004_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_int_rand_cmp_eq0004_cy<6> (Mcompar_int_rand_cmp_eq0004_cy<6>)
+     MUXCY:CI->O          34   0.303   1.891  Mcompar_int_rand_cmp_eq0004_cy<7> (Mcompar_int_rand_cmp_eq0004_cy<7>)
+     LUT4_D:I3->O         12   0.551   1.144  best_way_mux0022<3>11_1 (best_way_mux0022<3>11)
+     LUT4_D:I3->O          1   0.551   0.869  ant_near_mux0023<0>8 (ant_near_mux0023<0>8)
+     LUT4:I2->O           16   0.551   1.237  ant_near_mux0023<0>26_1 (ant_near_mux0023<0>26)
+     MUXF6:S->O            1   0.649   0.000  Mmux_pheromone_mux0079_4_f6_14 (Mmux_pheromone_mux0079_4_f615)
+     MUXF7:I0->O           1   0.342   0.869  Mmux_pheromone_mux0079_2_f7_14 (pheromone_mux0079<9>)
+     LUT4:I2->O            1   0.551   0.000  Mcompar_int_rand_cmp_eq0008_lut<4> (Mcompar_int_rand_cmp_eq0008_lut<4>)
+     MUXCY:S->O            1   0.500   0.000  Mcompar_int_rand_cmp_eq0008_cy<4> (Mcompar_int_rand_cmp_eq0008_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_int_rand_cmp_eq0008_cy<5> (Mcompar_int_rand_cmp_eq0008_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_int_rand_cmp_eq0008_cy<6> (Mcompar_int_rand_cmp_eq0008_cy<6>)
+     MUXCY:CI->O          39   0.303   1.919  Mcompar_int_rand_cmp_eq0008_cy<7> (Mcompar_int_rand_cmp_eq0008_cy<7>)
+     LUT4_D:I3->O         13   0.551   1.196  best_way_mux0024<0>11_1 (best_way_mux0024<0>11)
+     LUT4:I3->O           16   0.551   1.237  ant_near_mux0025<0>26_1 (ant_near_mux0025<0>26)
+     MUXF6:S->O            1   0.649   0.000  Mmux_pheromone_mux0084_4_f6_14 (Mmux_pheromone_mux0084_4_f615)
+     MUXF7:I0->O           1   0.342   0.869  Mmux_pheromone_mux0084_2_f7_14 (pheromone_mux0084<9>)
+     LUT4:I2->O            1   0.551   0.000  Mcompar_int_rand_cmp_eq0012_lut<4> (Mcompar_int_rand_cmp_eq0012_lut<4>)
+     MUXCY:S->O            1   0.500   0.000  Mcompar_int_rand_cmp_eq0012_cy<4> (Mcompar_int_rand_cmp_eq0012_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_int_rand_cmp_eq0012_cy<5> (Mcompar_int_rand_cmp_eq0012_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_int_rand_cmp_eq0012_cy<6> (Mcompar_int_rand_cmp_eq0012_cy<6>)
+     MUXCY:CI->O          27   0.303   1.850  Mcompar_int_rand_cmp_eq0012_cy<7> (Mcompar_int_rand_cmp_eq0012_cy<7>)
+     LUT4:I3->O            2   0.551   1.216  best_way_mux0026<0>1 (best_way_mux0026<0>)
+     LUT4:I0->O            1   0.551   0.000  ant_near_mux0026<1>25_G (N3644)
+     MUXF5:I1->O          64   0.360   2.036  ant_near_mux0026<1>25 (ant_near_mux0026<1>)
+     MUXF5:S->O            1   0.621   0.000  Mmux_pheromone_mux0089_4_f5_6 (Mmux_pheromone_mux0089_4_f57)
+     MUXF6:I1->O           1   0.342   0.000  Mmux_pheromone_mux0089_3_f6_6 (Mmux_pheromone_mux0089_3_f67)
+     MUXF7:I1->O           1   0.342   0.869  Mmux_pheromone_mux0089_2_f7_6 (pheromone_mux0089<1>)
+     LUT4:I2->O            1   0.551   0.000  Mcompar_int_rand_cmp_eq0006_lut<0> (Mcompar_int_rand_cmp_eq0006_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  Mcompar_int_rand_cmp_eq0006_cy<0> (Mcompar_int_rand_cmp_eq0006_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_int_rand_cmp_eq0006_cy<1> (Mcompar_int_rand_cmp_eq0006_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_int_rand_cmp_eq0006_cy<2> (Mcompar_int_rand_cmp_eq0006_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_int_rand_cmp_eq0006_cy<3> (Mcompar_int_rand_cmp_eq0006_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_int_rand_cmp_eq0006_cy<4> (Mcompar_int_rand_cmp_eq0006_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_int_rand_cmp_eq0006_cy<5> (Mcompar_int_rand_cmp_eq0006_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_int_rand_cmp_eq0006_cy<6> (Mcompar_int_rand_cmp_eq0006_cy<6>)
+     MUXCY:CI->O          23   0.303   1.727  Mcompar_int_rand_cmp_eq0006_cy<7> (Mcompar_int_rand_cmp_eq0006_cy<7>)
+     LUT4:I3->O            2   0.551   1.216  ant_near_mux0028<1>2 (ant_near_mux0028<1>2)
+     LUT4:I0->O            1   0.551   0.000  ant_near_mux0028<1>25_F (N3647)
+     MUXF5:I0->O          64   0.360   2.036  ant_near_mux0028<1>25 (ant_near_mux0028<1>)
+     MUXF5:S->O            1   0.621   0.000  Mmux_pheromone_mux0094_4_f5_6 (Mmux_pheromone_mux0094_4_f57)
+     MUXF6:I1->O           1   0.342   0.000  Mmux_pheromone_mux0094_3_f6_6 (Mmux_pheromone_mux0094_3_f67)
+     MUXF7:I1->O           1   0.342   0.869  Mmux_pheromone_mux0094_2_f7_6 (pheromone_mux0094<1>)
+     LUT4:I2->O            1   0.551   0.000  Mcompar_int_rand_cmp_eq0010_lut<0> (Mcompar_int_rand_cmp_eq0010_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  Mcompar_int_rand_cmp_eq0010_cy<0> (Mcompar_int_rand_cmp_eq0010_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_int_rand_cmp_eq0010_cy<1> (Mcompar_int_rand_cmp_eq0010_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_int_rand_cmp_eq0010_cy<2> (Mcompar_int_rand_cmp_eq0010_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_int_rand_cmp_eq0010_cy<3> (Mcompar_int_rand_cmp_eq0010_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_int_rand_cmp_eq0010_cy<4> (Mcompar_int_rand_cmp_eq0010_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_int_rand_cmp_eq0010_cy<5> (Mcompar_int_rand_cmp_eq0010_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_int_rand_cmp_eq0010_cy<6> (Mcompar_int_rand_cmp_eq0010_cy<6>)
+     MUXCY:CI->O           6   0.303   1.029  Mcompar_int_rand_cmp_eq0010_cy<7> (Mcompar_int_rand_cmp_eq0010_cy<7>)
+     LUT4:I3->O           15   0.551   1.214  best_way_mux0032<4>1 (N11)
+     LUT4:I3->O            2   0.551   0.903  ant_near_mux0031<0>0 (ant_near_mux0031<0>0)
+     LUT4:I3->O           16   0.551   1.237  ant_near_mux0031<0>26 (ant_near_mux0031<0>)
+     MUXF6:S->O            1   0.649   0.000  Mmux_pheromone_mux0099_3_f6_6 (Mmux_pheromone_mux0099_3_f67)
+     MUXF7:I1->O           1   0.342   0.869  Mmux_pheromone_mux0099_2_f7_6 (pheromone_mux0099<1>)
+     LUT4:I2->O            1   0.551   0.000  Mcompar_best_way_cmp_eq0000_lut<0> (Mcompar_best_way_cmp_eq0000_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  Mcompar_best_way_cmp_eq0000_cy<0> (Mcompar_best_way_cmp_eq0000_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_eq0000_cy<1> (Mcompar_best_way_cmp_eq0000_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_eq0000_cy<2> (Mcompar_best_way_cmp_eq0000_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_eq0000_cy<3> (Mcompar_best_way_cmp_eq0000_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_eq0000_cy<4> (Mcompar_best_way_cmp_eq0000_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_eq0000_cy<5> (Mcompar_best_way_cmp_eq0000_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_best_way_cmp_eq0000_cy<6> (Mcompar_best_way_cmp_eq0000_cy<6>)
+     MUXCY:CI->O          10   0.303   1.160  Mcompar_best_way_cmp_eq0000_cy<7> (Mcompar_best_way_cmp_eq0000_cy<7>)
+     LUT4_D:I3->O          3   0.551   0.933  best_way_mux0063<5>14 (N170)
+     LUT4_D:I3->O          3   0.551   0.933  best_way_mux0032<0>1 (best_way_mux0032<0>)
+     LUT4:I3->O            1   0.551   0.000  next_ant_0_mux0003<1>25_G (N3554)
+     MUXF5:I1->O           4   0.360   0.943  next_ant_0_mux0003<1>25 (next_ant_0_mux0003<1>25)
+     LUT4:I3->O            1   0.551   1.140  next_ant_0_mux0003<1>76_SW0_SW0_F (N3837)
+     LUT4:I0->O            1   0.551   0.000  next_ant_0_mux0003<1>76_F (N4117)
+     MUXF5:I0->O           1   0.360   0.000  next_ant_0_mux0003<1>76 (next_ant_0_mux0003<1>)
+     LD:D                      0.203          next_ant_0_1
+    ----------------------------------------
+    Total                    211.586ns (90.359ns logic, 121.227ns route)
+                                       (42.7% logic, 57.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'result_mux0003'
+  Clock period: 3.731ns (frequency: 268.025MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.731ns (Levels of Logic = 1)
+  Source:            initialize (LATCH)
+  Destination:       initialize (LATCH)
+  Source Clock:      result_mux0003 falling
+  Destination Clock: result_mux0003 falling
+
+  Data Path: initialize to initialize
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q             11   0.633   1.144  initialize (initialize1)
+     INV:I->O              1   0.551   0.801  initialize_0_not00001_INV_0 (initialize_0_not0000)
+     LDE:GE                    0.602          initialize
+    ----------------------------------------
+    Total                      3.731ns (1.786ns logic, 1.945ns route)
+                                       (47.9% logic, 52.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'eat<1>_1_not0000'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.647ns (Levels of Logic = 2)
+  Source:            start_eat<1><1> (PAD)
+  Destination:       eat<1>_1 (LATCH)
+  Destination Clock: eat<1>_1_not0000 falling
+
+  Data Path: start_eat<1><1> to eat<1>_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.821   1.072  start_eat_1__1_IBUF (start_eat_1__1_IBUF)
+     LUT2:I1->O            1   0.551   0.000  _mux00191 (_mux0019)
+     LD:D                      0.203          eat<1>_1
+    ----------------------------------------
+    Total                      2.647ns (1.575ns logic, 1.072ns route)
+                                       (59.5% logic, 40.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'eat<1>_0_not0000'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.647ns (Levels of Logic = 2)
+  Source:            start_eat<1><0> (PAD)
+  Destination:       eat<1>_0 (LATCH)
+  Destination Clock: eat<1>_0_not0000 falling
+
+  Data Path: start_eat<1><0> to eat<1>_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.821   1.072  start_eat_1__0_IBUF (start_eat_1__0_IBUF)
+     LUT2:I1->O            1   0.551   0.000  _mux00181 (_mux0018)
+     LD:D                      0.203          eat<1>_0
+    ----------------------------------------
+    Total                      2.647ns (1.575ns logic, 1.072ns route)
+                                       (59.5% logic, 40.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'eat<0>_1_not0000'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.647ns (Levels of Logic = 2)
+  Source:            start_eat<0><1> (PAD)
+  Destination:       eat<0>_1 (LATCH)
+  Destination Clock: eat<0>_1_not0000 falling
+
+  Data Path: start_eat<0><1> to eat<0>_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.821   1.072  start_eat_0__1_IBUF (start_eat_0__1_IBUF)
+     LUT2:I1->O            1   0.551   0.000  _mux00171 (_mux0017)
+     LD:D                      0.203          eat<0>_1
+    ----------------------------------------
+    Total                      2.647ns (1.575ns logic, 1.072ns route)
+                                       (59.5% logic, 40.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'eat<0>_0_not0000'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.647ns (Levels of Logic = 2)
+  Source:            start_eat<0><0> (PAD)
+  Destination:       eat<0>_0 (LATCH)
+  Destination Clock: eat<0>_0_not0000 falling
+
+  Data Path: start_eat<0><0> to eat<0>_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.821   1.072  start_eat_0__0_IBUF (start_eat_0__0_IBUF)
+     LUT2:I1->O            1   0.551   0.000  _mux00161 (_mux0016)
+     LD:D                      0.203          eat<0>_0
+    ----------------------------------------
+    Total                      2.647ns (1.575ns logic, 1.072ns route)
+                                       (59.5% logic, 40.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              7.165ns (Levels of Logic = 1)
+  Source:            ant_0_1 (FF)
+  Destination:       ant<0><1> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: ant_0_1 to ant<0><1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.720   0.801  ant_0_1 (ant_0_1)
+     OBUF:I->O                 5.644          ant_0__1_OBUF (ant<0><1>)
+    ----------------------------------------
+    Total                      7.165ns (6.364ns logic, 0.801ns route)
+                                       (88.8% logic, 11.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 291.00 secs
+Total CPU time to Xst completion: 290.84 secs
+ 
+--> 
+
+Total memory usage is 1103804 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   47 (   0 filtered)
+Number of infos    :    7 (   0 filtered)
+

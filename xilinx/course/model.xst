@@ -5,7 +5,7 @@ run
 -ifmt mixed
 -ofn model
 -ofmt NGC
--p xc3s5000-4-fg900
+-p xc3s1000-4-ft256
 -top model
 -opt_mode Speed
 -opt_level 1

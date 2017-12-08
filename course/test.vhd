@@ -17,7 +17,7 @@ end component;
 signal clk : std_logic;
 signal eat : eat_arr;
 signal ant : ant_arr;
-signal initialize: std_logic := '0';
+signal initialize, Eatinitialize: std_logic := '0';
 
 begin
 	
@@ -31,17 +31,15 @@ begin
 		variable tmp_eat : bit_vector(0 to MATRIX_SIZE-1-2);
 	begin
 
-		if(clk'event and clk = '0') then
+		if(Eatinitialize = '0') then
 
-			if(initialize = '0') then
-
-				for i in 0 to MATRIX_SIZE-1-2 loop
+			for i in 0 to MATRIX_SIZE-1-2 loop
 			    readline (input_data_file, indata_line);
 			    read (indata_line, tmp_eat);
 			    eat(i) <= To_StdLogicVector(tmp_eat);
-			  end loop;
+			    Eatinitialize <= '1';
+			end loop;
 
-			end if;
 		end if;
 
 		if(clk'event and clk = '1') then
