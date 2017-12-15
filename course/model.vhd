@@ -45,8 +45,8 @@ begin
 				eat <= start_eat;
 				initialize <= '1';
 			end if;
-		elsif(initialize = '1') then
-
+		--elsif(initialize = '1') then
+		else
 			-- next_ant sequence
 			-- 7  6  4
 			-- 5 ant 2 
@@ -117,7 +117,8 @@ begin
 					next_ant <= (ant_near(best_way)(0), ant_near(best_way)(1));
 				end if;
 
-			elsif(goHome = '0') then
+			--elsif(goHome = '0') then
+			else
 
 				-- hit on food
 				if(eat(next_ant(0)-1)(next_ant(1)-1) = '1') then

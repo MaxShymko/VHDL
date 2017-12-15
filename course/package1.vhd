@@ -3,7 +3,7 @@ Use IEEE.std_logic_1164.all;
 
 package package1 is
 
-	constant dimension : natural := 4;
+	constant dimension : natural := 20;
 
 
 	constant MATRIX_SIZE: natural := dimension + 2;
@@ -22,8 +22,6 @@ end package1;
 package body package1 is
 
 	function random(prev_num: integer) return integer is
-	constant a: integer := 16807;
-	constant m: integer := 2147483647;
 	begin
 		return ((5**13)*(prev_num)) mod 1073741824;
 	end random;

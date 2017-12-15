@@ -2,12 +2,12 @@
 Release 14.7 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
 -n 3 -fastpaths -xml model.twx model.ncd -o model.twr model.pcf
 
 Design file:              model.ncd
 Physical constraint file: model.pcf
-Device,package,speed:     xc3s1000,ft256,-4 (PRODUCTION 1.39 2013-10-13)
+Device,package,speed:     xc7vx330t,ffg1157,C,-3 (PRODUCTION 1.10 2013-10-13)
 Report level:             verbose report
 
 Environment Variable      Effect 
@@ -24,14 +24,6 @@ INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on
    a 50 Ohm transmission line loading model.  For the details of this model, 
    and for more information on accounting for different loading conditions, 
    please see the device datasheet.
-INFO:Timing:3390 - This architecture does not support a default System Jitter 
-   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
-   Uncertainty calculation.
-INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
-   'Phase Error' calculations, these terms will be zero in the Clock 
-   Uncertainty calculation.  Please make appropriate modification to 
-   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
-   Error.
 
 
 
@@ -40,32 +32,32 @@ Data Sheet report:
 All values displayed in nanoseconds (ns)
 
 Clock clk to Pad
-------------+------------+------------------+--------+
-            | clk (edge) |                  | Clock  |
-Destination |   to PAD   |Internal Clock(s) | Phase  |
-------------+------------+------------------+--------+
-ant<0><0>   |    7.258(R)|clk_BUFGP         |   0.000|
-ant<0><1>   |    7.264(R)|clk_BUFGP         |   0.000|
-ant<0><2>   |    7.258(R)|clk_BUFGP         |   0.000|
-ant<1><0>   |    7.258(R)|clk_BUFGP         |   0.000|
-ant<1><1>   |    7.267(R)|clk_BUFGP         |   0.000|
-ant<1><2>   |    7.235(R)|clk_BUFGP         |   0.000|
-------------+------------+------------------+--------+
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+ant<0><0>   |         6.041(R)|      SLOW  |         3.168(R)|      FAST  |clk_BUFGP         |   0.000|
+ant<0><1>   |         6.052(R)|      SLOW  |         3.178(R)|      FAST  |clk_BUFGP         |   0.000|
+ant<0><2>   |         6.052(R)|      SLOW  |         3.178(R)|      FAST  |clk_BUFGP         |   0.000|
+ant<1><0>   |         6.028(R)|      SLOW  |         3.177(R)|      FAST  |clk_BUFGP         |   0.000|
+ant<1><1>   |         6.028(R)|      SLOW  |         3.176(R)|      FAST  |clk_BUFGP         |   0.000|
+ant<1><2>   |         6.041(R)|      SLOW  |         3.167(R)|      FAST  |clk_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock start_eat<0><0>
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-start_eat<0><0>|         |         |   -0.846|    3.525|
-start_eat<0><1>|         |         |   -1.247|    3.525|
-start_eat<0><2>|         |         |   -1.080|    3.525|
-start_eat<1><0>|         |         |   -1.828|    3.525|
-start_eat<1><1>|         |         |   -1.126|    3.525|
-start_eat<1><2>|         |         |   -1.052|    3.525|
-start_eat<2><0>|         |         |   -3.573|    3.525|
-start_eat<2><1>|         |         |    0.685|    3.525|
-start_eat<2><2>|         |         |   -1.585|    3.525|
+start_eat<0><0>|         |         |    0.057|    0.581|
+start_eat<0><1>|         |         |   -0.120|    0.581|
+start_eat<0><2>|         |         |    0.005|    0.581|
+start_eat<1><0>|         |         |    0.041|    0.581|
+start_eat<1><1>|         |         |   -0.089|    0.581|
+start_eat<1><2>|         |         |   -0.198|    0.581|
+start_eat<2><0>|         |         |   -0.164|    0.581|
+start_eat<2><1>|         |         |    0.029|    0.581|
+start_eat<2><2>|         |         |   -0.249|    0.581|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock start_eat<0><1>
@@ -73,15 +65,15 @@ Clock to Setup on destination clock start_eat<0><1>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-start_eat<0><0>|         |         |   -1.063|    3.525|
-start_eat<0><1>|         |         |   -1.464|    3.525|
-start_eat<0><2>|         |         |   -1.297|    3.525|
-start_eat<1><0>|         |         |   -2.045|    3.525|
-start_eat<1><1>|         |         |   -1.343|    3.525|
-start_eat<1><2>|         |         |   -1.269|    3.525|
-start_eat<2><0>|         |         |   -3.790|    3.525|
-start_eat<2><1>|         |         |    0.468|    3.525|
-start_eat<2><2>|         |         |   -1.802|    3.525|
+start_eat<0><0>|         |         |    0.201|    0.581|
+start_eat<0><1>|         |         |    0.024|    0.581|
+start_eat<0><2>|         |         |    0.149|    0.581|
+start_eat<1><0>|         |         |    0.185|    0.581|
+start_eat<1><1>|         |         |    0.055|    0.581|
+start_eat<1><2>|         |         |   -0.054|    0.581|
+start_eat<2><0>|         |         |   -0.020|    0.581|
+start_eat<2><1>|         |         |    0.173|    0.581|
+start_eat<2><2>|         |         |   -0.105|    0.581|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock start_eat<0><2>
@@ -89,15 +81,15 @@ Clock to Setup on destination clock start_eat<0><2>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-start_eat<0><0>|         |         |   -0.872|    3.525|
-start_eat<0><1>|         |         |   -1.273|    3.525|
-start_eat<0><2>|         |         |   -1.106|    3.525|
-start_eat<1><0>|         |         |   -1.854|    3.525|
-start_eat<1><1>|         |         |   -1.152|    3.525|
-start_eat<1><2>|         |         |   -1.078|    3.525|
-start_eat<2><0>|         |         |   -3.599|    3.525|
-start_eat<2><1>|         |         |    0.659|    3.525|
-start_eat<2><2>|         |         |   -1.611|    3.525|
+start_eat<0><0>|         |         |    0.100|    0.581|
+start_eat<0><1>|         |         |   -0.077|    0.581|
+start_eat<0><2>|         |         |    0.048|    0.581|
+start_eat<1><0>|         |         |    0.084|    0.581|
+start_eat<1><1>|         |         |   -0.046|    0.581|
+start_eat<1><2>|         |         |   -0.155|    0.581|
+start_eat<2><0>|         |         |   -0.121|    0.581|
+start_eat<2><1>|         |         |    0.072|    0.581|
+start_eat<2><2>|         |         |   -0.206|    0.581|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock start_eat<1><0>
@@ -105,15 +97,15 @@ Clock to Setup on destination clock start_eat<1><0>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-start_eat<0><0>|         |         |   -2.267|    3.525|
-start_eat<0><1>|         |         |   -2.668|    3.525|
-start_eat<0><2>|         |         |   -2.501|    3.525|
-start_eat<1><0>|         |         |   -3.249|    3.525|
-start_eat<1><1>|         |         |   -2.547|    3.525|
-start_eat<1><2>|         |         |   -2.473|    3.525|
-start_eat<2><0>|         |         |   -4.994|    3.525|
-start_eat<2><1>|         |         |   -0.736|    3.525|
-start_eat<2><2>|         |         |   -3.006|    3.525|
+start_eat<0><0>|         |         |    0.065|    0.581|
+start_eat<0><1>|         |         |   -0.112|    0.581|
+start_eat<0><2>|         |         |    0.013|    0.581|
+start_eat<1><0>|         |         |    0.049|    0.581|
+start_eat<1><1>|         |         |   -0.081|    0.581|
+start_eat<1><2>|         |         |   -0.190|    0.581|
+start_eat<2><0>|         |         |   -0.156|    0.581|
+start_eat<2><1>|         |         |    0.037|    0.581|
+start_eat<2><2>|         |         |   -0.241|    0.581|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock start_eat<1><1>
@@ -121,15 +113,15 @@ Clock to Setup on destination clock start_eat<1><1>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-start_eat<0><0>|         |         |   -1.914|    3.525|
-start_eat<0><1>|         |         |   -2.315|    3.525|
-start_eat<0><2>|         |         |   -2.148|    3.525|
-start_eat<1><0>|         |         |   -2.896|    3.525|
-start_eat<1><1>|         |         |   -2.194|    3.525|
-start_eat<1><2>|         |         |   -2.120|    3.525|
-start_eat<2><0>|         |         |   -4.641|    3.525|
-start_eat<2><1>|         |         |   -0.383|    3.525|
-start_eat<2><2>|         |         |   -2.653|    3.525|
+start_eat<0><0>|         |         |    0.170|    0.581|
+start_eat<0><1>|         |         |   -0.007|    0.581|
+start_eat<0><2>|         |         |    0.118|    0.581|
+start_eat<1><0>|         |         |    0.154|    0.581|
+start_eat<1><1>|         |         |    0.024|    0.581|
+start_eat<1><2>|         |         |   -0.085|    0.581|
+start_eat<2><0>|         |         |   -0.051|    0.581|
+start_eat<2><1>|         |         |    0.142|    0.581|
+start_eat<2><2>|         |         |   -0.136|    0.581|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock start_eat<1><2>
@@ -137,15 +129,15 @@ Clock to Setup on destination clock start_eat<1><2>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-start_eat<0><0>|         |         |   -1.776|    3.525|
-start_eat<0><1>|         |         |   -2.177|    3.525|
-start_eat<0><2>|         |         |   -2.010|    3.525|
-start_eat<1><0>|         |         |   -2.758|    3.525|
-start_eat<1><1>|         |         |   -2.056|    3.525|
-start_eat<1><2>|         |         |   -1.982|    3.525|
-start_eat<2><0>|         |         |   -4.503|    3.525|
-start_eat<2><1>|         |         |   -0.245|    3.525|
-start_eat<2><2>|         |         |   -2.515|    3.525|
+start_eat<0><0>|         |         |    0.260|    0.581|
+start_eat<0><1>|         |         |    0.083|    0.581|
+start_eat<0><2>|         |         |    0.208|    0.581|
+start_eat<1><0>|         |         |    0.244|    0.581|
+start_eat<1><1>|         |         |    0.114|    0.581|
+start_eat<1><2>|         |         |    0.005|    0.581|
+start_eat<2><0>|         |         |    0.039|    0.581|
+start_eat<2><1>|         |         |    0.232|    0.581|
+start_eat<2><2>|         |         |   -0.046|    0.581|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock start_eat<2><0>
@@ -153,15 +145,15 @@ Clock to Setup on destination clock start_eat<2><0>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-start_eat<0><0>|         |         |   -1.927|    3.525|
-start_eat<0><1>|         |         |   -2.328|    3.525|
-start_eat<0><2>|         |         |   -2.161|    3.525|
-start_eat<1><0>|         |         |   -2.909|    3.525|
-start_eat<1><1>|         |         |   -2.207|    3.525|
-start_eat<1><2>|         |         |   -2.133|    3.525|
-start_eat<2><0>|         |         |   -4.654|    3.525|
-start_eat<2><1>|         |         |   -0.396|    3.525|
-start_eat<2><2>|         |         |   -2.666|    3.525|
+start_eat<0><0>|         |         |    0.236|    0.581|
+start_eat<0><1>|         |         |    0.059|    0.581|
+start_eat<0><2>|         |         |    0.184|    0.581|
+start_eat<1><0>|         |         |    0.220|    0.581|
+start_eat<1><1>|         |         |    0.090|    0.581|
+start_eat<1><2>|         |         |   -0.019|    0.581|
+start_eat<2><0>|         |         |    0.015|    0.581|
+start_eat<2><1>|         |         |    0.208|    0.581|
+start_eat<2><2>|         |         |   -0.070|    0.581|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock start_eat<2><1>
@@ -169,15 +161,15 @@ Clock to Setup on destination clock start_eat<2><1>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-start_eat<0><0>|         |         |   -1.632|    3.525|
-start_eat<0><1>|         |         |   -2.033|    3.525|
-start_eat<0><2>|         |         |   -1.866|    3.525|
-start_eat<1><0>|         |         |   -2.614|    3.525|
-start_eat<1><1>|         |         |   -1.912|    3.525|
-start_eat<1><2>|         |         |   -1.838|    3.525|
-start_eat<2><0>|         |         |   -4.359|    3.525|
-start_eat<2><1>|         |         |   -0.101|    3.525|
-start_eat<2><2>|         |         |   -2.371|    3.525|
+start_eat<0><0>|         |         |    0.057|    0.581|
+start_eat<0><1>|         |         |   -0.120|    0.581|
+start_eat<0><2>|         |         |    0.005|    0.581|
+start_eat<1><0>|         |         |    0.041|    0.581|
+start_eat<1><1>|         |         |   -0.089|    0.581|
+start_eat<1><2>|         |         |   -0.198|    0.581|
+start_eat<2><0>|         |         |   -0.164|    0.581|
+start_eat<2><1>|         |         |    0.029|    0.581|
+start_eat<2><2>|         |         |   -0.249|    0.581|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock start_eat<2><2>
@@ -185,26 +177,26 @@ Clock to Setup on destination clock start_eat<2><2>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-start_eat<0><0>|         |         |   -0.796|    3.525|
-start_eat<0><1>|         |         |   -1.197|    3.525|
-start_eat<0><2>|         |         |   -1.030|    3.525|
-start_eat<1><0>|         |         |   -1.778|    3.525|
-start_eat<1><1>|         |         |   -1.076|    3.525|
-start_eat<1><2>|         |         |   -1.002|    3.525|
-start_eat<2><0>|         |         |   -3.523|    3.525|
-start_eat<2><1>|         |         |    0.735|    3.525|
-start_eat<2><2>|         |         |   -1.535|    3.525|
+start_eat<0><0>|         |         |    0.306|    0.581|
+start_eat<0><1>|         |         |    0.129|    0.581|
+start_eat<0><2>|         |         |    0.254|    0.581|
+start_eat<1><0>|         |         |    0.290|    0.581|
+start_eat<1><1>|         |         |    0.160|    0.581|
+start_eat<1><2>|         |         |    0.051|    0.581|
+start_eat<2><0>|         |         |    0.085|    0.581|
+start_eat<2><1>|         |         |    0.278|    0.581|
+start_eat<2><2>|         |         |    0.000|    0.581|
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Fri Dec 08 17:37:29 2017 
+Analysis completed Mon Dec 11 16:02:38 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 343 MB
+Peak Memory Usage: 1264 MB
 
 
 

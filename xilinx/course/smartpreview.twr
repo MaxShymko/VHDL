@@ -1,0 +1,1295 @@
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net initialize
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 59159559458352479000000000000000000 paths analyzed, 14 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  43.912ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_3369_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 65 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   4.392ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_5929_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 65 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   4.715ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_2409_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 65 endpoints analyzed, 6 failing endpoints
+ 6 timing errors detected. (6 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   6.062ns.
+--------------------------------------------------------------------------------
+Slack:                  -0.222 (requirement - (data path - clock path skew + uncertainty))
+  Source:               pheromone<1><5>_15 (LATCH)
+  Destination:          pheromone<1><5>_7 (LATCH)
+  Requirement:          5.840
+  Data Path Delay:      4.048 (Levels of Logic = 5)
+  Clock Path Skew:      -1.979ns (0.255 - 2.234)
+  Source Clock:         goHome_PWR_4_o_MUX_2409_o falling at 0.103ns
+  Destination Clock:    goHome_PWR_4_o_MUX_2409_o falling at 5.943ns
+  Clock Uncertainty:    0.035
+
+  Clock Uncertainty:          0.035  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pheromone<1><5>_15 to pheromone<1><5>_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X99Y273.DQ     Tcklo                 0.294   pheromone<1><5>_15
+                                                       pheromone<1><5>_15
+    SLICE_X116Y250.D5    net (fanout=21)       1.033   pheromone<1><5>_15
+    SLICE_X116Y250.D     Tilo                  0.043   next_ant<0>_2_1
+                                                       next_ant<0><2>310
+    SLICE_X116Y250.C5    net (fanout=1)        0.147   next_ant<0><2>3
+    SLICE_X116Y250.C     Tilo                  0.043   next_ant<0>_2_1
+                                                       next_ant<0><2>311
+    SLICE_X102Y255.A6    net (fanout=7)        0.885   next_ant<0><2>_mmx_out11
+    SLICE_X102Y255.A     Tilo                  0.043   Mmux_NS.best_way[2]_X_4_o_wide_mux_1003_OUT_1028
+                                                       Mmux_n395072
+    SLICE_X95Y258.B3     net (fanout=337)      0.558   n3950<15>
+    SLICE_X95Y258.B      Tilo                  0.043   Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o119
+                                                       Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o1191
+    SLICE_X82Y228.D6     net (fanout=336)      1.013   Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o119
+    SLICE_X82Y228.CLK    Tas                  -0.054   pheromone<1><5>_7
+                                                       Mmux_pheromone[1][5][15]_pheromone[1][5][15]_MUX_2405_o18
+                                                       pheromone<1><5>_7
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+Slack:                  -0.217 (requirement - (data path - clock path skew + uncertainty))
+  Source:               pheromone<1><5>_15 (LATCH)
+  Destination:          pheromone<1><5>_6 (LATCH)
+  Requirement:          5.840
+  Data Path Delay:      4.043 (Levels of Logic = 5)
+  Clock Path Skew:      -1.979ns (0.255 - 2.234)
+  Source Clock:         goHome_PWR_4_o_MUX_2409_o falling at 0.103ns
+  Destination Clock:    goHome_PWR_4_o_MUX_2409_o falling at 5.943ns
+  Clock Uncertainty:    0.035
+
+  Clock Uncertainty:          0.035  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pheromone<1><5>_15 to pheromone<1><5>_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X99Y273.DQ     Tcklo                 0.294   pheromone<1><5>_15
+                                                       pheromone<1><5>_15
+    SLICE_X116Y250.D5    net (fanout=21)       1.033   pheromone<1><5>_15
+    SLICE_X116Y250.D     Tilo                  0.043   next_ant<0>_2_1
+                                                       next_ant<0><2>310
+    SLICE_X116Y250.C5    net (fanout=1)        0.147   next_ant<0><2>3
+    SLICE_X116Y250.C     Tilo                  0.043   next_ant<0>_2_1
+                                                       next_ant<0><2>311
+    SLICE_X102Y255.A6    net (fanout=7)        0.885   next_ant<0><2>_mmx_out11
+    SLICE_X102Y255.A     Tilo                  0.043   Mmux_NS.best_way[2]_X_4_o_wide_mux_1003_OUT_1028
+                                                       Mmux_n395072
+    SLICE_X95Y258.B3     net (fanout=337)      0.558   n3950<15>
+    SLICE_X95Y258.B      Tilo                  0.043   Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o119
+                                                       Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o1191
+    SLICE_X82Y228.B6     net (fanout=336)      1.007   Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o119
+    SLICE_X82Y228.CLK    Tas                  -0.053   pheromone<1><5>_7
+                                                       Mmux_pheromone[1][5][15]_pheromone[1][5][15]_MUX_2405_o19
+                                                       pheromone<1><5>_6
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+Slack:                  -0.172 (requirement - (data path - clock path skew + uncertainty))
+  Source:               pheromone<1><5>_15 (LATCH)
+  Destination:          pheromone<1><5>_2 (LATCH)
+  Requirement:          5.840
+  Data Path Delay:      4.126 (Levels of Logic = 5)
+  Clock Path Skew:      -1.851ns (0.383 - 2.234)
+  Source Clock:         goHome_PWR_4_o_MUX_2409_o falling at 0.103ns
+  Destination Clock:    goHome_PWR_4_o_MUX_2409_o falling at 5.943ns
+  Clock Uncertainty:    0.035
+
+  Clock Uncertainty:          0.035  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pheromone<1><5>_15 to pheromone<1><5>_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X99Y273.DQ     Tcklo                 0.294   pheromone<1><5>_15
+                                                       pheromone<1><5>_15
+    SLICE_X116Y250.D5    net (fanout=21)       1.033   pheromone<1><5>_15
+    SLICE_X116Y250.D     Tilo                  0.043   next_ant<0>_2_1
+                                                       next_ant<0><2>310
+    SLICE_X116Y250.C5    net (fanout=1)        0.147   next_ant<0><2>3
+    SLICE_X116Y250.C     Tilo                  0.043   next_ant<0>_2_1
+                                                       next_ant<0><2>311
+    SLICE_X102Y255.A6    net (fanout=7)        0.885   next_ant<0><2>_mmx_out11
+    SLICE_X102Y255.A     Tilo                  0.043   Mmux_NS.best_way[2]_X_4_o_wide_mux_1003_OUT_1028
+                                                       Mmux_n395072
+    SLICE_X95Y258.B3     net (fanout=337)      0.558   n3950<15>
+    SLICE_X95Y258.B      Tilo                  0.043   Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o119
+                                                       Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o1191
+    SLICE_X79Y230.B6     net (fanout=336)      1.058   Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o119
+    SLICE_X79Y230.CLK    Tas                  -0.021   pheromone<1><5>_3
+                                                       Mmux_pheromone[1][5][15]_pheromone[1][5][15]_MUX_2405_o113
+                                                       pheromone<1><5>_2
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+Slack:                  -0.133 (requirement - (data path - clock path skew + uncertainty))
+  Source:               pheromone<1><5>_15 (LATCH)
+  Destination:          pheromone<1><5>_9 (LATCH)
+  Requirement:          5.840
+  Data Path Delay:      4.087 (Levels of Logic = 5)
+  Clock Path Skew:      -1.851ns (0.383 - 2.234)
+  Source Clock:         goHome_PWR_4_o_MUX_2409_o falling at 0.103ns
+  Destination Clock:    goHome_PWR_4_o_MUX_2409_o falling at 5.943ns
+  Clock Uncertainty:    0.035
+
+  Clock Uncertainty:          0.035  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pheromone<1><5>_15 to pheromone<1><5>_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X99Y273.DQ     Tcklo                 0.294   pheromone<1><5>_15
+                                                       pheromone<1><5>_15
+    SLICE_X116Y250.D5    net (fanout=21)       1.033   pheromone<1><5>_15
+    SLICE_X116Y250.D     Tilo                  0.043   next_ant<0>_2_1
+                                                       next_ant<0><2>310
+    SLICE_X116Y250.C5    net (fanout=1)        0.147   next_ant<0><2>3
+    SLICE_X116Y250.C     Tilo                  0.043   next_ant<0>_2_1
+                                                       next_ant<0><2>311
+    SLICE_X102Y255.A6    net (fanout=7)        0.885   next_ant<0><2>_mmx_out11
+    SLICE_X102Y255.A     Tilo                  0.043   Mmux_NS.best_way[2]_X_4_o_wide_mux_1003_OUT_1028
+                                                       Mmux_n395072
+    SLICE_X95Y258.B3     net (fanout=337)      0.558   n3950<15>
+    SLICE_X95Y258.B      Tilo                  0.043   Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o119
+                                                       Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o1191
+    SLICE_X78Y230.D6     net (fanout=336)      1.052   Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o119
+    SLICE_X78Y230.CLK    Tas                  -0.054   pheromone<1><5>_9
+                                                       Mmux_pheromone[1][5][15]_pheromone[1][5][15]_MUX_2405_o16
+                                                       pheromone<1><5>_9
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+Slack:                  -0.130 (requirement - (data path - clock path skew + uncertainty))
+  Source:               pheromone<1><5>_15 (LATCH)
+  Destination:          pheromone<1><5>_8 (LATCH)
+  Requirement:          5.840
+  Data Path Delay:      4.084 (Levels of Logic = 5)
+  Clock Path Skew:      -1.851ns (0.383 - 2.234)
+  Source Clock:         goHome_PWR_4_o_MUX_2409_o falling at 0.103ns
+  Destination Clock:    goHome_PWR_4_o_MUX_2409_o falling at 5.943ns
+  Clock Uncertainty:    0.035
+
+  Clock Uncertainty:          0.035  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pheromone<1><5>_15 to pheromone<1><5>_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X99Y273.DQ     Tcklo                 0.294   pheromone<1><5>_15
+                                                       pheromone<1><5>_15
+    SLICE_X116Y250.D5    net (fanout=21)       1.033   pheromone<1><5>_15
+    SLICE_X116Y250.D     Tilo                  0.043   next_ant<0>_2_1
+                                                       next_ant<0><2>310
+    SLICE_X116Y250.C5    net (fanout=1)        0.147   next_ant<0><2>3
+    SLICE_X116Y250.C     Tilo                  0.043   next_ant<0>_2_1
+                                                       next_ant<0><2>311
+    SLICE_X102Y255.A6    net (fanout=7)        0.885   next_ant<0><2>_mmx_out11
+    SLICE_X102Y255.A     Tilo                  0.043   Mmux_NS.best_way[2]_X_4_o_wide_mux_1003_OUT_1028
+                                                       Mmux_n395072
+    SLICE_X95Y258.B3     net (fanout=337)      0.558   n3950<15>
+    SLICE_X95Y258.B      Tilo                  0.043   Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o119
+                                                       Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o1191
+    SLICE_X78Y230.B6     net (fanout=336)      1.048   Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o119
+    SLICE_X78Y230.CLK    Tas                  -0.053   pheromone<1><5>_9
+                                                       Mmux_pheromone[1][5][15]_pheromone[1][5][15]_MUX_2405_o17
+                                                       pheromone<1><5>_8
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+Slack:                  -0.119 (requirement - (data path - clock path skew + uncertainty))
+  Source:               pheromone<1><5>_15 (LATCH)
+  Destination:          pheromone<1><5>_3 (LATCH)
+  Requirement:          5.840
+  Data Path Delay:      4.073 (Levels of Logic = 5)
+  Clock Path Skew:      -1.851ns (0.383 - 2.234)
+  Source Clock:         goHome_PWR_4_o_MUX_2409_o falling at 0.103ns
+  Destination Clock:    goHome_PWR_4_o_MUX_2409_o falling at 5.943ns
+  Clock Uncertainty:    0.035
+
+  Clock Uncertainty:          0.035  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pheromone<1><5>_15 to pheromone<1><5>_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X99Y273.DQ     Tcklo                 0.294   pheromone<1><5>_15
+                                                       pheromone<1><5>_15
+    SLICE_X116Y250.D5    net (fanout=21)       1.033   pheromone<1><5>_15
+    SLICE_X116Y250.D     Tilo                  0.043   next_ant<0>_2_1
+                                                       next_ant<0><2>310
+    SLICE_X116Y250.C5    net (fanout=1)        0.147   next_ant<0><2>3
+    SLICE_X116Y250.C     Tilo                  0.043   next_ant<0>_2_1
+                                                       next_ant<0><2>311
+    SLICE_X102Y255.A6    net (fanout=7)        0.885   next_ant<0><2>_mmx_out11
+    SLICE_X102Y255.A     Tilo                  0.043   Mmux_NS.best_way[2]_X_4_o_wide_mux_1003_OUT_1028
+                                                       Mmux_n395072
+    SLICE_X95Y258.B3     net (fanout=337)      0.558   n3950<15>
+    SLICE_X95Y258.B      Tilo                  0.043   Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o119
+                                                       Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o1191
+    SLICE_X79Y230.D6     net (fanout=336)      1.007   Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o119
+    SLICE_X79Y230.CLK    Tas                  -0.023   pheromone<1><5>_3
+                                                       Mmux_pheromone[1][5][15]_pheromone[1][5][15]_MUX_2405_o112
+                                                       pheromone<1><5>_3
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_3209_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 65 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.888ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_4809_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 65 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   6.129ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_4489_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 65 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.979ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_5449_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 65 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   6.149ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_5289_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 65 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.248ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_1449_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 65 endpoints analyzed, 20 failing endpoints
+ 20 timing errors detected. (20 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.990ns.
+--------------------------------------------------------------------------------
+Slack:                  -0.461 (requirement - (data path - clock path skew + uncertainty))
+  Source:               pheromone<0><5>_15 (LATCH)
+  Destination:          pheromone<0><5>_6 (LATCH)
+  Requirement:          5.529
+  Data Path Delay:      4.082 (Levels of Logic = 5)
+  Clock Path Skew:      -1.873ns (0.428 - 2.301)
+  Source Clock:         goHome_PWR_4_o_MUX_1449_o falling at 0.414ns
+  Destination Clock:    goHome_PWR_4_o_MUX_1449_o falling at 5.943ns
+  Clock Uncertainty:    0.035
+
+  Clock Uncertainty:          0.035  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pheromone<0><5>_15 to pheromone<0><5>_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X95Y272.DQ     Tcklo                 0.294   pheromone<0><5>_15
+                                                       pheromone<0><5>_15
+    SLICE_X116Y250.D6    net (fanout=21)       0.994   pheromone<0><5>_15
+    SLICE_X116Y250.D     Tilo                  0.043   next_ant<0>_2_1
+                                                       next_ant<0><2>310
+    SLICE_X116Y250.C5    net (fanout=1)        0.147   next_ant<0><2>3
+    SLICE_X116Y250.C     Tilo                  0.043   next_ant<0>_2_1
+                                                       next_ant<0><2>311
+    SLICE_X102Y255.A6    net (fanout=7)        0.885   next_ant<0><2>_mmx_out11
+    SLICE_X102Y255.A     Tilo                  0.043   Mmux_NS.best_way[2]_X_4_o_wide_mux_1003_OUT_1028
+                                                       Mmux_n395072
+    SLICE_X95Y258.B3     net (fanout=337)      0.558   n3950<15>
+    SLICE_X95Y258.B      Tilo                  0.043   Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o119
+                                                       Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o1191
+    SLICE_X81Y229.B6     net (fanout=336)      1.053   Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o119
+    SLICE_X81Y229.CLK    Tas                  -0.021   pheromone<0><5>_7
+                                                       Mmux_pheromone[0][5][15]_pheromone[0][5][15]_MUX_1445_o19
+                                                       pheromone<0><5>_6
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+Slack:                  -0.438 (requirement - (data path - clock path skew + uncertainty))
+  Source:               pheromone<0><5>_15 (LATCH)
+  Destination:          pheromone<0><5>_1 (LATCH)
+  Requirement:          5.529
+  Data Path Delay:      3.972 (Levels of Logic = 5)
+  Clock Path Skew:      -1.960ns (0.341 - 2.301)
+  Source Clock:         goHome_PWR_4_o_MUX_1449_o falling at 0.414ns
+  Destination Clock:    goHome_PWR_4_o_MUX_1449_o falling at 5.943ns
+  Clock Uncertainty:    0.035
+
+  Clock Uncertainty:          0.035  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pheromone<0><5>_15 to pheromone<0><5>_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X95Y272.DQ     Tcklo                 0.294   pheromone<0><5>_15
+                                                       pheromone<0><5>_15
+    SLICE_X116Y250.D6    net (fanout=21)       0.994   pheromone<0><5>_15
+    SLICE_X116Y250.D     Tilo                  0.043   next_ant<0>_2_1
+                                                       next_ant<0><2>310
+    SLICE_X116Y250.C5    net (fanout=1)        0.147   next_ant<0><2>3
+    SLICE_X116Y250.C     Tilo                  0.043   next_ant<0>_2_1
+                                                       next_ant<0><2>311
+    SLICE_X102Y255.A6    net (fanout=7)        0.885   next_ant<0><2>_mmx_out11
+    SLICE_X102Y255.A     Tilo                  0.043   Mmux_NS.best_way[2]_X_4_o_wide_mux_1003_OUT_1028
+                                                       Mmux_n395072
+    SLICE_X95Y258.B3     net (fanout=337)      0.558   n3950<15>
+    SLICE_X95Y258.B      Tilo                  0.043   Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o119
+                                                       Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o1191
+    SLICE_X81Y242.C5     net (fanout=336)      0.945   Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o119
+    SLICE_X81Y242.CLK    Tas                  -0.023   pheromone<0><5>_1
+                                                       Mmux_pheromone[0][5][15]_pheromone[0][5][15]_MUX_1445_o114
+                                                       pheromone<0><5>_1
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+Slack:                  -0.436 (requirement - (data path - clock path skew + uncertainty))
+  Source:               pheromone<0><5>_15 (LATCH)
+  Destination:          pheromone<0><5>_7 (LATCH)
+  Requirement:          5.529
+  Data Path Delay:      4.057 (Levels of Logic = 5)
+  Clock Path Skew:      -1.873ns (0.428 - 2.301)
+  Source Clock:         goHome_PWR_4_o_MUX_1449_o falling at 0.414ns
+  Destination Clock:    goHome_PWR_4_o_MUX_1449_o falling at 5.943ns
+  Clock Uncertainty:    0.035
+
+  Clock Uncertainty:          0.035  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pheromone<0><5>_15 to pheromone<0><5>_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X95Y272.DQ     Tcklo                 0.294   pheromone<0><5>_15
+                                                       pheromone<0><5>_15
+    SLICE_X116Y250.D6    net (fanout=21)       0.994   pheromone<0><5>_15
+    SLICE_X116Y250.D     Tilo                  0.043   next_ant<0>_2_1
+                                                       next_ant<0><2>310
+    SLICE_X116Y250.C5    net (fanout=1)        0.147   next_ant<0><2>3
+    SLICE_X116Y250.C     Tilo                  0.043   next_ant<0>_2_1
+                                                       next_ant<0><2>311
+    SLICE_X102Y255.A6    net (fanout=7)        0.885   next_ant<0><2>_mmx_out11
+    SLICE_X102Y255.A     Tilo                  0.043   Mmux_NS.best_way[2]_X_4_o_wide_mux_1003_OUT_1028
+                                                       Mmux_n395072
+    SLICE_X95Y258.B3     net (fanout=337)      0.558   n3950<15>
+    SLICE_X95Y258.B      Tilo                  0.043   Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o119
+                                                       Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o1191
+    SLICE_X81Y229.D6     net (fanout=336)      1.030   Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o119
+    SLICE_X81Y229.CLK    Tas                  -0.023   pheromone<0><5>_7
+                                                       Mmux_pheromone[0][5][15]_pheromone[0][5][15]_MUX_1445_o18
+                                                       pheromone<0><5>_7
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+Slack:                  -0.430 (requirement - (data path - clock path skew + uncertainty))
+  Source:               pheromone<0><5>_15 (LATCH)
+  Destination:          pheromone<0><5>_9 (LATCH)
+  Requirement:          5.529
+  Data Path Delay:      3.929 (Levels of Logic = 5)
+  Clock Path Skew:      -1.995ns (0.306 - 2.301)
+  Source Clock:         goHome_PWR_4_o_MUX_1449_o falling at 0.414ns
+  Destination Clock:    goHome_PWR_4_o_MUX_1449_o falling at 5.943ns
+  Clock Uncertainty:    0.035
+
+  Clock Uncertainty:          0.035  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pheromone<0><5>_15 to pheromone<0><5>_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X95Y272.DQ     Tcklo                 0.294   pheromone<0><5>_15
+                                                       pheromone<0><5>_15
+    SLICE_X116Y250.D6    net (fanout=21)       0.994   pheromone<0><5>_15
+    SLICE_X116Y250.D     Tilo                  0.043   next_ant<0>_2_1
+                                                       next_ant<0><2>310
+    SLICE_X116Y250.C5    net (fanout=1)        0.147   next_ant<0><2>3
+    SLICE_X116Y250.C     Tilo                  0.043   next_ant<0>_2_1
+                                                       next_ant<0><2>311
+    SLICE_X102Y255.A6    net (fanout=7)        0.885   next_ant<0><2>_mmx_out11
+    SLICE_X102Y255.A     Tilo                  0.043   Mmux_NS.best_way[2]_X_4_o_wide_mux_1003_OUT_1028
+                                                       Mmux_n395072
+    SLICE_X95Y258.B3     net (fanout=337)      0.558   n3950<15>
+    SLICE_X95Y258.B      Tilo                  0.043   Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o119
+                                                       Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o1191
+    SLICE_X84Y237.D6     net (fanout=336)      0.902   Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o119
+    SLICE_X84Y237.CLK    Tas                  -0.023   pheromone<0><5>_9
+                                                       Mmux_pheromone[0][5][15]_pheromone[0][5][15]_MUX_1445_o16
+                                                       pheromone<0><5>_9
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+Slack:                  -0.417 (requirement - (data path - clock path skew + uncertainty))
+  Source:               pheromone<0><5>_15 (LATCH)
+  Destination:          pheromone<0><5>_5 (LATCH)
+  Requirement:          5.529
+  Data Path Delay:      4.038 (Levels of Logic = 5)
+  Clock Path Skew:      -1.873ns (0.428 - 2.301)
+  Source Clock:         goHome_PWR_4_o_MUX_1449_o falling at 0.414ns
+  Destination Clock:    goHome_PWR_4_o_MUX_1449_o falling at 5.943ns
+  Clock Uncertainty:    0.035
+
+  Clock Uncertainty:          0.035  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pheromone<0><5>_15 to pheromone<0><5>_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X95Y272.DQ     Tcklo                 0.294   pheromone<0><5>_15
+                                                       pheromone<0><5>_15
+    SLICE_X116Y250.D6    net (fanout=21)       0.994   pheromone<0><5>_15
+    SLICE_X116Y250.D     Tilo                  0.043   next_ant<0>_2_1
+                                                       next_ant<0><2>310
+    SLICE_X116Y250.C5    net (fanout=1)        0.147   next_ant<0><2>3
+    SLICE_X116Y250.C     Tilo                  0.043   next_ant<0>_2_1
+                                                       next_ant<0><2>311
+    SLICE_X102Y255.A6    net (fanout=7)        0.885   next_ant<0><2>_mmx_out11
+    SLICE_X102Y255.A     Tilo                  0.043   Mmux_NS.best_way[2]_X_4_o_wide_mux_1003_OUT_1028
+                                                       Mmux_n395072
+    SLICE_X95Y258.B3     net (fanout=337)      0.558   n3950<15>
+    SLICE_X95Y258.B      Tilo                  0.043   Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o119
+                                                       Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o1191
+    SLICE_X80Y229.D6     net (fanout=336)      1.042   Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o119
+    SLICE_X80Y229.CLK    Tas                  -0.054   pheromone<0><5>_5
+                                                       Mmux_pheromone[0][5][15]_pheromone[0][5][15]_MUX_1445_o110
+                                                       pheromone<0><5>_5
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+Slack:                  -0.414 (requirement - (data path - clock path skew + uncertainty))
+  Source:               pheromone<0><5>_15 (LATCH)
+  Destination:          pheromone<0><5>_4 (LATCH)
+  Requirement:          5.529
+  Data Path Delay:      4.035 (Levels of Logic = 5)
+  Clock Path Skew:      -1.873ns (0.428 - 2.301)
+  Source Clock:         goHome_PWR_4_o_MUX_1449_o falling at 0.414ns
+  Destination Clock:    goHome_PWR_4_o_MUX_1449_o falling at 5.943ns
+  Clock Uncertainty:    0.035
+
+  Clock Uncertainty:          0.035  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pheromone<0><5>_15 to pheromone<0><5>_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X95Y272.DQ     Tcklo                 0.294   pheromone<0><5>_15
+                                                       pheromone<0><5>_15
+    SLICE_X116Y250.D6    net (fanout=21)       0.994   pheromone<0><5>_15
+    SLICE_X116Y250.D     Tilo                  0.043   next_ant<0>_2_1
+                                                       next_ant<0><2>310
+    SLICE_X116Y250.C5    net (fanout=1)        0.147   next_ant<0><2>3
+    SLICE_X116Y250.C     Tilo                  0.043   next_ant<0>_2_1
+                                                       next_ant<0><2>311
+    SLICE_X102Y255.A6    net (fanout=7)        0.885   next_ant<0><2>_mmx_out11
+    SLICE_X102Y255.A     Tilo                  0.043   Mmux_NS.best_way[2]_X_4_o_wide_mux_1003_OUT_1028
+                                                       Mmux_n395072
+    SLICE_X95Y258.B3     net (fanout=337)      0.558   n3950<15>
+    SLICE_X95Y258.B      Tilo                  0.043   Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o119
+                                                       Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o1191
+    SLICE_X80Y229.B6     net (fanout=336)      1.038   Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o119
+    SLICE_X80Y229.CLK    Tas                  -0.053   pheromone<0><5>_5
+                                                       Mmux_pheromone[0][5][15]_pheromone[0][5][15]_MUX_1445_o111
+                                                       pheromone<0><5>_4
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+Slack:                  -0.403 (requirement - (data path - clock path skew + uncertainty))
+  Source:               pheromone<0><5>_15 (LATCH)
+  Destination:          pheromone<0><5>_8 (LATCH)
+  Requirement:          5.529
+  Data Path Delay:      3.902 (Levels of Logic = 5)
+  Clock Path Skew:      -1.995ns (0.306 - 2.301)
+  Source Clock:         goHome_PWR_4_o_MUX_1449_o falling at 0.414ns
+  Destination Clock:    goHome_PWR_4_o_MUX_1449_o falling at 5.943ns
+  Clock Uncertainty:    0.035
+
+  Clock Uncertainty:          0.035  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pheromone<0><5>_15 to pheromone<0><5>_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X95Y272.DQ     Tcklo                 0.294   pheromone<0><5>_15
+                                                       pheromone<0><5>_15
+    SLICE_X116Y250.D6    net (fanout=21)       0.994   pheromone<0><5>_15
+    SLICE_X116Y250.D     Tilo                  0.043   next_ant<0>_2_1
+                                                       next_ant<0><2>310
+    SLICE_X116Y250.C5    net (fanout=1)        0.147   next_ant<0><2>3
+    SLICE_X116Y250.C     Tilo                  0.043   next_ant<0>_2_1
+                                                       next_ant<0><2>311
+    SLICE_X102Y255.A6    net (fanout=7)        0.885   next_ant<0><2>_mmx_out11
+    SLICE_X102Y255.A     Tilo                  0.043   Mmux_NS.best_way[2]_X_4_o_wide_mux_1003_OUT_1028
+                                                       Mmux_n395072
+    SLICE_X95Y258.B3     net (fanout=337)      0.558   n3950<15>
+    SLICE_X95Y258.B      Tilo                  0.043   Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o119
+                                                       Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o1191
+    SLICE_X84Y237.B6     net (fanout=336)      0.873   Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o119
+    SLICE_X84Y237.CLK    Tas                  -0.021   pheromone<0><5>_9
+                                                       Mmux_pheromone[0][5][15]_pheromone[0][5][15]_MUX_1445_o17
+                                                       pheromone<0><5>_8
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+Slack:                  -0.383 (requirement - (data path - clock path skew + uncertainty))
+  Source:               pheromone<0><5>_15 (LATCH)
+  Destination:          pheromone<0><5>_0 (LATCH)
+  Requirement:          5.529
+  Data Path Delay:      3.917 (Levels of Logic = 5)
+  Clock Path Skew:      -1.960ns (0.341 - 2.301)
+  Source Clock:         goHome_PWR_4_o_MUX_1449_o falling at 0.414ns
+  Destination Clock:    goHome_PWR_4_o_MUX_1449_o falling at 5.943ns
+  Clock Uncertainty:    0.035
+
+  Clock Uncertainty:          0.035  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pheromone<0><5>_15 to pheromone<0><5>_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X95Y272.DQ     Tcklo                 0.294   pheromone<0><5>_15
+                                                       pheromone<0><5>_15
+    SLICE_X116Y250.D6    net (fanout=21)       0.994   pheromone<0><5>_15
+    SLICE_X116Y250.D     Tilo                  0.043   next_ant<0>_2_1
+                                                       next_ant<0><2>310
+    SLICE_X116Y250.C5    net (fanout=1)        0.147   next_ant<0><2>3
+    SLICE_X116Y250.C     Tilo                  0.043   next_ant<0>_2_1
+                                                       next_ant<0><2>311
+    SLICE_X102Y255.A6    net (fanout=7)        0.885   next_ant<0><2>_mmx_out11
+    SLICE_X102Y255.A     Tilo                  0.043   Mmux_NS.best_way[2]_X_4_o_wide_mux_1003_OUT_1028
+                                                       Mmux_n395072
+    SLICE_X95Y258.B3     net (fanout=337)      0.558   n3950<15>
+    SLICE_X95Y258.B      Tilo                  0.043   Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o119
+                                                       Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o1191
+    SLICE_X81Y242.B6     net (fanout=336)      0.888   Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o119
+    SLICE_X81Y242.CLK    Tas                  -0.021   pheromone<0><5>_1
+                                                       Mmux_pheromone[0][5][15]_pheromone[0][5][15]_MUX_1445_o115
+                                                       pheromone<0><5>_0
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+Slack:                  -0.373 (requirement - (data path - clock path skew + uncertainty))
+  Source:               pheromone<0><5>_15 (LATCH)
+  Destination:          pheromone<0><5>_10 (LATCH)
+  Requirement:          5.529
+  Data Path Delay:      3.966 (Levels of Logic = 5)
+  Clock Path Skew:      -1.901ns (0.400 - 2.301)
+  Source Clock:         goHome_PWR_4_o_MUX_1449_o falling at 0.414ns
+  Destination Clock:    goHome_PWR_4_o_MUX_1449_o falling at 5.943ns
+  Clock Uncertainty:    0.035
+
+  Clock Uncertainty:          0.035  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pheromone<0><5>_15 to pheromone<0><5>_10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X95Y272.DQ     Tcklo                 0.294   pheromone<0><5>_15
+                                                       pheromone<0><5>_15
+    SLICE_X116Y250.D6    net (fanout=21)       0.994   pheromone<0><5>_15
+    SLICE_X116Y250.D     Tilo                  0.043   next_ant<0>_2_1
+                                                       next_ant<0><2>310
+    SLICE_X116Y250.C5    net (fanout=1)        0.147   next_ant<0><2>3
+    SLICE_X116Y250.C     Tilo                  0.043   next_ant<0>_2_1
+                                                       next_ant<0><2>311
+    SLICE_X102Y255.A6    net (fanout=7)        0.885   next_ant<0><2>_mmx_out11
+    SLICE_X102Y255.A     Tilo                  0.043   Mmux_NS.best_way[2]_X_4_o_wide_mux_1003_OUT_1028
+                                                       Mmux_n395072
+    SLICE_X95Y258.B3     net (fanout=337)      0.558   n3950<15>
+    SLICE_X95Y258.B      Tilo                  0.043   Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o119
+                                                       Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o1191
+    SLICE_X82Y232.B6     net (fanout=336)      0.969   Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o119
+    SLICE_X82Y232.CLK    Tas                  -0.053   pheromone<0><5>_11
+                                                       Mmux_pheromone[0][5][15]_pheromone[0][5][15]_MUX_1445_o15
+                                                       pheromone<0><5>_10
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+Slack:                  -0.333 (requirement - (data path - clock path skew + uncertainty))
+  Source:               pheromone<0><5>_15 (LATCH)
+  Destination:          pheromone<0><5>_11 (LATCH)
+  Requirement:          5.529
+  Data Path Delay:      3.926 (Levels of Logic = 5)
+  Clock Path Skew:      -1.901ns (0.400 - 2.301)
+  Source Clock:         goHome_PWR_4_o_MUX_1449_o falling at 0.414ns
+  Destination Clock:    goHome_PWR_4_o_MUX_1449_o falling at 5.943ns
+  Clock Uncertainty:    0.035
+
+  Clock Uncertainty:          0.035  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pheromone<0><5>_15 to pheromone<0><5>_11
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X95Y272.DQ     Tcklo                 0.294   pheromone<0><5>_15
+                                                       pheromone<0><5>_15
+    SLICE_X116Y250.D6    net (fanout=21)       0.994   pheromone<0><5>_15
+    SLICE_X116Y250.D     Tilo                  0.043   next_ant<0>_2_1
+                                                       next_ant<0><2>310
+    SLICE_X116Y250.C5    net (fanout=1)        0.147   next_ant<0><2>3
+    SLICE_X116Y250.C     Tilo                  0.043   next_ant<0>_2_1
+                                                       next_ant<0><2>311
+    SLICE_X102Y255.A6    net (fanout=7)        0.885   next_ant<0><2>_mmx_out11
+    SLICE_X102Y255.A     Tilo                  0.043   Mmux_NS.best_way[2]_X_4_o_wide_mux_1003_OUT_1028
+                                                       Mmux_n395072
+    SLICE_X95Y258.B3     net (fanout=337)      0.558   n3950<15>
+    SLICE_X95Y258.B      Tilo                  0.043   Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o119
+                                                       Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o1191
+    SLICE_X82Y232.D5     net (fanout=336)      0.930   Mmux_pheromone[0][0][15]_pheromone[0][0][15]_MUX_645_o119
+    SLICE_X82Y232.CLK    Tas                  -0.054   pheromone<0><5>_11
+                                                       Mmux_pheromone[0][5][15]_pheromone[0][5][15]_MUX_1445_o14
+                                                       pheromone<0><5>_11
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_6089_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 65 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.627ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_1289_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 65 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.656ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_5609_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 65 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   6.210ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_1609_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 80 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   6.338ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_4649_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 65 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.897ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_4969_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 65 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.981ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_2249_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 65 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   6.357ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_5769_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 65 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   6.116ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_4169_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 65 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.851ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_4329_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 65 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.651ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_6249_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 65 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.519ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_383_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   0.480ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_6406_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 12943232938377914000000000000000000000 paths analyzed, 14 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  45.121ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_6427_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 7538631414019281900000000000000000000 paths analyzed, 10 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  45.084ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_1129_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 80 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   6.030ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_2889_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 80 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.543ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_3689_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 80 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   6.161ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_1929_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 80 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.887ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_4009_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 80 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.549ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_969_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 80 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.718ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_2729_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 80 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.377ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_809_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 80 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.788ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_3049_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 80 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.914ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_3529_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 80 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   6.034ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_391_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 306 paths analyzed, 34 endpoints analyzed, 2 failing endpoints
+ 2 timing errors detected. (2 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   3.762ns.
+--------------------------------------------------------------------------------
+Slack:                  -0.057 (requirement - (data path - clock path skew + uncertainty))
+  Source:               tmp_random_result_16 (LATCH)
+  Destination:          tmp_random_result_0 (LATCH)
+  Requirement:          3.705
+  Data Path Delay:      3.240 (Levels of Logic = 2)
+  Clock Path Skew:      -0.487ns (1.204 - 1.691)
+  Source Clock:         goHome_PWR_4_o_MUX_391_o falling at 1.523ns
+  Destination Clock:    goHome_PWR_4_o_MUX_391_o falling at 5.228ns
+  Clock Uncertainty:    0.035
+
+  Clock Uncertainty:          0.035  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: tmp_random_result_16 to tmp_random_result_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X73Y274.AQ     Tcklo                 0.294   tmp_random_result_16
+                                                       tmp_random_result_16
+    DSP48_X4Y109.B16     net (fanout=2)        0.311   tmp_random_result_16
+    DSP48_X4Y109.P0      Tdspdo_B_P_MULT       2.280   Mmult_n2519
+                                                       Mmult_n2519
+    SLICE_X76Y269.A5     net (fanout=1)        0.419   n2519<0>
+    SLICE_X76Y269.CLK    Tas                  -0.064   tmp_random_result_3
+                                                       Mmux_tmp_random_result[31]_GND_4_o_MUX_637_o11
+                                                       tmp_random_result_0
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+Slack:                  -0.004 (requirement - (data path - clock path skew + uncertainty))
+  Source:               tmp_random_result_16 (LATCH)
+  Destination:          tmp_random_result_2 (LATCH)
+  Requirement:          3.705
+  Data Path Delay:      3.187 (Levels of Logic = 2)
+  Clock Path Skew:      -0.487ns (1.204 - 1.691)
+  Source Clock:         goHome_PWR_4_o_MUX_391_o falling at 1.523ns
+  Destination Clock:    goHome_PWR_4_o_MUX_391_o falling at 5.228ns
+  Clock Uncertainty:    0.035
+
+  Clock Uncertainty:          0.035  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: tmp_random_result_16 to tmp_random_result_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X73Y274.AQ     Tcklo                 0.294   tmp_random_result_16
+                                                       tmp_random_result_16
+    DSP48_X4Y109.B16     net (fanout=2)        0.311   tmp_random_result_16
+    DSP48_X4Y109.P2      Tdspdo_B_P_MULT       2.280   Mmult_n2519
+                                                       Mmult_n2519
+    SLICE_X76Y269.C6     net (fanout=1)        0.356   n2519<2>
+    SLICE_X76Y269.CLK    Tas                  -0.054   tmp_random_result_3
+                                                       Mmux_tmp_random_result[31]_GND_4_o_MUX_621_o11
+                                                       tmp_random_result_2
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_5129_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 137 paths analyzed, 24 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   4.170ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_649_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 80 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.183ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_1769_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 80 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   6.495ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_2089_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 80 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   6.251ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+initialize_start_eat[0][0]_MUX_159_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   0.475ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+initialize_start_eat[0][0]_MUX_239_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   0.544ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_2569_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 80 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.212ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+goHome_PWR_4_o_MUX_3849_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 785 paths analyzed, 80 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.947ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+initialize_start_eat[0][0]_MUX_255_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   0.475ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+initialize_start_eat[0][0]_MUX_263_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   0.563ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+initialize_start_eat[0][0]_MUX_271_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   0.475ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+initialize_start_eat[0][0]_MUX_191_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   0.478ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+initialize_start_eat[0][0]_MUX_199_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   0.475ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+initialize_start_eat[0][0]_MUX_207_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   0.562ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+initialize_start_eat[0][0]_MUX_215_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   0.478ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+initialize_start_eat[0][0]_MUX_223_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   0.475ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+initialize_start_eat[0][0]_MUX_167_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   0.577ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+initialize_start_eat[0][0]_MUX_175_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   0.497ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+initialize_start_eat[0][0]_MUX_183_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   0.577ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+initialize_start_eat[0][0]_MUX_279_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   0.577ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+initialize_start_eat[0][0]_MUX_247_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   0.508ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net 
+initialize_start_eat[0][0]_MUX_231_o
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   0.562ns.
+--------------------------------------------------------------------------------
+
+
+3 constraints not met.
+
+
+

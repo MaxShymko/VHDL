@@ -15,3 +15,33 @@ map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o model_m
 par -w -intstyle ise -ol high -t 1 model_map.ncd model.ncd model.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml model.twx model.ncd -o model.twr model.pcf 
 xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/model.xst" -ofn "D:/GitHub/VHDL/xilinx/course/model.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 model.ngc model.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o model_map.ncd model.ngd model.pcf 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/model.xst" -ofn "D:/GitHub/VHDL/xilinx/course/model.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 model.ngc model.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o model_map.ncd model.ngd model.pcf 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/model.xst" -ofn "D:/GitHub/VHDL/xilinx/course/model.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 model.ngc model.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o model_map.ncd model.ngd model.pcf 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/model.xst" -ofn "D:/GitHub/VHDL/xilinx/course/model.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 model.ngc model.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o model_map.ncd model.ngd model.pcf 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/model.xst" -ofn "D:/GitHub/VHDL/xilinx/course/model.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 model.ngc model.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o model_map.ncd model.ngd model.pcf 
+par -w -intstyle ise -ol high -t 1 model_map.ncd model.ncd model.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml model.twx model.ncd -o model.twr model.pcf 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/model.xst" -ofn "D:/GitHub/VHDL/xilinx/course/model.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7vx330t-ffg1157-3 model.ngc model.ngd  
+map -intstyle ise -p xc7vx330t-ffg1157-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o model_map.ncd model.ngd model.pcf 
+par -w -intstyle ise -ol high -mt off model_map.ncd model.ncd model.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml model.twx model.ncd -o model.twr model.pcf 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/model.xst" -ofn "D:/GitHub/VHDL/xilinx/course/model.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7vx330t-ffg1157-3 model.ngc model.ngd  
+map -intstyle ise -p xc7vx330t-ffg1157-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o model_map.ncd model.ngd model.pcf 
+par -w -intstyle ise -ol high -mt off model_map.ncd model.ncd model.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml model.twx model.ncd -o model.twr model.pcf 
+xst -intstyle ise -ifn "D:/GitHub/VHDL/xilinx/course/model.xst" -ofn "D:/GitHub/VHDL/xilinx/course/model.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7vx330t-ffg1157-3 model.ngc model.ngd  
+map -intstyle ise -p xc7vx330t-ffg1157-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o model_map.ncd model.ngd model.pcf 
+par -w -intstyle ise -ol high -mt off model_map.ncd model.ncd model.pcf 
